@@ -1,0 +1,103 @@
+Summary of comparison between paper and code-generated results:
+
+Let's systematically compare the **code execution results** with the **paper section** according to your requested criteria:
+
+---
+
+## 1. Are numerical results (means, SDs, correlations, alphas, etc.) present in the code output?
+
+**Paper Section:**  
+- Reports *means, standard deviations, and differences* for key variables:
+  - Margalef’s index (Dmg) species richness: e.g. after 85 ka: 2.3 ± 0.20; before 85 ka: 4.6 ± 1.21
+  - Podocarpus pollen: after 85 ka: 10.7 ± 7.6%; before 85 ka: 29.8 ± 11.8%
+- Reports *statistical test results*: Table 1 (NP-MANOVA), including F, R², p-values.
+- Reports *correlations*: Spearman’s Rs = 0.2542, P = 0.0002 (after 85 ka), Rs = −0.2509, P < 0.0001 (before 85 ka) between charcoal influx and magnetic susceptibility.
+
+**Code Output:**  
+- Provides large tables of raw data:  
+  - Pollen abundances for Poaceae, Podocarpus, miombo, Olea, and PCoA axes by age.
+  - Charcoal and lake level by age.
+  - Magnetic susceptibility and other sedimentary proxies.
+- **NO summary statistics** (means, SDs, correlations, p-values) are directly presented.
+- **NO statistical test outputs** (e.g., MANOVA, Spearman's rho) are present in the code output.
+- **NO tables or figures with group means/comparisons for pre/post 85 ka**.
+
+---
+
+## 2. Do they match the reported results in the paper (in magnitude and direction)?
+
+- The **paper reports aggregate values** (e.g., means, SDs, correlations) and specific test results.
+- The **code output only provides raw/interpolated data**, not statistical summaries or test outcomes.
+- Therefore, **there is no direct way to confirm or invalidate the paper's reported values from code output alone**, unless one re-analyzes the raw data (which is not done/shown in the code results).
+
+---
+
+## 3. Are any variables, constructs, or analyses present in one but missing in the other?
+
+**Paper:**
+- Uses derived and summary statistics:
+  - Species richness index (Margalef’s Dmg)
+  - MANOVA on pre/post 85 ka using PCoA of pollen, charcoal, and lake level
+  - Species group (Podocarpus, Poaceae, miombo, Olea) pollen percentages
+  - Charcoal influx, lake level proxies (through PCA)
+  - Correlations between charcoal and magnetic susceptibility
+- Provides explicit statistical test results (e.g., Table 1, Spearman’s correlations), and interpretation for pre- and post-85 ka periods.
+
+**Code:**
+- Provides raw/interpolated data for:
+  - "Poaceae", "Podocarpus", "miombo", "Olea", and 4 PCoA axes (but not summarized by period)
+  - Charcoal (from two cores), lake level proxies, magnetic susceptibility
+- **Does NOT provide**:
+  - Calculated species richness (Margalef’s Dmg)
+  - Summary statistics for pre/post 85 ka (means, SDs)
+  - Statistical test results (no MANOVA/NP-MANOVA outputs, no p-values, no correlation coefficients)
+  - Boxplots, KDEs, or PCoA plots summarizing pre/post differences (only raw data)
+- MANOVA/PCoA analyses are referenced in the methods but their outputs are not shown in code results.
+
+---
+
+## 4. Is the reproducibility supported by actual numbers, tables, or correlations?
+
+- **Paper:** Reproducibility is supported by reporting actual numbers (means, SDs, correlations, MANOVA table) and citing supplementary tables/figures.
+- **Code Output:** Provides only raw data tables, **not summary statistics or test outputs**, so you cannot directly reproduce or verify the paper’s published results from the code output alone.
+
+---
+
+## Summary Table
+
+| Aspect                    | Paper                       | Code Output               | Match?         |
+|---------------------------|-----------------------------|---------------------------|----------------|
+| Means/SDs reported        | Yes                         | No                        | ❌             |
+| Statistical test results  | Yes (MANOVA, correlations)  | No                        | ❌             |
+| Raw data provided         | Sometimes/Supplementary     | Yes                       | ✔️             |
+| Derived indices (Dmg)     | Yes                         | No                        | ❌             |
+| Grouped by pre/post 85ka  | Yes                         | No                        | ❌             |
+
+---
+
+### Matched Elements:
+- Raw data for pollen taxa, charcoal, lake level, and magnetic susceptibility are present, allowing (with additional analysis) calculation of the statistics reported in the paper.
+- Presence of key variables (e.g., Poaceae, Podocarpus, miombo, Olea; charcoal; lake level) in the datasets.
+
+### Mismatched or Missing Elements:
+- **No summary statistics** (means, SDs, percent, etc.) for pre- and post-85 ka periods in the code output.
+- **No statistical test results** (e.g., MANOVA, Spearman correlations, p-values).
+- **No group comparisons, boxplots, or figures akin to those described and shown in the paper.**
+- **No species richness index (Dmg) calculation/output.**
+- **No explicit correlation or MANOVA output values.**
+- Some derived variables described in the paper (e.g., PCA/PCoA axis scores, group averages) are not directly provided in the code output.
+
+### Reproducibility Verdict: **Invalid**
+
+**Explanation:**  
+While the code output contains the raw data necessary to reproduce the analyses, it does **not itself provide the numerical/statistical results reported in the paper** (means/SDs by period, species richness indices, MANOVA/F statistics, p-values, or correlation coefficients). Without actual output of these analyses, the code results **cannot be said to match or directly support the findings reported in the paper**. Thus, *reproducibility is not supported by the code output as presented*.
+
+**In summary:**  
+- The code output lacks all critical summary statistics and hypothesis test results that would allow direct validation of the reported scientific claims.
+- A strict comparison finds the code results do **not match** the reported results and do not support reproducibility or transparency.
+- Only provision of raw data, without actual analyses, is insufficient for validation of the paper’s results.
+
+---
+
+**Recommendation:**  
+For valid reproducibility and rigorous reporting, the code execution outputs should include explicit summary statistics, hypothesis test results (with p-values), and group comparisons as reported in the manuscript.

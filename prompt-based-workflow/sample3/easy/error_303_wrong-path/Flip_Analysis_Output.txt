@@ -1,0 +1,416 @@
+       id            age_t1          sex_t1          no_daily     
+ Min.   : 1.00   Min.   :10.00   Min.   :0.0000   Min.   : 62.00  
+ 1st Qu.:24.75   1st Qu.:20.00   1st Qu.:1.0000   1st Qu.: 70.00  
+ Median :48.50   Median :23.00   Median :1.0000   Median : 74.00  
+ Mean   :48.50   Mean   :22.81   Mean   :0.8229   Mean   : 76.09  
+ 3rd Qu.:72.25   3rd Qu.:26.00   3rd Qu.:1.0000   3rd Qu.: 81.00  
+ Max.   :96.00   Max.   :35.00   Max.   :1.0000   Max.   :105.00  
+      sccs          csd_nob          simpson_csd           n_csd         
+ Min.   :1.974   Min.   :-2.64315   Min.   :-2.66092   Min.   :-2.80977  
+ 1st Qu.:2.739   1st Qu.:-0.57754   1st Qu.:-0.41426   1st Qu.:-0.78186  
+ Median :3.041   Median :-0.02157   Median : 0.15090   Median :-0.07682  
+ Mean   :3.066   Mean   :-0.03958   Mean   : 0.07452   Mean   :-0.07432  
+ 3rd Qu.:3.433   3rd Qu.: 0.51645   3rd Qu.: 0.75801   3rd Qu.: 0.61390  
+ Max.   :4.147   Max.   : 2.57146   Max.   : 1.97542   Max.   : 2.43023  
+     e_csd              o_csd             a_csd              c_csd         
+ Min.   :-2.24905   Min.   :-2.5079   Min.   :-1.86023   Min.   :-2.54934  
+ 1st Qu.:-0.79877   1st Qu.:-0.2898   1st Qu.:-0.71560   1st Qu.:-0.73295  
+ Median :-0.05755   Median : 0.2407   Median : 0.06023   Median :-0.05704  
+ Mean   :-0.08517   Mean   : 0.1122   Mean   : 0.11664   Mean   :-0.06532  
+ 3rd Qu.: 0.59468   3rd Qu.: 0.7330   3rd Qu.: 0.80468   3rd Qu.: 0.41735  
+ Max.   : 2.45806   Max.   : 2.6917   Max.   : 2.68486   Max.   : 2.48800  
+    per_csd        csd_state_selfesteem      rses                swls         
+ Min.   :-2.3774   Min.   :-2.19892     Min.   :-2.313736   Min.   :-1.99408  
+ 1st Qu.:-0.5900   1st Qu.:-0.69664     1st Qu.:-0.526542   1st Qu.:-0.79438  
+ Median : 0.2296   Median :-0.06808     Median : 0.061244   Median :-0.14762  
+ Mean   : 0.1292   Mean   :-0.01351     Mean   :-0.005884   Mean   :-0.09183  
+ 3rd Qu.: 0.6930   3rd Qu.: 0.47397     3rd Qu.: 0.651458   3rd Qu.: 0.62110  
+ Max.   : 2.8322   Max.   : 3.18404     Max.   : 1.953668   Max.   : 3.39037  
+       pa                 na          csd_state_nervous  csd_state_relaxed 
+ Min.   :-2.69533   Min.   :-1.5850   Min.   :-2.24869   Min.   :-3.04786  
+ 1st Qu.:-0.56874   1st Qu.:-0.5135   1st Qu.:-0.55345   1st Qu.:-0.81086  
+ Median : 0.29997   Median : 0.1377   Median : 0.01999   Median :-0.03897  
+ Mean   : 0.06359   Mean   : 0.1273   Mean   : 0.10530   Mean   :-0.01509  
+ 3rd Qu.: 0.71853   3rd Qu.: 0.7809   3rd Qu.: 0.96184   3rd Qu.: 0.76670  
+ Max.   : 1.85057   Max.   : 2.2841   Max.   : 3.29052   Max.   : 2.57727  
+ csd_state_irritable csd_state_assertive csd_state_unsociable csd_state_shy    
+ Min.   :-2.62933    Min.   :-2.60404    Min.   :-1.80689     Min.   :-2.5082  
+ 1st Qu.:-0.58187    1st Qu.:-0.61154    1st Qu.:-0.60349     1st Qu.:-0.7790  
+ Median : 0.06353    Median : 0.06194    Median : 0.06132     Median :-0.2249  
+ Mean   : 0.04201    Mean   : 0.09004    Mean   : 0.07793     Mean   :-0.2562  
+ 3rd Qu.: 0.77779    3rd Qu.: 0.91968    3rd Qu.: 0.65990     3rd Qu.: 0.3392  
+ Max.   : 2.27347    Max.   : 2.81608    Max.   : 2.05850     Max.   : 1.7148  
+ csd_state_sociable csd_state_curious  csd_state_creative csd_state_witty   
+ Min.   :-2.29803   Min.   :-2.54193   Min.   :-2.84855   Min.   :-2.37367  
+ 1st Qu.:-0.66170   1st Qu.:-0.74924   1st Qu.:-0.69725   1st Qu.:-0.50554  
+ Median :-0.12454   Median :-0.04325   Median :-0.11651   Median : 0.05312  
+ Mean   :-0.09261   Mean   :-0.09568   Mean   :-0.02436   Mean   : 0.09297  
+ 3rd Qu.: 0.56029   3rd Qu.: 0.51142   3rd Qu.: 0.67524   3rd Qu.: 0.73852  
+ Max.   : 2.28197   Max.   : 2.20076   Max.   : 3.02210   Max.   : 2.12605  
+ csd_state_hostile csd_state_compliant csd_state_sensitive csd_state_friendly
+ Min.   :-2.6325   Min.   :-2.5617     Min.   :-2.32925    Min.   :-2.05814  
+ 1st Qu.:-0.6004   1st Qu.:-0.8248     1st Qu.:-0.56166    1st Qu.:-0.67441  
+ Median : 0.2669   Median :-0.1687     Median :-0.12857    Median :-0.07477  
+ Mean   : 0.1157   Mean   :-0.1759     Mean   : 0.01798    Mean   : 0.02531  
+ 3rd Qu.: 0.8534   3rd Qu.: 0.4688     3rd Qu.: 0.61410    3rd Qu.: 0.70001  
+ Max.   : 2.1565   Max.   : 1.7021     Max.   : 2.70896    Max.   : 2.45899  
+ csd_state_cynical  csd_state_helpful csd_state_diligent csd_state_organised
+ Min.   :-2.20387   Min.   :-2.9180   Min.   :-2.48652   Min.   :-2.94987   
+ 1st Qu.:-0.49449   1st Qu.:-0.7589   1st Qu.:-0.65139   1st Qu.:-0.62261   
+ Median : 0.03297   Median :-0.1153   Median :-0.19867   Median :-0.14619   
+ Mean   : 0.19163   Mean   :-0.1554   Mean   :-0.08742   Mean   : 0.02798   
+ 3rd Qu.: 0.92531   3rd Qu.: 0.5998   3rd Qu.: 0.40727   3rd Qu.: 0.76207   
+ Max.   : 3.42110   Max.   : 2.2356   Max.   : 2.65374   Max.   : 2.56441   
+ csd_state_negligent    csd_sim1            csd_sim2           csd_sim3       
+ Min.   :-2.83938    Min.   :-3.129088   Min.   :-2.31866   Min.   :-2.67816  
+ 1st Qu.:-0.49895    1st Qu.:-0.671493   1st Qu.:-0.64803   1st Qu.:-0.56631  
+ Median : 0.10931    Median : 0.054464   Median : 0.10054   Median :-0.07156  
+ Mean   : 0.01962    Mean   :-0.008686   Mean   : 0.09256   Mean   :-0.03572  
+ 3rd Qu.: 0.55704    3rd Qu.: 0.681343   3rd Qu.: 0.82737   3rd Qu.: 0.68978  
+ Max.   : 1.79671    Max.   : 2.076903   Max.   : 2.54037   Max.   : 2.37284  
+    csd_sim4          csd_sim5           csd_sim6          csd_sim7       
+ Min.   :-2.3333   Min.   :-1.97326   Min.   :-1.8147   Min.   :-2.75361  
+ 1st Qu.:-0.9186   1st Qu.:-0.60209   1st Qu.:-0.5671   1st Qu.:-1.02727  
+ Median :-0.1914   Median : 0.14758   Median : 0.2522   Median :-0.06133  
+ Mean   :-0.2277   Mean   : 0.06022   Mean   : 0.2111   Mean   :-0.15920  
+ 3rd Qu.: 0.4721   3rd Qu.: 0.59701   3rd Qu.: 0.8635   3rd Qu.: 0.66253  
+ Max.   : 1.4589   Max.   : 2.48311   Max.   : 2.8949   Max.   : 2.20533  
+    csd_sim8           csd_sim9          csd_sim10       
+ Min.   :-1.75644   Min.   :-2.88763   Min.   :-2.34449  
+ 1st Qu.:-0.66199   1st Qu.:-0.62102   1st Qu.:-0.73334  
+ Median :-0.08883   Median : 0.08539   Median :-0.03762  
+ Mean   :-0.05007   Mean   :-0.02790   Mean   :-0.03629  
+ 3rd Qu.: 0.50742   3rd Qu.: 0.64104   3rd Qu.: 0.63686  
+ Max.   : 2.97159   Max.   : 2.33753   Max.   : 2.41506  
+         vars  n  mean   sd median trimmed  mad min max range  skew kurtosis
+age_t1      1 96 22.81 4.96     23   22.82 4.45  10  35    25 -0.02    -0.17
+sex_t1      2 96  0.82 0.38      1    0.90 0.00   0   1     1 -1.67     0.78
+no_daily    3 96 76.09 8.52     74   75.38 7.41  62 105    43  0.78     0.43
+           se
+age_t1   0.51
+sex_t1   0.04
+no_daily 0.87
+[1] 0.1709413
+[1] 0.07340046
+[1] 0.2643686
+[1] 0.4302618
+[1] 0.09153709
+[1] 0.4270371
+[1] 0.40189
+                      mean   sd
+sccs                  3.07 0.50
+csd_nob              -0.04 1.01
+simpson_csd          -0.02 0.31
+n_csd                 0.04 0.60
+e_csd                -0.05 0.51
+o_csd                -0.01 0.58
+a_csd                 0.00 0.49
+c_csd                -0.01 0.53
+per_csd              -0.01 0.26
+csd_state_selfesteem -0.01 1.00
+Call:psych::corr.test(x = df[, names_var])
+Correlation matrix 
+                      sccs csd_nob simpson_csd n_csd e_csd o_csd a_csd c_csd
+sccs                  1.00    0.08        0.12 -0.04 -0.12  0.06  0.03  0.03
+csd_nob               0.08    1.00       -0.14  0.25  0.09  0.03  0.17 -0.06
+simpson_csd           0.12   -0.14        1.00  0.09 -0.20 -0.14  0.21  0.06
+n_csd                -0.04    0.25        0.09  1.00  0.07 -0.10  0.07  0.02
+e_csd                -0.12    0.09       -0.20  0.07  1.00 -0.02  0.11  0.01
+o_csd                 0.06    0.03       -0.14 -0.10 -0.02  1.00  0.08  0.04
+a_csd                 0.03    0.17        0.21  0.07  0.11  0.08  1.00 -0.09
+c_csd                 0.03   -0.06        0.06  0.02  0.01  0.04 -0.09  1.00
+per_csd              -0.01    0.22        0.05  0.42  0.51  0.37  0.67  0.30
+csd_state_selfesteem -0.06    0.02       -0.04  0.00  0.02  0.08  0.02 -0.08
+                     per_csd csd_state_selfesteem
+sccs                   -0.01                -0.06
+csd_nob                 0.22                 0.02
+simpson_csd             0.05                -0.04
+n_csd                   0.42                 0.00
+e_csd                   0.51                 0.02
+o_csd                   0.37                 0.08
+a_csd                   0.67                 0.02
+c_csd                   0.30                -0.08
+per_csd                 1.00                 0.03
+csd_state_selfesteem    0.03                 1.00
+Sample Size 
+[1] 96
+Probability values (Entries above the diagonal are adjusted for multiple tests.) 
+                     sccs csd_nob simpson_csd n_csd e_csd o_csd a_csd c_csd
+sccs                 0.00    1.00        1.00  1.00  1.00  1.00  1.00  1.00
+csd_nob              0.46    0.00        1.00  0.64  1.00  1.00  1.00  1.00
+simpson_csd          0.24    0.17        0.00  1.00  1.00  1.00  1.00  1.00
+n_csd                0.69    0.02        0.36  0.00  1.00  1.00  1.00  1.00
+e_csd                0.25    0.39        0.06  0.49  0.00  1.00  1.00  1.00
+o_csd                0.58    0.78        0.18  0.34  0.85  0.00  1.00  1.00
+a_csd                0.74    0.10        0.04  0.47  0.27  0.45  0.00  1.00
+c_csd                0.75    0.54        0.54  0.83  0.95  0.72  0.38  0.00
+per_csd              0.90    0.03        0.61  0.00  0.00  0.00  0.00  0.00
+csd_state_selfesteem 0.55    0.87        0.67  0.98  0.82  0.42  0.82  0.45
+                     per_csd csd_state_selfesteem
+sccs                    1.00                    1
+csd_nob                 1.00                    1
+simpson_csd             1.00                    1
+n_csd                   0.00                    1
+e_csd                   0.00                    1
+o_csd                   0.01                    1
+a_csd                   0.00                    1
+c_csd                   0.13                    1
+per_csd                 0.00                    1
+csd_state_selfesteem    0.78                    0
+
+ To see confidence intervals of the correlations, print with the short=FALSE option
+                         M   SD    1.    2.    3.    4.    5.    6.    7.    8.
+SCC                   3.07 0.50  1.00  0.08  0.12 -0.04 -0.12  0.06  0.03  0.03
+Neutral Objects      -0.04 1.01  0.08  1.00 -0.14  0.25  0.09  0.03  0.17 -0.06
+Simpson Task         -0.02 0.31  0.12 -0.14  1.00  0.09 -0.20 -0.14  0.21  0.06
+Daily neuroticism     0.04 0.60 -0.04  0.25  0.09  1.00  0.07 -0.10  0.07  0.02
+Daily extraversion   -0.05 0.51 -0.12  0.09 -0.20  0.07  1.00 -0.02  0.11  0.01
+Daily openness       -0.01 0.58  0.06  0.03 -0.14 -0.10 -0.02  1.00  0.08  0.04
+Daily agreeableness   0.00 0.49  0.03  0.17  0.21  0.07  0.11  0.08  1.00 -0.09
+Daily conscientious. -0.01 0.53  0.03 -0.06  0.06  0.02  0.01  0.04 -0.09  1.00
+Daily personality    -0.01 0.26 -0.01  0.22  0.05  0.42  0.51  0.37  0.67  0.30
+Daily self-esteem    -0.01 1.00 -0.06  0.02 -0.04  0.00  0.02  0.08  0.02 -0.08
+                        9.   10.
+SCC                  -0.01 -0.06
+Neutral Objects       0.22  0.02
+Simpson Task          0.05 -0.04
+Daily neuroticism     0.42  0.00
+Daily extraversion    0.51  0.02
+Daily openness        0.37  0.08
+Daily agreeableness   0.67  0.02
+Daily conscientious.  0.30 -0.08
+Daily personality     1.00  0.03
+Daily self-esteem     0.03  1.00
+Call:psych::corr.test(x = df[, c(names_var[-1], "rses", "swls", "pa", 
+    "na")])
+Correlation matrix 
+                     csd_nob simpson_csd n_csd e_csd o_csd a_csd c_csd per_csd
+csd_nob                 1.00       -0.14  0.25  0.09  0.03  0.17 -0.06    0.22
+simpson_csd            -0.14        1.00  0.09 -0.20 -0.14  0.21  0.06    0.05
+n_csd                   0.25        0.09  1.00  0.07 -0.10  0.07  0.02    0.42
+e_csd                   0.09       -0.20  0.07  1.00 -0.02  0.11  0.01    0.51
+o_csd                   0.03       -0.14 -0.10 -0.02  1.00  0.08  0.04    0.37
+a_csd                   0.17        0.21  0.07  0.11  0.08  1.00 -0.09    0.67
+c_csd                  -0.06        0.06  0.02  0.01  0.04 -0.09  1.00    0.30
+per_csd                 0.22        0.05  0.42  0.51  0.37  0.67  0.30    1.00
+csd_state_selfesteem    0.02       -0.04  0.00  0.02  0.08  0.02 -0.08    0.03
+rses                    0.04       -0.02 -0.04 -0.08  0.05 -0.07  0.03   -0.06
+swls                    0.02       -0.07  0.08  0.13 -0.17 -0.06 -0.03   -0.02
+pa                      0.05        0.07  0.16 -0.04 -0.04  0.04  0.06    0.07
+na                     -0.15        0.13 -0.01 -0.12  0.17 -0.08 -0.07   -0.06
+                     csd_state_selfesteem  rses  swls    pa    na
+csd_nob                              0.02  0.04  0.02  0.05 -0.15
+simpson_csd                         -0.04 -0.02 -0.07  0.07  0.13
+n_csd                                0.00 -0.04  0.08  0.16 -0.01
+e_csd                                0.02 -0.08  0.13 -0.04 -0.12
+o_csd                                0.08  0.05 -0.17 -0.04  0.17
+a_csd                                0.02 -0.07 -0.06  0.04 -0.08
+c_csd                               -0.08  0.03 -0.03  0.06 -0.07
+per_csd                              0.03 -0.06 -0.02  0.07 -0.06
+csd_state_selfesteem                 1.00 -0.17  0.04  0.19  0.01
+rses                                -0.17  1.00 -0.11  0.05  0.07
+swls                                 0.04 -0.11  1.00  0.13 -0.16
+pa                                   0.19  0.05  0.13  1.00 -0.02
+na                                   0.01  0.07 -0.16 -0.02  1.00
+Sample Size 
+[1] 96
+Probability values (Entries above the diagonal are adjusted for multiple tests.) 
+                     csd_nob simpson_csd n_csd e_csd o_csd a_csd c_csd per_csd
+csd_nob                 0.00        1.00  1.00  1.00  1.00  1.00  1.00    1.00
+simpson_csd             0.17        0.00  1.00  1.00  1.00  1.00  1.00    1.00
+n_csd                   0.02        0.36  0.00  1.00  1.00  1.00  1.00    0.00
+e_csd                   0.39        0.06  0.49  0.00  1.00  1.00  1.00    0.00
+o_csd                   0.78        0.18  0.34  0.85  0.00  1.00  1.00    0.02
+a_csd                   0.10        0.04  0.47  0.27  0.45  0.00  1.00    0.00
+c_csd                   0.54        0.54  0.83  0.95  0.72  0.38  0.00    0.24
+per_csd                 0.03        0.61  0.00  0.00  0.00  0.00  0.00    0.00
+csd_state_selfesteem    0.87        0.67  0.98  0.82  0.42  0.82  0.45    0.78
+rses                    0.69        0.88  0.68  0.45  0.64  0.49  0.77    0.53
+swls                    0.84        0.49  0.44  0.19  0.11  0.55  0.74    0.83
+pa                      0.64        0.51  0.11  0.73  0.67  0.72  0.54    0.48
+na                      0.16        0.21  0.94  0.26  0.11  0.44  0.53    0.55
+                     csd_state_selfesteem rses swls   pa na
+csd_nob                              1.00 1.00 1.00 1.00  1
+simpson_csd                          1.00 1.00 1.00 1.00  1
+n_csd                                1.00 1.00 1.00 1.00  1
+e_csd                                1.00 1.00 1.00 1.00  1
+o_csd                                1.00 1.00 1.00 1.00  1
+a_csd                                1.00 1.00 1.00 1.00  1
+c_csd                                1.00 1.00 1.00 1.00  1
+per_csd                              1.00 1.00 1.00 1.00  1
+csd_state_selfesteem                 0.00 1.00 1.00 1.00  1
+rses                                 0.09 0.00 1.00 1.00  1
+swls                                 0.68 0.30 0.00 1.00  1
+pa                                   0.06 0.61 0.22 0.00  1
+na                                   0.90 0.50 0.13 0.86  0
+
+ To see confidence intervals of the correlations, print with the short=FALSE option
+                     Self-Est. Life Sat. Pos. Affect Neg. Affect
+Neutral Objects           0.04      0.02        0.05       -0.15
+Simpson Task             -0.02     -0.07        0.07        0.13
+Daily neuroticism        -0.04      0.08        0.16       -0.01
+Daily extraversion       -0.08      0.13       -0.04       -0.12
+Daily openness            0.05     -0.17       -0.04        0.17
+Daily agreeableness      -0.07     -0.06        0.04       -0.08
+Daily conscientious.      0.03     -0.03        0.06       -0.07
+Daily personality        -0.06     -0.02        0.07       -0.06
+Daily self-esteem        -0.17      0.04        0.19        0.01
+partial correlations 
+                     n_csd e_csd o_csd a_csd c_csd per_csd csd_state_selfesteem
+n_csd                 1.00  0.08 -0.09  0.00  0.03    0.38                 0.00
+e_csd                 0.08  1.00 -0.05  0.15  0.02    0.53                 0.01
+o_csd                -0.09 -0.05  1.00  0.11  0.05    0.39                 0.08
+a_csd                 0.00  0.15  0.11  1.00 -0.10    0.66                 0.03
+c_csd                 0.03  0.02  0.05 -0.10  1.00    0.32                -0.07
+per_csd               0.38  0.53  0.39  0.66  0.32    1.00                 0.03
+csd_state_selfesteem  0.00  0.01  0.08  0.03 -0.07    0.03                 1.00
+rses                 -0.05 -0.09  0.05 -0.08  0.03   -0.07                -0.17
+swls                  0.09  0.12 -0.18 -0.05 -0.03   -0.02                 0.04
+pa                    0.15 -0.03 -0.04  0.01  0.06    0.06                 0.19
+na                    0.02 -0.09  0.19 -0.09 -0.08   -0.04                 0.02
+                      rses  swls    pa    na
+n_csd                -0.05  0.09  0.15  0.02
+e_csd                -0.09  0.12 -0.03 -0.09
+o_csd                 0.05 -0.18 -0.04  0.19
+a_csd                -0.08 -0.05  0.01 -0.09
+c_csd                 0.03 -0.03  0.06 -0.08
+per_csd              -0.07 -0.02  0.06 -0.04
+csd_state_selfesteem -0.17  0.04  0.19  0.02
+rses                  1.00 -0.11  0.05  0.08
+swls                 -0.11  1.00  0.13 -0.15
+pa                    0.05  0.13  1.00 -0.02
+na                    0.08 -0.15 -0.02  1.00
+Call:psych::corr.p(r = res, n = 94)
+Correlation matrix 
+partial correlations 
+                     n_csd e_csd o_csd a_csd c_csd per_csd csd_state_selfesteem
+n_csd                 1.00  0.08 -0.09  0.00  0.03    0.38                 0.00
+e_csd                 0.08  1.00 -0.05  0.15  0.02    0.53                 0.01
+o_csd                -0.09 -0.05  1.00  0.11  0.05    0.39                 0.08
+a_csd                 0.00  0.15  0.11  1.00 -0.10    0.66                 0.03
+c_csd                 0.03  0.02  0.05 -0.10  1.00    0.32                -0.07
+per_csd               0.38  0.53  0.39  0.66  0.32    1.00                 0.03
+csd_state_selfesteem  0.00  0.01  0.08  0.03 -0.07    0.03                 1.00
+rses                 -0.05 -0.09  0.05 -0.08  0.03   -0.07                -0.17
+swls                  0.09  0.12 -0.18 -0.05 -0.03   -0.02                 0.04
+pa                    0.15 -0.03 -0.04  0.01  0.06    0.06                 0.19
+na                    0.02 -0.09  0.19 -0.09 -0.08   -0.04                 0.02
+                      rses  swls    pa    na
+n_csd                -0.05  0.09  0.15  0.02
+e_csd                -0.09  0.12 -0.03 -0.09
+o_csd                 0.05 -0.18 -0.04  0.19
+a_csd                -0.08 -0.05  0.01 -0.09
+c_csd                 0.03 -0.03  0.06 -0.08
+per_csd              -0.07 -0.02  0.06 -0.04
+csd_state_selfesteem -0.17  0.04  0.19  0.02
+rses                  1.00 -0.11  0.05  0.08
+swls                 -0.11  1.00  0.13 -0.15
+pa                    0.05  0.13  1.00 -0.02
+na                    0.08 -0.15 -0.02  1.00
+Sample Size 
+[1] 94
+Probability values (Entries above the diagonal are adjusted for multiple tests.) 
+partial correlations 
+                     n_csd e_csd o_csd a_csd c_csd per_csd csd_state_selfesteem
+n_csd                 0.00  1.00  1.00  1.00  1.00    0.01                 1.00
+e_csd                 0.45  0.00  1.00  1.00  1.00    0.00                 1.00
+o_csd                 0.38  0.64  0.00  1.00  1.00    0.01                 1.00
+a_csd                 0.98  0.14  0.29  0.00  1.00    0.00                 1.00
+c_csd                 0.76  0.83  0.65  0.35  0.00    0.10                 1.00
+per_csd               0.00  0.00  0.00  0.00  0.00    0.00                 1.00
+csd_state_selfesteem  0.97  0.89  0.46  0.76  0.47    0.78                 0.00
+rses                  0.61  0.41  0.66  0.45  0.75    0.48                 0.09
+swls                  0.40  0.24  0.09  0.62  0.78    0.84                 0.70
+pa                    0.16  0.80  0.74  0.91  0.54    0.58                 0.06
+na                    0.89  0.40  0.07  0.41  0.43    0.69                 0.84
+                     rses swls   pa na
+n_csd                1.00 1.00 1.00  1
+e_csd                1.00 1.00 1.00  1
+o_csd                1.00 1.00 1.00  1
+a_csd                1.00 1.00 1.00  1
+c_csd                1.00 1.00 1.00  1
+per_csd              1.00 1.00 1.00  1
+csd_state_selfesteem 1.00 1.00 1.00  1
+rses                 0.00 1.00 1.00  1
+swls                 0.30 0.00 1.00  1
+pa                   0.62 0.21 0.00  1
+na                   0.46 0.15 0.85  0
+
+ To see confidence intervals of the correlations, print with the short=FALSE option
+                     Self-Est. Life Sat. Pos. Affect Neg. Affect
+Daily neuroticism        -0.05      0.09        0.15        0.02
+Daily extraversion       -0.09      0.12       -0.03       -0.09
+Daily openness            0.05     -0.18       -0.04        0.19
+Daily agreeableness      -0.08     -0.05        0.01       -0.09
+Daily conscientious.      0.03     -0.03        0.06       -0.08
+Daily personality        -0.07     -0.02        0.06       -0.04
+Daily self-esteem        -0.17      0.04        0.19        0.02
+Call:psych::corr.test(x = df2$n_csd, y = df2$csd_mean_n)
+Correlation matrix 
+[1] -0.01
+Sample Size 
+[1] 96
+These are the unadjusted probability values.
+  The probability values  adjusted for multiple tests are in the p.adj object. 
+[1] 0.89
+
+ To see confidence intervals of the correlations, print with the short=FALSE option
+Call:psych::corr.test(x = df2$e_csd, y = df2$csd_mean_e)
+Correlation matrix 
+[1] -0.02
+Sample Size 
+[1] 96
+These are the unadjusted probability values.
+  The probability values  adjusted for multiple tests are in the p.adj object. 
+[1] 0.82
+
+ To see confidence intervals of the correlations, print with the short=FALSE option
+Call:psych::corr.test(x = df2$o_csd, y = df2$csd_mean_o)
+Correlation matrix 
+[1] 0.01
+Sample Size 
+[1] 96
+These are the unadjusted probability values.
+  The probability values  adjusted for multiple tests are in the p.adj object. 
+[1] 0.94
+
+ To see confidence intervals of the correlations, print with the short=FALSE option
+Call:psych::corr.test(x = df2$a_csd, y = df2$csd_mean_a)
+Correlation matrix 
+[1] 0.02
+Sample Size 
+[1] 96
+These are the unadjusted probability values.
+  The probability values  adjusted for multiple tests are in the p.adj object. 
+[1] 0.84
+
+ To see confidence intervals of the correlations, print with the short=FALSE option
+Call:psych::corr.test(x = df2$c_csd, y = df2$csd_mean_c)
+Correlation matrix 
+[1] -0.09
+Sample Size 
+[1] 96
+These are the unadjusted probability values.
+  The probability values  adjusted for multiple tests are in the p.adj object. 
+[1] 0.4
+
+ To see confidence intervals of the correlations, print with the short=FALSE option
+Call:psych::corr.test(x = df2[, existing_cols])
+Correlation matrix 
+           csd_mean_n csd_mean_e csd_mean_o csd_mean_a csd_mean_c
+csd_mean_n       1.00       0.09       0.01       0.09       0.07
+csd_mean_e       0.09       1.00       0.01      -0.07      -0.18
+csd_mean_o       0.01       0.01       1.00      -0.02       0.11
+csd_mean_a       0.09      -0.07      -0.02       1.00       0.07
+csd_mean_c       0.07      -0.18       0.11       0.07       1.00
+Sample Size 
+[1] 96
+Probability values (Entries above the diagonal are adjusted for multiple tests.) 
+           csd_mean_n csd_mean_e csd_mean_o csd_mean_a csd_mean_c
+csd_mean_n       0.00       1.00       1.00       1.00       1.00
+csd_mean_e       0.37       0.00       1.00       1.00       0.76
+csd_mean_o       0.95       0.94       0.00       1.00       1.00
+csd_mean_a       0.40       0.50       0.81       0.00       1.00
+csd_mean_c       0.49       0.08       0.28       0.48       0.00
+
+ To see confidence intervals of the correlations, print with the short=FALSE option

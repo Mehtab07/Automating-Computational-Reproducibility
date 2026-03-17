@@ -1,0 +1,98 @@
+      id                age_t1           sex            no_daily    
+ Length:93          Min.   :18.00   Min.   :0.0000   Min.   :19.00  
+ Class :character   1st Qu.:21.00   1st Qu.:1.0000   1st Qu.:50.00  
+ Mode  :character   Median :22.00   Median :1.0000   Median :53.00  
+                    Mean   :23.27   Mean   :0.8495   Mean   :50.99  
+                    3rd Qu.:25.00   3rd Qu.:1.0000   3rd Qu.:55.00  
+                    Max.   :37.00   Max.   :2.0000   Max.   :56.00  
+ csd_state_ial_pa    csd_state_ial_fg    csd_state_ial_hi   csd_state_ial_no  
+ Min.   :-0.506836   Min.   :-0.578039   Min.   :-0.54141   Min.   :-0.52527  
+ 1st Qu.:-0.201811   1st Qu.:-0.127534   1st Qu.:-0.11024   1st Qu.:-0.13248  
+ Median :-0.038080   Median : 0.007973   Median : 0.03679   Median : 0.01696  
+ Mean   : 0.001751   Mean   : 0.011739   Mean   : 0.01588   Mean   : 0.01385  
+ 3rd Qu.: 0.181907   3rd Qu.: 0.150613   3rd Qu.: 0.13545   3rd Qu.: 0.18232  
+ Max.   : 0.806357   Max.   : 0.522687   Max.   : 0.63826   Max.   : 0.56954  
+ csd_state_ial_de    csd_state_ial_jk   csd_state_ial_lm    
+ Min.   :-0.620605   Min.   :-0.57063   Min.   :-0.3932842  
+ 1st Qu.:-0.108323   1st Qu.:-0.14942   1st Qu.:-0.1580878  
+ Median : 0.020636   Median :-0.04329   Median :-0.0101755  
+ Mean   : 0.003755   Mean   : 0.01450   Mean   :-0.0005217  
+ 3rd Qu.: 0.117248   3rd Qu.: 0.20879   3rd Qu.: 0.1156524  
+ Max.   : 0.533954   Max.   : 0.72008   Max.   : 0.6856581  
+ csd_state_ial_bc    csd_state_bfi_n     csd_state_bfi_o    csd_state_bfi_c    
+ Min.   :-0.585098   Min.   :-0.552781   Min.   :-0.47352   Min.   :-0.498931  
+ 1st Qu.:-0.083920   1st Qu.:-0.210950   1st Qu.:-0.16403   1st Qu.:-0.190335  
+ Median : 0.018125   Median :-0.026677   Median :-0.02802   Median :-0.016921  
+ Mean   : 0.004441   Mean   : 0.005042   Mean   : 0.01151   Mean   :-0.000676  
+ 3rd Qu.: 0.125150   3rd Qu.: 0.175834   3rd Qu.: 0.17220   3rd Qu.: 0.123047  
+ Max.   : 0.427203   Max.   : 0.664229   Max.   : 0.80997   Max.   : 0.608384  
+ csd_state_pa_1      csd_state_pa_2     csd_state_pa_3     csd_state_pa_4    
+ Min.   :-0.506669   Min.   :-0.49665   Min.   :-0.49610   Min.   :-0.67537  
+ 1st Qu.:-0.167647   1st Qu.:-0.14247   1st Qu.:-0.17204   1st Qu.:-0.18456  
+ Median :-0.013177   Median : 0.01296   Median : 0.01018   Median :-0.01852  
+ Mean   : 0.008694   Mean   : 0.02341   Mean   : 0.01588   Mean   : 0.01332  
+ 3rd Qu.: 0.179202   3rd Qu.: 0.16363   3rd Qu.: 0.16386   3rd Qu.: 0.20756  
+ Max.   : 0.635554   Max.   : 0.77653   Max.   : 0.61750   Max.   : 0.76095  
+ csd_state_na_1      csd_state_na_2     csd_state_na_3      csd_state_se     
+ Min.   :-0.491811   Min.   :-0.52189   Min.   :-0.62200   Min.   :-0.51804  
+ 1st Qu.:-0.105055   1st Qu.:-0.11870   1st Qu.:-0.10942   1st Qu.:-0.16948  
+ Median :-0.002203   Median : 0.01653   Median : 0.01881   Median : 0.00772  
+ Mean   : 0.017583   Mean   : 0.01168   Mean   : 0.02207   Mean   : 0.01511  
+ 3rd Qu.: 0.159214   3rd Qu.: 0.12490   3rd Qu.: 0.15538   3rd Qu.: 0.18327  
+ Max.   : 0.541038   Max.   : 0.63274   Max.   : 0.63775   Max.   : 0.70844  
+   csd_nob_t1         csd_sim1_t1        csd_sim2_t1         csd_sim3_t1      
+ Min.   :-0.491828   Min.   :-0.65115   Min.   :-1.028673   Min.   :-1.32901  
+ 1st Qu.:-0.099031   1st Qu.:-0.19543   1st Qu.:-0.324180   1st Qu.:-0.28489  
+ Median : 0.002402   Median : 0.06249   Median : 0.006742   Median : 0.18505  
+ Mean   : 0.016664   Mean   : 0.01374   Mean   :-0.010697   Mean   : 0.02124  
+ 3rd Qu.: 0.146266   3rd Qu.: 0.19819   3rd Qu.: 0.277976   3rd Qu.: 0.31743  
+ Max.   : 0.572383   Max.   : 0.76278   Max.   : 0.761635   Max.   : 0.57802  
+  csd_sim4_t1         csd_sim5_t1        csd_sim6_t1         csd_sim7_t1      
+ Min.   :-1.156375   Min.   :-1.44657   Min.   :-0.699882   Min.   :-1.03288  
+ 1st Qu.:-0.339878   1st Qu.:-0.21951   1st Qu.:-0.248036   1st Qu.:-0.37068  
+ Median : 0.004142   Median : 0.02771   Median : 0.006428   Median :-0.03516  
+ Mean   : 0.002428   Mean   : 0.01904   Mean   : 0.008346   Mean   : 0.01360  
+ 3rd Qu.: 0.257839   3rd Qu.: 0.36340   3rd Qu.: 0.209391   3rd Qu.: 0.35247  
+ Max.   : 0.865704   Max.   : 0.89321   Max.   : 1.248136   Max.   : 1.27652  
+  csd_sim8_t1        csd_sim9_t1        csd_sim10_t1          sccs_t1     
+ Min.   :-1.29271   Min.   :-0.84155   Min.   :-1.562351   Min.   :1.000  
+ 1st Qu.:-0.27963   1st Qu.:-0.37554   1st Qu.:-0.114076   1st Qu.:2.167  
+ Median : 0.06001   Median :-0.02505   Median : 0.070642   Median :2.833  
+ Mean   : 0.01491   Mean   : 0.02453   Mean   : 0.006575   Mean   :2.874  
+ 3rd Qu.: 0.28192   3rd Qu.: 0.32232   3rd Qu.: 0.264175   3rd Qu.:3.583  
+ Max.   : 0.70729   Max.   : 1.11737   Max.   : 0.747050   Max.   :4.917  
+   csd_nob_t2         csd_sim1_t2        csd_sim2_t2       csd_sim3_t2     
+ Min.   :-0.519865   Min.   :-1.30125   Min.   :-1.6088   Min.   :-1.8427  
+ 1st Qu.:-0.088615   1st Qu.:-0.21462   1st Qu.:-0.3168   1st Qu.:-0.2581  
+ Median :-0.009109   Median : 0.07955   Median : 0.2170   Median : 0.1616  
+ Mean   : 0.000000   Mean   : 0.00000   Mean   : 0.0000   Mean   : 0.0000  
+ 3rd Qu.: 0.117750   3rd Qu.: 0.24549   3rd Qu.: 0.3831   3rd Qu.: 0.3034  
+ Max.   : 0.516699   Max.   : 0.86367   Max.   : 0.7006   Max.   : 0.4667  
+  csd_sim4_t2        csd_sim5_t2        csd_sim6_t2        csd_sim7_t2      
+ Min.   :-1.14898   Min.   :-1.38697   Min.   :-0.86955   Min.   :-0.99270  
+ 1st Qu.:-0.30711   1st Qu.:-0.29976   1st Qu.:-0.22383   1st Qu.:-0.29979  
+ Median :-0.01857   Median : 0.07251   Median : 0.05283   Median : 0.02436  
+ Mean   : 0.00000   Mean   : 0.00000   Mean   : 0.00000   Mean   : 0.00000  
+ 3rd Qu.: 0.26524   3rd Qu.: 0.34332   3rd Qu.: 0.15478   3rd Qu.: 0.37831  
+ Max.   : 0.98073   Max.   : 1.48099   Max.   : 1.16914   Max.   : 1.00552  
+  csd_sim8_t2        csd_sim9_t2       csd_sim10_t2            rses      
+ Min.   :-1.73736   Min.   :-1.1313   Min.   :-1.584763   Min.   :1.100  
+ 1st Qu.:-0.22364   1st Qu.:-0.3148   1st Qu.:-0.170550   1st Qu.:2.500  
+ Median : 0.08838   Median : 0.0234   Median : 0.006251   Median :3.000  
+ Mean   : 0.00000   Mean   : 0.0000   Mean   : 0.000000   Mean   :2.962  
+ 3rd Qu.: 0.33792   3rd Qu.: 0.2736   3rd Qu.: 0.281021   3rd Qu.:3.500  
+ Max.   : 0.57204   Max.   : 0.9727   Max.   : 0.724638   Max.   :4.000  
+      swls            jsat             pa              na       
+ Min.   :1.000   Min.   :1.000   Min.   :1.900   Min.   :1.000  
+ 1st Qu.:3.800   1st Qu.:3.000   1st Qu.:2.800   1st Qu.:1.400  
+ Median :5.000   Median :3.600   Median :3.300   Median :2.000  
+ Mean   :4.757   Mean   :3.486   Mean   :3.291   Mean   :2.017  
+ 3rd Qu.:5.600   3rd Qu.:4.000   3rd Qu.:3.800   3rd Qu.:2.400  
+ Max.   :7.000   Max.   :5.000   Max.   :4.700   Max.   :3.800  
+      ucla          sccs_t2     
+ Min.   :1.250   Min.   :1.083  
+ 1st Qu.:2.750   1st Qu.:2.167  
+ Median :3.000   Median :3.000  
+ Mean   :3.078   Mean   :2.819  
+ 3rd Qu.:3.500   3rd Qu.:3.500  
+ Max.   :4.000   Max.   :4.750  

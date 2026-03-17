@@ -1,0 +1,2559 @@
+      PID            TID            DYAD            item         TSELF      
+ Min.   :1011   Min.   :1011   Min.   :101.0   Min.   :  1   Min.   :1.000  
+ 1st Qu.:1374   1st Qu.:1374   1st Qu.:137.2   1st Qu.: 29   1st Qu.:3.000  
+ Median :2006   Median :2006   Median :200.5   Median : 57   Median :5.000  
+ Mean   :1949   Mean   :1949   Mean   :194.7   Mean   : 57   Mean   :4.427  
+ 3rd Qu.:2384   3rd Qu.:2384   3rd Qu.:238.2   3rd Qu.: 85   3rd Qu.:6.000  
+ Max.   :3432   Max.   :3432   Max.   :343.0   Max.   :113   Max.   :7.000  
+                                                             NA's   :264    
+     PSELF           RATING          SMEAN           trait       
+ Min.   :1.000   Min.   :1.000   Min.   :1.443   Min.   :0.0000  
+ 1st Qu.:3.000   1st Qu.:3.000   1st Qu.:3.569   1st Qu.:0.0000  
+ Median :5.000   Median :5.000   Median :4.569   Median :0.0000  
+ Mean   :4.427   Mean   :4.352   Mean   :4.424   Mean   :0.4159  
+ 3rd Qu.:6.000   3rd Qu.:6.000   3rd Qu.:5.333   3rd Qu.:1.0000  
+ Max.   :7.000   Max.   :7.000   Max.   :6.531   Max.   :1.0000  
+ NA's   :264     NA's   :300                                     
+     motive             CO               EX               OP         
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.00000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.00000  
+ Median :1.0000   Median :0.0000   Median :0.0000   Median :0.00000  
+ Mean   :0.5841   Mean   :0.0885   Mean   :0.0708   Mean   :0.07965  
+ 3rd Qu.:1.0000   3rd Qu.:0.0000   3rd Qu.:0.0000   3rd Qu.:0.00000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.0000   Max.   :1.00000  
+                                                                     
+       NE               IN                AG                SP        
+ Min.   :0.0000   Min.   :0.00000   Min.   :0.00000   Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.00000   1st Qu.:0.00000   1st Qu.:0.0000  
+ Median :0.0000   Median :0.00000   Median :0.00000   Median :0.0000  
+ Mean   :0.0708   Mean   :0.02655   Mean   :0.07965   Mean   :0.0531  
+ 3rd Qu.:0.0000   3rd Qu.:0.00000   3rd Qu.:0.00000   3rd Qu.:0.0000  
+ Max.   :1.0000   Max.   :1.00000   Max.   :1.00000   Max.   :1.0000  
+                                                                      
+       DA              AFG               AE               AI        
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000  
+ Median :0.0000   Median :0.0000   Median :0.0000   Median :0.0000  
+ Mean   :0.0531   Mean   :0.0531   Mean   :0.0531   Mean   :0.0531  
+ 3rd Qu.:0.0000   3rd Qu.:0.0000   3rd Qu.:0.0000   3rd Qu.:0.0000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+                                                                    
+       ST               MA              MRB              MRG        
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000  
+ Median :0.0000   Median :0.0000   Median :0.0000   Median :0.0000  
+ Mean   :0.0531   Mean   :0.0531   Mean   :0.0531   Mean   :0.0531  
+ 3rd Qu.:0.0000   3rd Qu.:0.0000   3rd Qu.:0.0000   3rd Qu.:0.0000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+                                                                    
+       KC             TSELFr             PSELFr             SMEANc          
+ Min.   :0.0000   Min.   :-5.51938   Min.   :-5.51938   Min.   :-2.9552519  
+ 1st Qu.:0.0000   1st Qu.:-1.01575   1st Qu.:-1.01575   1st Qu.:-0.8807692  
+ Median :0.0000   Median : 0.07692   Median : 0.07692   Median : 0.1269231  
+ Mean   :0.0531   Mean   : 0.00000   Mean   : 0.00000   Mean   : 0.0001998  
+ 3rd Qu.:0.0000   3rd Qu.: 0.99231   3rd Qu.: 0.99231   3rd Qu.: 0.9115385  
+ Max.   :1.0000   Max.   : 5.55725   Max.   : 5.55725   Max.   : 2.1213798  
+                  NA's   :264        NA's   :264                            
+    RATINGc             TSELFc             PSELFc             SDMEAN     
+ Min.   :-3.36900   Min.   :-5.51938   Min.   :-5.51938   Min.   :2.116  
+ 1st Qu.:-1.36900   1st Qu.:-1.01575   1st Qu.:-1.01575   1st Qu.:3.116  
+ Median : 0.63100   Median : 0.07692   Median : 0.07692   Median :3.950  
+ Mean   : 0.00007   Mean   : 0.00000   Mean   : 0.00000   Mean   :4.143  
+ 3rd Qu.: 1.63100   3rd Qu.: 0.99231   3rd Qu.: 0.99231   3rd Qu.:5.475  
+ Max.   : 2.66500   Max.   : 5.55725   Max.   : 5.55725   Max.   :6.223  
+ NA's   :300        NA's   :264        NA's   :264                       
+     OMEANc              SDMEANc             pfriendqz         tfriendqz      
+ Min.   :-1.2713333   Min.   :-2.0272980   Min.   :-4.3036   Min.   :-4.3036  
+ 1st Qu.:-0.3695126   1st Qu.:-1.0272975   1st Qu.:-0.6400   1st Qu.:-0.6400  
+ Median :-0.0046667   Median :-0.1925868   Median : 0.1686   Median : 0.1686  
+ Mean   : 0.0001258   Mean   : 0.0003122   Mean   : 0.0000   Mean   : 0.0000  
+ 3rd Qu.: 0.3370000   3rd Qu.: 1.3320000   3rd Qu.: 0.7389   3rd Qu.: 0.7389  
+ Max.   : 1.6136807   Max.   : 2.0801405   Max.   : 1.9467   Max.   : 1.9467  
+                                           NA's   :113       NA's   :113      
+    pclosez           tclosez         TRELLengthz       PRELLengthz     
+ Min.   :-3.5427   Min.   :-3.5427   Min.   :-0.7577   Min.   :-0.7577  
+ 1st Qu.:-0.7475   1st Qu.:-0.7475   1st Qu.:-0.6183   1st Qu.:-0.6102  
+ Median : 0.2207   Median : 0.2207   Median :-0.4349   Median :-0.4328  
+ Mean   : 0.0000   Mean   : 0.0000   Mean   : 0.0000   Mean   : 0.0000  
+ 3rd Qu.: 0.9481   3rd Qu.: 0.9481   3rd Qu.: 0.1177   3rd Qu.: 0.1163  
+ Max.   : 1.1738   Max.   : 1.1738   Max.   : 4.0367   Max.   : 4.0367  
+ NA's   :113       NA's   :113                         NA's   :791      
+     OMEAN           study         
+ Min.   :3.317   Min.   :-1.00000  
+ 1st Qu.:4.218   1st Qu.:-1.00000  
+ Median :4.583   Median : 1.00000  
+ Mean   :4.588   Mean   : 0.01515  
+ 3rd Qu.:4.925   3rd Qu.: 1.00000  
+ Max.   :6.202   Max.   : 1.00000  
+                                   
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + SMEANc +  
+    SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99899.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.3947 -0.6209  0.0281  0.6312  4.5194 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02996  0.1731                          
+          TSELFc      0.02459  0.1568    0.02                  
+          SMEANc      0.07981  0.2825    0.33  0.32            
+          SDMEANc     0.13977  0.3739   -0.25 -0.26 -0.65      
+          PSELFc      0.03702  0.1924    0.02 -0.20 -0.02  0.21
+ Residual             1.68481  1.2980                          
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) 0.002529   0.013259   0.191
+TSELFc      0.261913   0.011287  23.204
+SMEANc      0.751274   0.021131  35.554
+SDMEANc     0.236600   0.025824   9.162
+PSELFc      0.202667   0.013230  15.319
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc   0.012                     
+SMEANc   0.216  0.229              
+SDMEANc -0.184 -0.198 -0.686       
+PSELFc   0.012 -0.175 -0.019  0.164
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00647792 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + SMEANc +  
+    SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 0)
+
+REML criterion at convergence: 40107.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.2039 -0.5725  0.0751  0.6193  4.6697 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.06252  0.2500                          
+          TSELFc      0.03093  0.1759    0.12                  
+          SMEANc      0.12445  0.3528    0.27  0.24            
+          SDMEANc     0.20024  0.4475   -0.29 -0.22 -0.75      
+          PSELFc      0.05726  0.2393    0.16 -0.10 -0.09  0.18
+ Residual             1.35131  1.1625                          
+Number of obs: 12250, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.06794    0.01970  -3.449
+TSELFc       0.29792    0.01398  21.307
+SMEANc       0.80368    0.03118  25.779
+SDMEANc      0.24906    0.03153   7.898
+PSELFc       0.13542    0.01723   7.858
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc   0.072                     
+SMEANc   0.016  0.135              
+SDMEANc -0.174 -0.159 -0.750       
+PSELFc   0.109 -0.089 -0.049  0.133
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00380619 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + SMEANc +  
+    SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 1)
+
+REML criterion at convergence: 59106.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0699 -0.6253  0.0020  0.6300  4.4111 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02517  0.1587                          
+          TSELFc      0.03589  0.1894    0.07                  
+          SMEANc      0.09603  0.3099    0.34  0.13            
+          SDMEANc     0.15310  0.3913   -0.28 -0.11 -0.68      
+          PSELFc      0.04731  0.2175   -0.06 -0.22 -0.10  0.24
+ Residual             1.77426  1.3320                          
+Number of obs: 16903, groups:  PID, 261
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) 0.004404   0.014987   0.294
+TSELFc      0.229859   0.014015  16.401
+SMEANc      0.844401   0.026051  32.413
+SDMEANc     0.071162   0.033912   2.098
+PSELFc      0.248200   0.015505  16.007
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc   0.035                     
+SMEANc   0.100  0.076              
+SDMEANc  0.011 -0.070 -0.770       
+PSELFc  -0.034 -0.195 -0.069  0.146
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00231906 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * motive + SMEANc * motive + SDMEANc * motive +  
+    PSELFc * motive + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99941.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4119 -0.6276  0.0271  0.6363  4.4886 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.00000  0.0000                          
+          TSELFc      0.02552  0.1598     NaN                  
+          SMEANc      0.08057  0.2839     NaN  0.29            
+          SDMEANc     0.14018  0.3744     NaN -0.24 -0.65      
+          PSELFc      0.03656  0.1912     NaN -0.21 -0.06  0.23
+ Residual             1.70093  1.3042                          
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+               Estimate Std. Error t value
+(Intercept)    -0.06634    0.01332  -4.982
+TSELFc          0.30137    0.01338  22.524
+motive          0.07129    0.01715   4.156
+SMEANc          0.78389    0.03010  26.046
+SDMEANc         0.26654    0.02830   9.417
+PSELFc          0.15230    0.01487  10.239
+TSELFc:motive  -0.06807    0.01128  -6.035
+motive:SMEANc   0.05888    0.02975   1.979
+motive:SDMEANc -0.19576    0.02801  -6.989
+motive:PSELFc   0.09414    0.01129   8.342
+
+Correlation of Fixed Effects:
+            (Intr) TSELFc motive SMEANc SDMEAN PSELFc TSELF: m:SMEA m:SDME
+TSELFc       0.000                                                        
+motive      -0.769  0.000                                                 
+SMEANc      -0.249  0.128  0.194                                          
+SDMEANc      0.059 -0.146 -0.047 -0.708                                   
+PSELFc       0.000 -0.155 -0.001 -0.024  0.151                            
+TSELFc:motv  0.000 -0.520  0.000 -0.003  0.003  0.039                     
+motv:SMEANc  0.250 -0.002 -0.243 -0.666  0.402  0.000  0.000              
+mtv:SDMEANc -0.060  0.000  0.192  0.401 -0.329 -0.001 -0.001 -0.814       
+motv:PSELFc  0.001  0.043 -0.002 -0.001  0.002 -0.468 -0.102 -0.002  0.001
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * OMEANc + SMEANc * OMEANc + SDMEANc * OMEANc +  
+    PSELFc * OMEANc + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99715.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.3890 -0.6218  0.0323  0.6295  4.5806 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.03130  0.1769                          
+          TSELFc      0.02463  0.1569    0.02                  
+          SMEANc      0.08036  0.2835    0.32  0.30            
+          SDMEANc     0.14101  0.3755   -0.23 -0.24 -0.65      
+          PSELFc      0.03589  0.1895    0.02 -0.20 -0.05  0.24
+ Residual             1.67191  1.2930                          
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                Estimate Std. Error t value
+(Intercept)    -0.024047   0.014338  -1.677
+TSELFc          0.266392   0.011315  23.544
+OMEANc         -0.068968   0.016674  -4.136
+SMEANc          0.782710   0.022305  35.092
+SDMEANc         0.194877   0.026753   7.284
+PSELFc          0.195370   0.013081  14.935
+TSELFc:OMEANc   0.067479   0.009950   6.782
+OMEANc:SMEANc  -0.123515   0.026978  -4.578
+OMEANc:SDMEANc  0.200429   0.023824   8.413
+OMEANc:PSELFc  -0.097474   0.009955  -9.791
+
+Correlation of Fixed Effects:
+            (Intr) TSELFc OMEANc SMEANc SDMEAN PSELFc TSELF: OMEAN:SM OMEAN:SD
+TSELFc       0.009                                                            
+OMEANc       0.057 -0.001                                                     
+SMEANc       0.082  0.202 -0.119                                              
+SDMEANc     -0.075 -0.182 -0.023 -0.691                                       
+PSELFc       0.016 -0.176 -0.001 -0.035  0.183                                
+TSELF:OMEAN -0.002  0.072 -0.001  0.001 -0.003  0.003                         
+OMEAN:SMEAN -0.146  0.001  0.096  0.170 -0.038  0.001  0.000                  
+OMEAN:SDMEA -0.072  0.000 -0.209  0.014 -0.110  0.000 -0.003 -0.805           
+OMEAN:PSELF -0.003  0.004 -0.001  0.001 -0.003  0.061 -0.100 -0.001    0.000  
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.0105335 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * motive + SMEANc * motive + SDMEANc * motive +  
+    PSELFc * motive + TSELFc * OMEANc + SMEANc * OMEANc + SDMEANc *  
+    OMEANc + PSELFc * OMEANc + (TSELFc + SMEANc + SDMEANc + PSELFc |      PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99684.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.3635 -0.6182  0.0336  0.6293  4.5910 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.03124  0.1768                          
+          TSELFc      0.02469  0.1571    0.01                  
+          SMEANc      0.08104  0.2847    0.31  0.30            
+          SDMEANc     0.14147  0.3761   -0.23 -0.25 -0.65      
+          PSELFc      0.03576  0.1891    0.03 -0.20 -0.05  0.24
+ Residual             1.66853  1.2917                          
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                Estimate Std. Error t value
+(Intercept)    -0.077900   0.018598  -4.189
+TSELFc          0.288367   0.013972  20.639
+motive          0.086734   0.021240   4.083
+SMEANc          0.833229   0.034274  24.311
+SDMEANc         0.210310   0.032076   6.557
+PSELFc          0.169185   0.015419  10.973
+OMEANc          0.007264   0.022984   0.316
+TSELFc:motive  -0.038352   0.014283  -2.685
+motive:SMEANc  -0.038392   0.044935  -0.854
+motive:SDMEANc -0.089858   0.042863  -2.096
+motive:PSELFc   0.046105   0.014293   3.226
+TSELFc:OMEANc   0.046303   0.012643   3.662
+SMEANc:OMEANc  -0.122926   0.041481  -2.963
+SDMEANc:OMEANc  0.134584   0.036715   3.666
+PSELFc:OMEANc  -0.071894   0.012653  -5.682
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00292933 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * pfriendqz * motive + SMEANc * pfriendqz *  
+    motive + SDMEANc * pfriendqz * motive + PSELFc * pfriendqz *  
+    motive + (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99912.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4533 -0.6242  0.0254  0.6340  4.4782 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02425  0.1557                    
+          SMEANc  0.07855  0.2803    0.27            
+          SDMEANc 0.13805  0.3715   -0.27 -0.69      
+          PSELFc  0.03443  0.1856   -0.28 -0.11  0.21
+ Residual         1.69895  1.3034                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                          Estimate Std. Error t value
+(Intercept)              -0.066537   0.013307  -5.000
+TSELFc                    0.300308   0.013192  22.764
+pfriendqz                 0.028477   0.013275   2.145
+motive                    0.071788   0.017141   4.188
+SMEANc                    0.785039   0.029954  26.208
+SDMEANc                   0.266763   0.028156   9.474
+PSELFc                    0.150764   0.014603  10.324
+TSELFc:pfriendqz          0.023885   0.013089   1.825
+TSELFc:motive            -0.067631   0.011274  -5.999
+pfriendqz:motive         -0.003293   0.017147  -0.192
+pfriendqz:SMEANc          0.101176   0.029924   3.381
+motive:SMEANc             0.055350   0.029732   1.862
+pfriendqz:SDMEANc         0.033585   0.028105   1.195
+motive:SDMEANc           -0.193911   0.027990  -6.928
+pfriendqz:PSELFc          0.035573   0.014678   2.424
+motive:PSELFc             0.095779   0.011301   8.475
+TSELFc:pfriendqz:motive   0.015713   0.011114   1.414
+pfriendqz:motive:SMEANc  -0.037320   0.029657  -1.258
+pfriendqz:motive:SDMEANc -0.019553   0.027926  -0.700
+pfriendqz:motive:PSELFc   0.020738   0.011388   1.821
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00517038 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * pfriendqz * trait + SMEANc * pfriendqz * trait +  
+    SDMEANc * pfriendqz * trait + PSELFc * pfriendqz * trait +  
+    (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99912.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4532 -0.6242  0.0254  0.6340  4.4782 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02424  0.1557                    
+          SMEANc  0.07856  0.2803    0.27            
+          SDMEANc 0.13809  0.3716   -0.27 -0.69      
+          PSELFc  0.03443  0.1856   -0.28 -0.11  0.21
+ Residual         1.69895  1.3034                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                         Estimate Std. Error t value
+(Intercept)              0.005251   0.010964   0.479
+TSELFc                   0.232676   0.012011  19.372
+pfriendqz                0.025184   0.010998   2.290
+trait                   -0.071789   0.017141  -4.188
+SMEANc                   0.840386   0.024306  34.575
+SDMEANc                  0.072856   0.032470   2.244
+PSELFc                   0.246543   0.013544  18.203
+TSELFc:pfriendqz         0.039598   0.011945   3.315
+TSELFc:trait             0.067630   0.011274   5.999
+pfriendqz:trait          0.003293   0.017147   0.192
+pfriendqz:SMEANc         0.063856   0.024275   2.630
+trait:SMEANc            -0.055346   0.029732  -1.861
+pfriendqz:SDMEANc        0.014033   0.032410   0.433
+trait:SDMEANc            0.193907   0.027990   6.928
+pfriendqz:PSELFc         0.056312   0.013502   4.171
+trait:PSELFc            -0.095778   0.011301  -8.475
+TSELFc:pfriendqz:trait  -0.015714   0.011114  -1.414
+pfriendqz:trait:SMEANc   0.037320   0.029656   1.258
+pfriendqz:trait:SDMEANc  0.019553   0.027926   0.700
+pfriendqz:trait:PSELFc  -0.020739   0.011388  -1.821
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00332718 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * tfriendqz * motive + SMEANc * tfriendqz *  
+    motive + SDMEANc * tfriendqz * motive + PSELFc * tfriendqz *  
+    motive + (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99970.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4143 -0.6266  0.0280  0.6354  4.4981 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02485  0.1576                    
+          SMEANc  0.07801  0.2793    0.27            
+          SDMEANc 0.13953  0.3735   -0.23 -0.65      
+          PSELFc  0.03593  0.1896   -0.24 -0.08  0.25
+ Residual         1.70015  1.3039                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                           Estimate Std. Error t value
+(Intercept)              -0.0664840  0.0133142  -4.993
+TSELFc                    0.3013459  0.0132921  22.671
+tfriendqz                 0.0077849  0.0132892   0.586
+motive                    0.0718068  0.0171496   4.187
+SMEANc                    0.7843676  0.0299286  26.208
+SDMEANc                   0.2673980  0.0282627   9.461
+PSELFc                    0.1523252  0.0147938  10.297
+TSELFc:tfriendqz          0.0151249  0.0133763   1.131
+TSELFc:motive            -0.0691745  0.0113016  -6.121
+tfriendqz:motive         -0.0136641  0.0171623  -0.796
+tfriendqz:SMEANc          0.0659407  0.0299041   2.205
+motive:SMEANc             0.0561157  0.0297464   1.886
+tfriendqz:SDMEANc        -0.0291933  0.0282124  -1.035
+motive:SDMEANc           -0.1954102  0.0280041  -6.978
+tfriendqz:PSELFc          0.0001057  0.0147060   0.007
+motive:PSELFc             0.0936711  0.0112852   8.300
+TSELFc:tfriendqz:motive   0.0177042  0.0113901   1.554
+tfriendqz:motive:SMEANc  -0.0031077  0.0296781  -0.105
+tfriendqz:motive:SDMEANc -0.0186819  0.0279466  -0.668
+tfriendqz:motive:PSELFc   0.0423999  0.0111458   3.804
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * tfriendqz * trait + SMEANc * tfriendqz * trait +  
+    SDMEANc * tfriendqz * trait + PSELFc * tfriendqz * trait +  
+    (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99970.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4143 -0.6266  0.0280  0.6354  4.4981 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02485  0.1576                    
+          SMEANc  0.07801  0.2793    0.27            
+          SDMEANc 0.13954  0.3736   -0.23 -0.65      
+          PSELFc  0.03593  0.1896   -0.24 -0.08  0.25
+ Residual         1.70016  1.3039                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                         Estimate Std. Error t value
+(Intercept)              0.005323   0.010971   0.485
+TSELFc                   0.232171   0.012114  19.166
+tfriendqz               -0.005879   0.011005  -0.534
+trait                   -0.071807   0.017150  -4.187
+SMEANc                   0.840483   0.024269  34.632
+SDMEANc                  0.071988   0.032564   2.211
+PSELFc                   0.245996   0.013754  17.885
+TSELFc:tfriendqz         0.032829   0.012074   2.719
+TSELFc:trait             0.069175   0.011302   6.121
+tfriendqz:trait          0.013664   0.017162   0.796
+tfriendqz:SMEANc         0.062833   0.024244   2.592
+trait:SMEANc            -0.056116   0.029746  -1.886
+tfriendqz:SDMEANc       -0.047875   0.032506  -1.473
+trait:SDMEANc            0.195410   0.028004   6.978
+tfriendqz:PSELFc         0.042506   0.013698   3.103
+trait:PSELFc            -0.093671   0.011285  -8.300
+TSELFc:tfriendqz:trait  -0.017704   0.011390  -1.554
+tfriendqz:trait:SMEANc   0.003108   0.029678   0.105
+tfriendqz:trait:SDMEANc  0.018682   0.027947   0.668
+tfriendqz:trait:PSELFc  -0.042400   0.011146  -3.804
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * PRELLengthz * motive + SMEANc * PRELLengthz *  
+    motive + SDMEANc * PRELLengthz * motive + PSELFc * PRELLengthz *  
+    motive + (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 97202.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4161 -0.6274  0.0258  0.6338  4.5092 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02570  0.1603                    
+          SMEANc  0.08274  0.2876    0.29            
+          SDMEANc 0.14403  0.3795   -0.23 -0.66      
+          PSELFc  0.03689  0.1921   -0.22 -0.06  0.24
+ Residual         1.69521  1.3020                    
+Number of obs: 28362, groups:  PID, 255
+
+Fixed effects:
+                            Estimate Std. Error t value
+(Intercept)                -0.067831   0.013488  -5.029
+TSELFc                      0.300657   0.013572  22.152
+PRELLengthz                -0.001206   0.013530  -0.089
+motive                      0.071807   0.017374   4.133
+SMEANc                      0.781221   0.030613  25.519
+SDMEANc                     0.273809   0.028944   9.460
+PSELFc                      0.148302   0.015107   9.817
+TSELFc:PRELLengthz          0.007560   0.013555   0.558
+TSELFc:motive              -0.067004   0.011402  -5.877
+PRELLengthz:motive         -0.011402   0.017376  -0.656
+PRELLengthz:SMEANc          0.018500   0.030606   0.604
+motive:SMEANc               0.069369   0.030121   2.303
+PRELLengthz:SDMEANc        -0.001905   0.028849  -0.066
+motive:SDMEANc             -0.212903   0.028368  -7.505
+PRELLengthz:PSELFc         -0.010491   0.015109  -0.694
+motive:PSELFc               0.096261   0.011411   8.436
+TSELFc:PRELLengthz:motive   0.024170   0.011408   2.119
+PRELLengthz:motive:SMEANc   0.018341   0.030151   0.608
+PRELLengthz:motive:SDMEANc -0.028903   0.028294  -1.022
+PRELLengthz:motive:PSELFc   0.014670   0.011457   1.280
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00291902 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * PRELLengthz * trait + SMEANc * PRELLengthz *  
+    trait + SDMEANc * PRELLengthz * trait + PSELFc * PRELLengthz *  
+    trait + (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 97202.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4161 -0.6274  0.0258  0.6338  4.5092 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02570  0.1603                    
+          SMEANc  0.08274  0.2876    0.28            
+          SDMEANc 0.14404  0.3795   -0.23 -0.66      
+          PSELFc  0.03688  0.1920   -0.22 -0.06  0.25
+ Residual         1.69521  1.3020                    
+Number of obs: 28362, groups:  PID, 255
+
+Fixed effects:
+                           Estimate Std. Error t value
+(Intercept)                0.003976   0.011103   0.358
+TSELFc                     0.233653   0.012399  18.844
+PRELLengthz               -0.012607   0.011115  -1.134
+trait                     -0.071807   0.017374  -4.133
+SMEANc                     0.850591   0.024972  34.061
+SDMEANc                    0.060906   0.033272   1.831
+PSELFc                     0.244563   0.014067  17.385
+TSELFc:PRELLengthz         0.031731   0.012334   2.573
+TSELFc:trait               0.067005   0.011402   5.877
+PRELLengthz:trait          0.011402   0.017376   0.656
+PRELLengthz:SMEANc         0.036841   0.024861   1.482
+trait:SMEANc              -0.069370   0.030121  -2.303
+PRELLengthz:SDMEANc       -0.030808   0.033119  -0.930
+trait:SDMEANc              0.212904   0.028368   7.505
+PRELLengthz:PSELFc         0.004180   0.013993   0.299
+trait:PSELFc              -0.096262   0.011411  -8.436
+TSELFc:PRELLengthz:trait  -0.024170   0.011408  -2.119
+PRELLengthz:trait:SMEANc  -0.018341   0.030151  -0.608
+PRELLengthz:trait:SDMEANc  0.028903   0.028294   1.022
+PRELLengthz:trait:PSELFc  -0.014670   0.011457  -1.280
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * TRELLengthz * motive + SMEANc * TRELLengthz *  
+    motive + SDMEANc * TRELLengthz * motive + PSELFc * TRELLengthz *  
+    motive + (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99993
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4132 -0.6274  0.0282  0.6357  4.5022 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02505  0.1583                    
+          SMEANc  0.08044  0.2836    0.29            
+          SDMEANc 0.14087  0.3753   -0.24 -0.65      
+          PSELFc  0.03675  0.1917   -0.21 -0.06  0.23
+ Residual         1.70073  1.3041                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                             Estimate Std. Error t value
+(Intercept)                -0.0672737  0.0133216  -5.050
+TSELFc                      0.3009639  0.0133159  22.602
+TRELLengthz                -0.0005717  0.0133522  -0.043
+motive                      0.0730328  0.0171623   4.255
+SMEANc                      0.7837978  0.0300874  26.051
+SDMEANc                     0.2665262  0.0283498   9.401
+PSELFc                      0.1521291  0.0149024  10.208
+TSELFc:TRELLengthz          0.0076878  0.0133359   0.576
+TSELFc:motive              -0.0680000  0.0112859  -6.025
+TRELLengthz:motive         -0.0119192  0.0171339  -0.696
+TRELLengthz:SMEANc          0.0141854  0.0300798   0.472
+motive:SMEANc               0.0591932  0.0297490   1.990
+TRELLengthz:SDMEANc         0.0036667  0.0282578   0.130
+motive:SDMEANc             -0.1962176  0.0280075  -7.006
+TRELLengthz:PSELFc         -0.0140492  0.0148748  -0.944
+motive:PSELFc               0.0940185  0.0112902   8.327
+TSELFc:TRELLengthz:motive   0.0236658  0.0113146   2.092
+TRELLengthz:motive:SMEANc   0.0219538  0.0297381   0.738
+TRELLengthz:motive:SDMEANc -0.0350846  0.0278794  -1.258
+TRELLengthz:motive:PSELFc   0.0167286  0.0112716   1.484
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00300148 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * TRELLengthz * trait + SMEANc * TRELLengthz *  
+    trait + SDMEANc * TRELLengthz * trait + PSELFc * TRELLengthz *  
+    trait + (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99993
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4131 -0.6274  0.0282  0.6357  4.5022 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02505  0.1583                    
+          SMEANc  0.08046  0.2837    0.29            
+          SDMEANc 0.14089  0.3754   -0.24 -0.65      
+          PSELFc  0.03676  0.1917   -0.21 -0.06  0.23
+ Residual         1.70072  1.3041                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                           Estimate Std. Error t value
+(Intercept)                0.005759   0.010976   0.525
+TSELFc                     0.232963   0.012145  19.181
+TRELLengthz               -0.012491   0.010955  -1.140
+trait                     -0.073033   0.017162  -4.255
+SMEANc                     0.842991   0.024460  34.464
+SDMEANc                    0.070309   0.032648   2.154
+PSELFc                     0.246148   0.013869  17.748
+TSELFc:TRELLengthz         0.031354   0.012053   2.601
+TSELFc:trait               0.068000   0.011286   6.025
+TRELLengthz:trait          0.011919   0.017134   0.696
+TRELLengthz:SMEANc         0.036139   0.024309   1.487
+trait:SMEANc              -0.059193   0.029749  -1.990
+TRELLengthz:SDMEANc       -0.031418   0.032455  -0.968
+trait:SDMEANc              0.196218   0.028008   7.006
+TRELLengthz:PSELFc         0.002679   0.013783   0.194
+trait:PSELFc              -0.094019   0.011290  -8.327
+TSELFc:TRELLengthz:trait  -0.023666   0.011315  -2.092
+TRELLengthz:trait:SMEANc  -0.021954   0.029738  -0.738
+TRELLengthz:trait:SDMEANc  0.035085   0.027879   1.258
+TRELLengthz:trait:PSELFc  -0.016729   0.011272  -1.484
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00241681 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * pfriendqz * motive + SMEANc * pfriendqz *  
+    motive + SDMEANc * pfriendqz * motive + PSELFc * pfriendqz *  
+    motive + TSELFc * PRELLengthz * motive + SMEANc * PRELLengthz *  
+    motive + SDMEANc * PRELLengthz * motive + PSELFc * PRELLengthz *  
+    motive + (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 97185.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4600 -0.6246  0.0237  0.6342  4.5103 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02440  0.1562                    
+          SMEANc  0.08076  0.2842    0.26            
+          SDMEANc 0.14205  0.3769   -0.26 -0.70      
+          PSELFc  0.03479  0.1865   -0.29 -0.12  0.22
+ Residual         1.69380  1.3015                    
+Number of obs: 28362, groups:  PID, 255
+
+Fixed effects:
+                            Estimate Std. Error t value
+(Intercept)                -0.068455   0.013482  -5.078
+TSELFc                      0.299311   0.013380  22.370
+pfriendqz                   0.015952   0.013743   1.161
+motive                      0.071940   0.017367   4.142
+SMEANc                      0.780825   0.030476  25.621
+SDMEANc                     0.273072   0.028811   9.478
+PSELFc                      0.145960   0.014845   9.832
+PRELLengthz                -0.002197   0.013539  -0.162
+TSELFc:pfriendqz            0.026878   0.013650   1.969
+TSELFc:motive              -0.067112   0.011399  -5.888
+pfriendqz:motive            0.012010   0.017763   0.676
+pfriendqz:SMEANc            0.102654   0.031148   3.296
+motive:SMEANc               0.066663   0.030110   2.214
+pfriendqz:SDMEANc           0.034584   0.029422   1.175
+motive:SDMEANc             -0.210395   0.028359  -7.419
+pfriendqz:PSELFc            0.041140   0.015260   2.696
+motive:PSELFc               0.097946   0.011442   8.561
+TSELFc:PRELLengthz          0.006124   0.013372   0.458
+motive:PRELLengthz         -0.012309   0.017392  -0.708
+SMEANc:PRELLengthz          0.012213   0.030521   0.400
+SDMEANc:PRELLengthz        -0.003707   0.028755  -0.129
+PSELFc:PRELLengthz         -0.012413   0.014849  -0.836
+TSELFc:pfriendqz:motive     0.013585   0.011572   1.174
+pfriendqz:motive:SMEANc    -0.036367   0.030733  -1.183
+pfriendqz:motive:SDMEANc   -0.020564   0.028965  -0.710
+pfriendqz:motive:PSELFc     0.011697   0.011795   0.992
+TSELFc:motive:PRELLengthz   0.023058   0.011408   2.021
+motive:SMEANc:PRELLengthz   0.021175   0.030182   0.702
+motive:SDMEANc:PRELLengthz -0.028511   0.028322  -1.007
+motive:PSELFc:PRELLengthz   0.013439   0.011459   1.173
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00348546 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * pfriendqz * trait + SMEANc * pfriendqz * trait +  
+    SDMEANc * pfriendqz * trait + PSELFc * pfriendqz * trait +  
+    TSELFc * PRELLengthz * trait + SMEANc * PRELLengthz * trait +  
+    SDMEANc * PRELLengthz * trait + PSELFc * PRELLengthz * trait +  
+    (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 97185.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4600 -0.6246  0.0237  0.6342  4.5102 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02440  0.1562                    
+          SMEANc  0.08075  0.2842    0.26            
+          SDMEANc 0.14203  0.3769   -0.27 -0.70      
+          PSELFc  0.03479  0.1865   -0.29 -0.12  0.22
+ Residual         1.69381  1.3015                    
+Number of obs: 28362, groups:  PID, 255
+
+Fixed effects:
+                           Estimate Std. Error t value
+(Intercept)                0.003485   0.011098   0.314
+TSELFc                     0.232200   0.012190  19.048
+pfriendqz                  0.027963   0.011390   2.455
+trait                     -0.071941   0.017367  -4.142
+SMEANc                     0.847487   0.024817  34.149
+SDMEANc                    0.062679   0.033147   1.891
+PSELFc                     0.243907   0.013775  17.706
+PRELLengthz               -0.014506   0.011125  -1.304
+TSELFc:pfriendqz           0.040462   0.012400   3.263
+TSELFc:trait               0.067112   0.011399   5.888
+pfriendqz:trait           -0.012011   0.017763  -0.676
+pfriendqz:SMEANc           0.066286   0.025358   2.614
+trait:SMEANc              -0.066663   0.030110  -2.214
+pfriendqz:SDMEANc          0.014021   0.033828   0.414
+trait:SDMEANc              0.210393   0.028359   7.419
+pfriendqz:PSELFc           0.052837   0.014043   3.762
+trait:PSELFc              -0.097947   0.011442  -8.561
+TSELFc:PRELLengthz         0.029183   0.012140   2.404
+trait:PRELLengthz          0.012309   0.017392   0.708
+SMEANc:PRELLengthz         0.033388   0.024728   1.350
+SDMEANc:PRELLengthz       -0.032219   0.033037  -0.975
+PSELFc:PRELLengthz         0.001026   0.013716   0.075
+TSELFc:pfriendqz:trait    -0.013584   0.011572  -1.174
+pfriendqz:trait:SMEANc     0.036368   0.030733   1.183
+pfriendqz:trait:SDMEANc    0.020563   0.028965   0.710
+pfriendqz:trait:PSELFc    -0.011697   0.011795  -0.992
+TSELFc:trait:PRELLengthz  -0.023058   0.011408  -2.021
+trait:SMEANc:PRELLengthz  -0.021175   0.030182  -0.702
+trait:SDMEANc:PRELLengthz  0.028512   0.028322   1.007
+trait:PSELFc:PRELLengthz  -0.013439   0.011459  -1.173
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00239426 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * tfriendqz * motive + SMEANc * tfriendqz *  
+    motive + SDMEANc * tfriendqz * motive + PSELFc * tfriendqz *  
+    motive + TSELFc * TRELLengthz * motive + SMEANc * TRELLengthz *  
+    motive + SDMEANc * TRELLengthz * motive + PSELFc * TRELLengthz *  
+    motive + (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 100023.7
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4159 -0.6273  0.0286  0.6363  4.5386 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02448  0.1565                    
+          SMEANc  0.07801  0.2793    0.26            
+          SDMEANc 0.14026  0.3745   -0.23 -0.65      
+          PSELFc  0.03613  0.1901   -0.24 -0.08  0.25
+ Residual         1.70002  1.3038                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                             Estimate Std. Error t value
+(Intercept)                -0.0673416  0.0133202  -5.056
+TSELFc                      0.3009352  0.0132423  22.725
+tfriendqz                   0.0075337  0.0133123   0.566
+motive                      0.0733743  0.0171594   4.276
+SMEANc                      0.7843139  0.0299282  26.207
+SDMEANc                     0.2672965  0.0283123   9.441
+PSELFc                      0.1521712  0.0148223  10.266
+TRELLengthz                -0.0010635  0.0133718  -0.080
+TSELFc:tfriendqz            0.0145603  0.0133434   1.091
+TSELFc:motive              -0.0690358  0.0113084  -6.105
+tfriendqz:motive           -0.0125944  0.0171949  -0.732
+tfriendqz:SMEANc            0.0657631  0.0299700   2.194
+motive:SMEANc               0.0564616  0.0297459   1.898
+tfriendqz:SDMEANc          -0.0298258  0.0283200  -1.053
+motive:SDMEANc             -0.1957690  0.0280041  -6.991
+tfriendqz:PSELFc            0.0008578  0.0147550   0.058
+motive:PSELFc               0.0935709  0.0112905   8.288
+TSELFc:TRELLengthz          0.0067948  0.0132705   0.512
+motive:TRELLengthz         -0.0116135  0.0171626  -0.677
+SMEANc:TRELLengthz          0.0100900  0.0299876   0.336
+SDMEANc:TRELLengthz         0.0053564  0.0282735   0.189
+PSELFc:TRELLengthz         -0.0144389  0.0148158  -0.975
+TSELFc:tfriendqz:motive     0.0162262  0.0114045   1.423
+tfriendqz:motive:SMEANc    -0.0051410  0.0297385  -0.173
+tfriendqz:motive:SDMEANc   -0.0161533  0.0280011  -0.577
+tfriendqz:motive:PSELFc     0.0413754  0.0111599   3.708
+TSELFc:motive:TRELLengthz   0.0220983  0.0113247   1.951
+motive:SMEANc:TRELLengthz   0.0221735  0.0297920   0.744
+motive:SDMEANc:TRELLengthz -0.0340399  0.0279275  -1.219
+motive:PSELFc:TRELLengthz   0.0142841  0.0112812   1.266
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00251135 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * tfriendqz * trait + SMEANc * tfriendqz * trait +  
+    SDMEANc * tfriendqz * trait + PSELFc * tfriendqz * trait +  
+    TSELFc * TRELLengthz * trait + SMEANc * TRELLengthz * trait +  
+    SDMEANc * TRELLengthz * trait + PSELFc * TRELLengthz * trait +  
+    (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 100023.7
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4159 -0.6273  0.0286  0.6363  4.5386 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02448  0.1565                    
+          SMEANc  0.07800  0.2793    0.26            
+          SDMEANc 0.14024  0.3745   -0.23 -0.65      
+          PSELFc  0.03613  0.1901   -0.24 -0.08  0.25
+ Residual         1.70002  1.3038                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                            Estimate Std. Error t value
+(Intercept)                0.0060326  0.0109728   0.550
+TSELFc                     0.2318996  0.0120577  19.232
+tfriendqz                 -0.0050606  0.0110268  -0.459
+trait                     -0.0733735  0.0171594  -4.276
+SMEANc                     0.8407758  0.0242686  34.645
+SDMEANc                    0.0715271  0.0326059   2.194
+PSELFc                     0.2457414  0.0137834  17.829
+TRELLengthz               -0.0126770  0.0109745  -1.155
+TSELFc:tfriendqz           0.0307865  0.0120407   2.557
+TSELFc:trait               0.0690365  0.0113084   6.105
+tfriendqz:trait            0.0125943  0.0171949   0.732
+tfriendqz:SMEANc           0.0606223  0.0242849   2.496
+trait:SMEANc              -0.0564630  0.0297459  -1.898
+tfriendqz:SDMEANc         -0.0459792  0.0326072  -1.410
+trait:SDMEANc              0.1957699  0.0280041   6.991
+tfriendqz:PSELFc           0.0422332  0.0137533   3.071
+trait:PSELFc              -0.0935716  0.0112905  -8.288
+TSELFc:TRELLengthz         0.0288929  0.0119847   2.411
+trait:TRELLengthz          0.0116137  0.0171626   0.677
+SMEANc:TRELLengthz         0.0322634  0.0241540   1.336
+SDMEANc:TRELLengthz       -0.0286836  0.0324726  -0.883
+PSELFc:TRELLengthz        -0.0001546  0.0137234  -0.011
+TSELFc:tfriendqz:trait    -0.0162253  0.0114044  -1.423
+tfriendqz:trait:SMEANc     0.0051402  0.0297385   0.173
+tfriendqz:trait:SDMEANc    0.0161541  0.0280011   0.577
+tfriendqz:trait:PSELFc    -0.0413757  0.0111598  -3.708
+TSELFc:trait:TRELLengthz  -0.0220985  0.0113247  -1.951
+trait:SMEANc:TRELLengthz  -0.0221740  0.0297920  -0.744
+trait:SDMEANc:TRELLengthz  0.0340403  0.0279275   1.219
+trait:PSELFc:TRELLengthz  -0.0142840  0.0112812  -1.266
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00219403 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * pclosez * motive + SMEANc * pclosez * motive +  
+    SDMEANc * pclosez * motive + PSELFc * pclosez * motive +  
+    (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99942.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4380 -0.6248  0.0292  0.6349  4.4779 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02419  0.1555                    
+          SMEANc  0.07593  0.2756    0.25            
+          SDMEANc 0.13930  0.3732   -0.22 -0.65      
+          PSELFc  0.03612  0.1900   -0.25 -0.10  0.25
+ Residual         1.69903  1.3035                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                        Estimate Std. Error t value
+(Intercept)            -0.066312   0.013308  -4.983
+TSELFc                  0.301534   0.013183  22.873
+pclosez                 0.052487   0.013257   3.959
+motive                  0.071813   0.017143   4.189
+SMEANc                  0.784388   0.029789  26.332
+SDMEANc                 0.266713   0.028242   9.444
+PSELFc                  0.151717   0.014818  10.239
+TSELFc:pclosez          0.025117   0.013174   1.906
+TSELFc:motive          -0.068720   0.011275  -6.095
+pclosez:motive         -0.046556   0.017109  -2.721
+pclosez:SMEANc          0.080895   0.029698   2.724
+motive:SMEANc           0.056118   0.029737   1.887
+pclosez:SDMEANc        -0.033224   0.028163  -1.180
+motive:SDMEANc         -0.194476   0.027995  -6.947
+pclosez:PSELFc          0.016478   0.014798   1.114
+motive:PSELFc           0.094009   0.011290   8.326
+TSELFc:pclosez:motive   0.015811   0.011192   1.413
+pclosez:motive:SMEANc   0.006449   0.029573   0.218
+pclosez:motive:SDMEANc -0.039358   0.027810  -1.415
+pclosez:motive:PSELFc   0.023367   0.011272   2.073
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * pclosez * trait + SMEANc * pclosez * trait +  
+    SDMEANc * pclosez * trait + PSELFc * pclosez * trait + (0 +  
+    TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99942.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4380 -0.6248  0.0292  0.6349  4.4779 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02419  0.1555                    
+          SMEANc  0.07593  0.2755    0.25            
+          SDMEANc 0.13931  0.3732   -0.22 -0.65      
+          PSELFc  0.03612  0.1900   -0.25 -0.10  0.25
+ Residual         1.69903  1.3035                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                       Estimate Std. Error t value
+(Intercept)            0.005502   0.010967   0.502
+TSELFc                 0.232814   0.012006  19.391
+pclosez                0.005931   0.010957   0.541
+trait                 -0.071813   0.017143  -4.189
+SMEANc                 0.840506   0.024102  34.873
+SDMEANc                0.072237   0.032546   2.220
+PSELFc                 0.245726   0.013780  17.832
+TSELFc:pclosez         0.040928   0.011878   3.446
+TSELFc:trait           0.068720   0.011275   6.095
+pclosez:trait          0.046556   0.017109   2.721
+pclosez:SMEANc         0.087344   0.024012   3.637
+trait:SMEANc          -0.056119   0.029737  -1.887
+pclosez:SDMEANc       -0.072582   0.032425  -2.238
+trait:SDMEANc          0.194476   0.027995   6.947
+pclosez:PSELFc         0.039845   0.013747   2.899
+trait:PSELFc          -0.094009   0.011290  -8.326
+TSELFc:pclosez:trait  -0.015811   0.011192  -1.413
+pclosez:trait:SMEANc  -0.006449   0.029573  -0.218
+pclosez:trait:SDMEANc  0.039358   0.027810   1.415
+pclosez:trait:PSELFc  -0.023367   0.011272  -2.073
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * tclosez * motive + SMEANc * tclosez * motive +  
+    SDMEANc * tclosez * motive + PSELFc * tclosez * motive +  
+    (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99980.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4142 -0.6258  0.0278  0.6359  4.4899 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02435  0.1560                    
+          SMEANc  0.08040  0.2836    0.27            
+          SDMEANc 0.13962  0.3737   -0.22 -0.64      
+          PSELFc  0.03632  0.1906   -0.24 -0.07  0.24
+ Residual         1.70051  1.3040                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                        Estimate Std. Error t value
+(Intercept)            -0.066808   0.013314  -5.018
+TSELFc                  0.301014   0.013215  22.778
+tclosez                 0.013563   0.013265   1.022
+motive                  0.072286   0.017151   4.215
+SMEANc                  0.784455   0.030083  26.077
+SDMEANc                 0.266276   0.028268   9.420
+PSELFc                  0.152496   0.014844  10.273
+TSELFc:tclosez          0.030255   0.013202   2.292
+TSELFc:motive          -0.068747   0.011291  -6.088
+tclosez:motive         -0.024594   0.017130  -1.436
+tclosez:SMEANc          0.031159   0.029997   1.039
+motive:SMEANc           0.055734   0.029751   1.873
+tclosez:SDMEANc        -0.023290   0.028190  -0.826
+motive:SDMEANc         -0.193610   0.028008  -6.913
+tclosez:PSELFc          0.003571   0.014834   0.241
+motive:PSELFc           0.093613   0.011287   8.294
+TSELFc:tclosez:motive   0.006135   0.011274   0.544
+tclosez:motive:SMEANc   0.013147   0.029612   0.444
+tclosez:motive:SDMEANc -0.032034   0.027849  -1.150
+tclosez:motive:PSELFc   0.030419   0.011228   2.709
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00256812 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * tclosez * trait + SMEANc * tclosez * trait +  
+    SDMEANc * tclosez * trait + PSELFc * tclosez * trait + (0 +  
+    TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99980.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4142 -0.6258  0.0278  0.6359  4.4899 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02435  0.1560                    
+          SMEANc  0.08038  0.2835    0.27            
+          SDMEANc 0.13959  0.3736   -0.22 -0.64      
+          PSELFc  0.03633  0.1906   -0.24 -0.07  0.24
+ Residual         1.70051  1.3040                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                       Estimate Std. Error t value
+(Intercept)            0.005479   0.010972   0.499
+TSELFc                 0.232268   0.012035  19.300
+tclosez               -0.011031   0.010981  -1.005
+trait                 -0.072286   0.017151  -4.215
+SMEANc                 0.840188   0.024458  34.352
+SDMEANc                0.072667   0.032570   2.231
+PSELFc                 0.246109   0.013811  17.820
+TSELFc:tclosez         0.036390   0.012016   3.029
+TSELFc:trait           0.068746   0.011291   6.088
+tclosez:trait          0.024594   0.017130   1.436
+tclosez:SMEANc         0.044305   0.024389   1.817
+trait:SMEANc          -0.055732   0.029751  -1.873
+tclosez:SDMEANc       -0.055324   0.032466  -1.704
+trait:SDMEANc          0.193608   0.028008   6.913
+tclosez:PSELFc         0.033990   0.013705   2.480
+trait:PSELFc          -0.093612   0.011287  -8.294
+TSELFc:tclosez:trait  -0.006135   0.011274  -0.544
+tclosez:trait:SMEANc  -0.013146   0.029612  -0.444
+tclosez:trait:SDMEANc  0.032033   0.027849   1.150
+tclosez:trait:PSELFc  -0.030419   0.011228  -2.709
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00310678 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * pfriendqz * tfriendqz + SMEANc * pfriendqz *  
+    tfriendqz + SDMEANc * pfriendqz * tfriendqz + PSELFc * pfriendqz *  
+    tfriendqz + (0 + TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 100110.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.5037 -0.6233  0.0250  0.6350  4.4522 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02420  0.1556                    
+          SMEANc  0.07370  0.2715    0.30            
+          SDMEANc 0.13386  0.3659   -0.28 -0.70      
+          PSELFc  0.03556  0.1886   -0.28 -0.08  0.18
+ Residual         1.71176  1.3083                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                              Estimate Std. Error t value
+(Intercept)                  0.0045268  0.0089219   0.507
+TSELFc                       0.2554547  0.0126930  20.126
+pfriendqz                    0.0501130  0.0101342   4.945
+tfriendqz                   -0.0262225  0.0101348  -2.587
+SMEANc                       0.7810432  0.0233446  33.457
+SDMEANc                      0.2344413  0.0287598   8.152
+PSELFc                       0.2055572  0.0147258  13.959
+TSELFc:pfriendqz             0.0308738  0.0143293   2.155
+TSELFc:tfriendqz             0.0127312  0.0143846   0.885
+pfriendqz:tfriendqz         -0.0032254  0.0069205  -0.466
+pfriendqz:SMEANc             0.0232432  0.0264088   0.880
+tfriendqz:SMEANc             0.0145063  0.0264151   0.549
+pfriendqz:SDMEANc            0.0960640  0.0325980   2.947
+tfriendqz:SDMEANc           -0.0824382  0.0325979  -2.529
+pfriendqz:PSELFc             0.0505811  0.0166876   3.031
+tfriendqz:PSELFc             0.0001125  0.0166451   0.007
+TSELFc:pfriendqz:tfriendqz   0.0069488  0.0098213   0.708
+pfriendqz:tfriendqz:SMEANc  -0.0482062  0.0181850  -2.651
+pfriendqz:tfriendqz:SDMEANc  0.0018529  0.0223633   0.083
+pfriendqz:tfriendqz:PSELFc   0.0057158  0.0114118   0.501
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00261576 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * pfriendqz * tfriendqz * motive + SMEANc *  
+    pfriendqz * tfriendqz * motive + SDMEANc * pfriendqz * tfriendqz *  
+    motive + PSELFc * pfriendqz * tfriendqz * motive + (0 + TSELFc +  
+    SMEANc + SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99992.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4612 -0.6272  0.0266  0.6330  4.4550 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02428  0.1558                    
+          SMEANc  0.07472  0.2733    0.28            
+          SDMEANc 0.13360  0.3655   -0.27 -0.70      
+          PSELFc  0.03458  0.1860   -0.28 -0.10  0.21
+ Residual         1.69828  1.3032                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                                     Estimate Std. Error t value
+(Intercept)                        -0.0693656  0.0150761  -4.601
+TSELFc                              0.3030596  0.0149961  20.209
+pfriendqz                           0.0392199  0.0170622   2.299
+tfriendqz                          -0.0141069  0.0170751  -0.826
+motive                              0.0828024  0.0194265   4.262
+SMEANc                              0.8106624  0.0336168  24.115
+SDMEANc                             0.2652910  0.0314886   8.425
+PSELFc                              0.1463128  0.0165943   8.817
+TSELFc:pfriendqz                    0.0225975  0.0166769   1.355
+TSELFc:tfriendqz                    0.0008302  0.0170195   0.049
+pfriendqz:tfriendqz                 0.0041748  0.0117257   0.356
+TSELFc:motive                      -0.0786162  0.0128463  -6.120
+pfriendqz:motive                    0.0016633  0.0220144   0.076
+tfriendqz:motive                   -0.0231411  0.0220270  -1.051
+pfriendqz:SMEANc                    0.0831183  0.0381081   2.181
+tfriendqz:SMEANc                   -0.0065520  0.0381136  -0.172
+motive:SMEANc                       0.0551207  0.0336417   1.638
+pfriendqz:SDMEANc                   0.0807838  0.0356817   2.264
+tfriendqz:SDMEANc                  -0.0755529  0.0356816  -2.117
+motive:SDMEANc                     -0.1835136  0.0316714  -5.794
+pfriendqz:PSELFc                    0.0570914  0.0188293   3.032
+tfriendqz:PSELFc                   -0.0303127  0.0185279  -1.636
+motive:PSELFc                       0.0965681  0.0128604   7.509
+TSELFc:pfriendqz:tfriendqz         -0.0019188  0.0117957  -0.163
+TSELFc:pfriendqz:motive             0.0124920  0.0141260   0.884
+TSELFc:tfriendqz:motive             0.0177880  0.0145496   1.223
+pfriendqz:tfriendqz:motive         -0.0176877  0.0151932  -1.164
+pfriendqz:tfriendqz:SMEANc         -0.0434760  0.0263071  -1.653
+pfriendqz:motive:SMEANc            -0.0576004  0.0379905  -1.516
+tfriendqz:motive:SMEANc             0.0315833  0.0379977   0.831
+pfriendqz:tfriendqz:SDMEANc         0.0032766  0.0245004   0.134
+pfriendqz:motive:SDMEANc           -0.0162611  0.0357189  -0.455
+tfriendqz:motive:SDMEANc           -0.0186007  0.0357252  -0.521
+pfriendqz:tfriendqz:PSELFc          0.0059141  0.0130340   0.454
+pfriendqz:motive:PSELFc            -0.0080459  0.0145528  -0.553
+tfriendqz:motive:PSELFc             0.0467535  0.0141670   3.300
+TSELFc:pfriendqz:tfriendqz:motive   0.0137428  0.0100865   1.362
+pfriendqz:tfriendqz:motive:SMEANc   0.0006359  0.0263496   0.024
+pfriendqz:tfriendqz:motive:SDMEANc -0.0173974  0.0247842  -0.702
+pfriendqz:tfriendqz:motive:PSELFc   0.0003403  0.0101078   0.034
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00345699 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: 
+RATINGc ~ TSELFc * pfriendqz * tfriendqz * trait + SMEANc * pfriendqz *  
+    tfriendqz * trait + SDMEANc * pfriendqz * tfriendqz * trait +  
+    PSELFc * pfriendqz * tfriendqz * trait + (0 + TSELFc + SMEANc +  
+    SDMEANc + PSELFc | PID)
+   Data: fmimlm
+
+REML criterion at convergence: 99992.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.4612 -0.6272  0.0266  0.6330  4.4550 
+
+Random effects:
+ Groups   Name    Variance Std.Dev. Corr             
+ PID      TSELFc  0.02428  0.1558                    
+          SMEANc  0.07473  0.2734    0.28            
+          SDMEANc 0.13356  0.3655   -0.27 -0.70      
+          PSELFc  0.03457  0.1859   -0.28 -0.10  0.21
+ Residual         1.69829  1.3032                    
+Number of obs: 29153, groups:  PID, 262
+
+Fixed effects:
+                                    Estimate Std. Error t value
+(Intercept)                        0.0134367  0.0124256   1.081
+TSELFc                             0.2244427  0.0136026  16.500
+pfriendqz                          0.0408833  0.0141351   2.892
+tfriendqz                         -0.0372479  0.0141401  -2.634
+trait                             -0.0828019  0.0194265  -4.262
+SMEANc                             0.8657834  0.0272058  31.824
+SDMEANc                            0.0817775  0.0364823   2.242
+PSELFc                             0.2428815  0.0153528  15.820
+TSELFc:pfriendqz                   0.0350900  0.0153981   2.279
+TSELFc:tfriendqz                   0.0186182  0.0154022   1.209
+pfriendqz:tfriendqz               -0.0135130  0.0096943  -1.394
+TSELFc:trait                       0.0786175  0.0128463   6.120
+pfriendqz:trait                   -0.0016640  0.0220144  -0.076
+tfriendqz:trait                    0.0231411  0.0220270   1.051
+pfriendqz:SMEANc                   0.0255183  0.0306772   0.832
+tfriendqz:SMEANc                   0.0250312  0.0306805   0.816
+trait:SMEANc                      -0.0551210  0.0336417  -1.638
+pfriendqz:SDMEANc                  0.0645223  0.0412609   1.564
+tfriendqz:SDMEANc                 -0.0941537  0.0412589  -2.282
+trait:SDMEANc                      0.1835138  0.0316714   5.794
+pfriendqz:PSELFc                   0.0490454  0.0173815   2.822
+tfriendqz:PSELFc                   0.0164406  0.0173925   0.945
+trait:PSELFc                      -0.0965686  0.0128604  -7.509
+TSELFc:pfriendqz:tfriendqz         0.0118242  0.0104606   1.130
+TSELFc:pfriendqz:trait            -0.0124928  0.0141260  -0.884
+TSELFc:tfriendqz:trait            -0.0177875  0.0145496  -1.223
+pfriendqz:tfriendqz:trait          0.0176874  0.0151932   1.164
+pfriendqz:tfriendqz:SMEANc        -0.0428402  0.0213002  -2.011
+pfriendqz:trait:SMEANc             0.0576010  0.0379906   1.516
+tfriendqz:trait:SMEANc            -0.0315847  0.0379977  -0.831
+pfriendqz:tfriendqz:SDMEANc       -0.0141206  0.0284260  -0.497
+pfriendqz:trait:SDMEANc            0.0162610  0.0357190   0.455
+tfriendqz:trait:SDMEANc            0.0186017  0.0357252   0.521
+pfriendqz:tfriendqz:PSELFc         0.0062538  0.0118372   0.528
+pfriendqz:trait:PSELFc             0.0080466  0.0145528   0.553
+tfriendqz:trait:PSELFc            -0.0467536  0.0141670  -3.300
+TSELFc:pfriendqz:tfriendqz:trait  -0.0137430  0.0100865  -1.363
+pfriendqz:tfriendqz:trait:SMEANc  -0.0006359  0.0263496  -0.024
+pfriendqz:tfriendqz:trait:SDMEANc  0.0173976  0.0247842   0.702
+pfriendqz:tfriendqz:trait:PSELFc  -0.0003395  0.0101078  -0.034
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00368055 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$AG == 1)
+
+REML criterion at convergence: 7117
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.8666 -0.4946  0.0239  0.5098  4.1669 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.04646  0.2155                          
+          TSELFc      0.01950  0.1397   -0.07                  
+          PSELFc      0.04342  0.2084    0.41 -0.20            
+          SMEANc      0.20440  0.4521    0.16  0.20  0.08      
+          SDMEANc     0.61568  0.7847   -0.51 -0.19 -0.08 -0.92
+ Residual             0.85507  0.9247                          
+Number of obs: 2353, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.05339    0.02415  -2.211
+TSELFc       0.10714    0.02155   4.972
+SMEANc       0.65403    0.05728  11.418
+SDMEANc      0.37187    0.06286   5.916
+PSELFc       0.17587    0.02388   7.366
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc  -0.019                     
+SMEANc  -0.030  0.056              
+SDMEANc -0.187 -0.078 -0.873       
+PSELFc   0.132 -0.046  0.040 -0.062
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$EX == 1)
+
+REML criterion at convergence: 6677.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.3663 -0.4957  0.0479  0.5526  2.9077 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.62268  0.7891                          
+          TSELFc      0.04411  0.2100    0.27                  
+          PSELFc      0.09533  0.3088    0.05  0.06            
+          SMEANc      1.41978  1.1915   -0.46 -0.40  0.41      
+          SDMEANc     0.48730  0.6981   -0.75 -0.09 -0.28 -0.13
+ Residual             0.94729  0.9733                          
+Number of obs: 2078, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.29862    0.06760  -4.418
+TSELFc       0.30297    0.02525  11.997
+SMEANc       0.76893    0.19195   4.006
+SDMEANc      0.59016    0.09075   6.503
+PSELFc       0.12618    0.02867   4.401
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc   0.117                     
+SMEANc  -0.590 -0.096              
+SDMEANc  0.033 -0.024 -0.771       
+PSELFc   0.032 -0.027  0.099 -0.093
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$NE == 1)
+
+REML criterion at convergence: 7047.4
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-3.14718 -0.55713  0.00484  0.55951  3.03912 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.08847  0.2974                          
+          TSELFc      0.01970  0.1404    0.44                  
+          PSELFc      0.05864  0.2422    0.23 -0.33            
+          SMEANc      0.18937  0.4352    0.03  0.32 -0.17      
+          SDMEANc     0.43499  0.6595    0.24 -0.22  0.10 -0.95
+ Residual             1.14749  1.0712                          
+Number of obs: 2088, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.22438    0.03154  -7.114
+TSELFc       0.21320    0.02249   9.479
+SMEANc       0.86817    0.05156  16.837
+SDMEANc      0.15500    0.04540   3.414
+PSELFc       0.14318    0.02587   5.535
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc   0.114                     
+SMEANc  -0.125  0.065              
+SDMEANc  0.212 -0.085 -0.659       
+PSELFc   0.089 -0.119 -0.064  0.052
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$OP == 1)
+
+REML criterion at convergence: 7192.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.8398 -0.5263  0.0885  0.5998  2.9129 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.16612  0.4076                          
+          TSELFc      0.05506  0.2347    0.13                  
+          PSELFc      0.08441  0.2905    0.21 -0.50            
+          SMEANc      0.04857  0.2204   -0.35 -0.84  0.67      
+          SDMEANc     0.25297  0.5030   -0.03  0.18 -0.06 -0.40
+ Residual             0.87985  0.9380                          
+Number of obs: 2342, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.11950    0.04630  -2.581
+TSELFc       0.24024    0.02366  10.153
+SMEANc       0.41483    0.05754   7.209
+SDMEANc      0.48279    0.06316   7.644
+PSELFc       0.24777    0.02602   9.522
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc   0.051                     
+SMEANc   0.222 -0.124              
+SDMEANc -0.509  0.047 -0.750       
+PSELFc   0.086 -0.299  0.119 -0.035
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00316183 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$CO == 1)
+
+REML criterion at convergence: 8498.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.5511 -0.5154  0.0037  0.5439  4.1571 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.14736  0.3839                          
+          TSELFc      0.04316  0.2078    0.26                  
+          PSELFc      0.06030  0.2456    0.07 -0.17            
+          SMEANc      0.20063  0.4479   -0.28 -0.07 -0.01      
+          SDMEANc     0.36516  0.6043   -0.26  0.00  0.08 -0.71
+ Residual             1.10375  1.0506                          
+Number of obs: 2609, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.02394    0.03805  -0.629
+TSELFc       0.20940    0.02332   8.979
+SMEANc       0.80019    0.07137  11.211
+SDMEANc      0.22466    0.06073   3.700
+PSELFc       0.12696    0.02478   5.124
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc   0.089                     
+SMEANc  -0.545 -0.011              
+SDMEANc  0.245 -0.008 -0.853       
+PSELFc   0.021 -0.104  0.003  0.022
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$SP == 1)
+
+REML criterion at convergence: 4710.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.3669 -0.4995  0.0196  0.5111  3.2858 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.4636   0.6809                          
+          TSELFc      0.0475   0.2180   -0.08                  
+          PSELFc      0.1221   0.3494    0.10 -0.13            
+          SMEANc      0.2125   0.4610   -0.19  0.28 -0.07      
+          SDMEANc     1.1557   1.0750    0.98 -0.21 -0.01 -0.17
+ Residual             0.6977   0.8353                          
+Number of obs: 1550, groups:  PID, 261
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept)  0.03539    0.05126   0.690
+TSELFc       0.06566    0.02568   2.557
+SMEANc       0.69862    0.07448   9.379
+SDMEANc      0.45285    0.11245   4.027
+PSELFc       0.23489    0.03094   7.591
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc  -0.055                     
+SMEANc  -0.223  0.082              
+SDMEANc  0.693 -0.092 -0.637       
+PSELFc   0.038 -0.065 -0.007 -0.024
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$DA == 1)
+
+REML criterion at convergence: 5265.7
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.5288 -0.5522  0.0264  0.5541  2.8029 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.001987 0.04457                         
+          TSELFc      0.081371 0.28526   0.03                  
+          PSELFc      0.154569 0.39315   0.39  0.13            
+          SMEANc      0.987771 0.99387   0.92 -0.25  0.09      
+          SDMEANc     0.711665 0.84360  -0.91  0.34 -0.14 -0.99
+ Residual             1.158904 1.07652                         
+Number of obs: 1557, groups:  PID, 261
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.16836    0.06494  -2.593
+TSELFc       0.10142    0.02858   3.549
+SMEANc       0.36234    0.08898   4.072
+SDMEANc      0.15440    0.14179   1.089
+PSELFc       0.33862    0.03308  10.237
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc  -0.019                     
+SMEANc  -0.111 -0.139              
+SDMEANc  0.731  0.081 -0.669       
+PSELFc  -0.009  0.010  0.028 -0.043
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$AFG == 1)
+
+REML criterion at convergence: 4766.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.7771 -0.4790  0.0786  0.5484  3.3314 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.005228 0.0723                          
+          TSELFc      0.017719 0.1331    1.00                  
+          PSELFc      0.067174 0.2592    0.30  0.30            
+          SMEANc      1.371055 1.1709    0.01  0.01  0.04      
+          SDMEANc     0.945460 0.9723   -0.21 -0.21 -0.08 -0.78
+ Residual             0.831416 0.9118                          
+Number of obs: 1549, groups:  PID, 261
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept)  0.09757    0.05585   1.747
+TSELFc       0.16182    0.02747   5.892
+SMEANc       0.81830    0.18225   4.490
+SDMEANc     -0.02827    0.13621  -0.208
+PSELFc       0.26243    0.03143   8.350
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc   0.034                     
+SMEANc  -0.774 -0.004              
+SDMEANc  0.667 -0.033 -0.937       
+PSELFc   0.029 -0.018 -0.010 -0.014
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$AE == 1)
+
+REML criterion at convergence: 4942.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.8853 -0.5324  0.0388  0.5692  3.4647 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 1.12649  1.0614                          
+          TSELFc      0.02484  0.1576   -0.06                  
+          PSELFc      0.01696  0.1302    0.10 -1.00            
+          SMEANc      0.02001  0.1415   -0.98  0.15 -0.19      
+          SDMEANc     0.25962  0.5095    0.34 -0.65  0.66 -0.26
+ Residual             0.91033  0.9541                          
+Number of obs: 1553, groups:  PID, 261
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept)  0.00680    0.08349   0.081
+TSELFc       0.08809    0.02517   3.499
+SMEANc       0.95861    0.08178  11.723
+SDMEANc      0.08468    0.06541   1.295
+PSELFc       0.19036    0.02461   7.736
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc  -0.026                     
+SMEANc  -0.365  0.002              
+SDMEANc  0.587 -0.128 -0.381       
+PSELFc   0.026 -0.140 -0.005  0.121
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$AI == 1)
+
+REML criterion at convergence: 5117.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.1145 -0.5489 -0.0124  0.5320  3.4434 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 1.00895  1.0045                          
+          TSELFc      0.04001  0.2000    0.26                  
+          PSELFc      0.04883  0.2210    0.31 -0.28            
+          SMEANc      0.21835  0.4673    0.37  0.38  0.23      
+          SDMEANc     0.31690  0.5629   -0.33 -0.72  0.07 -0.91
+ Residual             0.96412  0.9819                          
+Number of obs: 1555, groups:  PID, 261
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.39704    0.07073  -5.613
+TSELFc       0.13432    0.02691   4.991
+SMEANc       0.56541    0.06313   8.957
+SDMEANc      0.27502    0.10462   2.629
+PSELFc       0.24152    0.02761   8.748
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc   0.118                     
+SMEANc  -0.022  0.083              
+SDMEANc  0.120 -0.119 -0.867       
+PSELFc   0.144 -0.126  0.057  0.012
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.0040421 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$ST == 1)
+
+REML criterion at convergence: 5083.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.4807 -0.5115  0.0950  0.6148  3.1413 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.005763 0.07592                         
+          TSELFc      0.045523 0.21336  -0.77                  
+          PSELFc      0.097991 0.31304   0.65 -0.22            
+          SMEANc      0.678564 0.82375  -0.10  0.05 -0.34      
+          SDMEANc     0.073619 0.27133   0.66 -0.10  0.96 -0.26
+ Residual             1.159956 1.07701                         
+Number of obs: 1551, groups:  PID, 261
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept)  0.16616    0.04170   3.984
+TSELFc       0.14686    0.02793   5.259
+SMEANc       0.78580    0.09064   8.669
+SDMEANc     -0.10813    0.09349  -1.157
+PSELFc       0.24919    0.03163   7.879
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc  -0.057                     
+SMEANc  -0.543  0.007              
+SDMEANc  0.101 -0.015 -0.410       
+PSELFc   0.037 -0.109 -0.138  0.111
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$MA == 1)
+
+REML criterion at convergence: 5447.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0413 -0.4175 -0.0729  0.4703  3.8946 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.2000   0.4472                          
+          TSELFc      0.1685   0.4104   -0.07                  
+          PSELFc      0.1845   0.4295   -0.17 -0.45            
+          SMEANc      0.8061   0.8978    0.94 -0.24 -0.16      
+          SDMEANc     0.2899   0.5384   -0.95  0.32  0.15 -0.92
+ Residual             1.1532   1.0739                          
+Number of obs: 1529, groups:  PID, 261
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept)  0.13560    0.07872   1.723
+TSELFc       0.29429    0.03513   8.376
+SMEANc       1.04381    0.07186  14.526
+SDMEANc     -0.18206    0.11754  -1.549
+PSELFc       0.24419    0.03603   6.778
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc  -0.026                     
+SMEANc   0.501 -0.176              
+SDMEANc  0.590  0.084 -0.273       
+PSELFc  -0.052 -0.382 -0.121  0.047
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$MRB == 1)
+
+REML criterion at convergence: 4646.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0281 -0.4627 -0.0174  0.4408  4.3301 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 3.85678  1.9639                          
+          TSELFc      0.01517  0.1232   -0.24                  
+          PSELFc      0.04375  0.2092    0.26 -0.31            
+          SMEANc      0.49018  0.7001    0.28  0.43  0.08      
+          SDMEANc     1.03739  1.0185    0.65 -0.89  0.44 -0.16
+ Residual             0.82449  0.9080                          
+Number of obs: 1456, groups:  PID, 252
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.43405    0.25871  -1.678
+TSELFc       0.10957    0.02681   4.087
+SMEANc       0.30765    0.16757   1.836
+SDMEANc      0.30633    0.17651   1.735
+PSELFc       0.17741    0.02930   6.056
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc  -0.033                     
+SMEANc   0.510  0.033              
+SDMEANc  0.501 -0.101 -0.422       
+PSELFc   0.081 -0.151  0.018  0.090
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$MRG == 1)
+
+REML criterion at convergence: 4895.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0061 -0.4734 -0.0381  0.3557  4.3281 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.01810  0.1345                          
+          TSELFc      0.02660  0.1631   -0.64                  
+          PSELFc      0.07542  0.2746   -0.07 -0.17            
+          SMEANc      1.09768  1.0477    0.32  0.16 -0.24      
+          SDMEANc     1.97588  1.4057   -0.40 -0.24  0.24 -0.96
+ Residual             1.07302  1.0359                          
+Number of obs: 1489, groups:  PID, 256
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept)  0.07701    0.03181   2.421
+TSELFc       0.15428    0.02947   5.236
+SMEANc       1.25427    0.10461  11.989
+SDMEANc     -0.41466    0.14541  -2.852
+PSELFc       0.23076    0.03398   6.791
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc  -0.058                     
+SMEANc   0.291  0.033              
+SDMEANc -0.274 -0.055 -0.976       
+PSELFc   0.009 -0.084 -0.104  0.091
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.0545352 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc + SMEANc + SDMEANc + PSELFc + (TSELFc + PSELFc +  
+    SMEANc + SDMEANc | PID)
+   Data: subset(fmimlm, fmimlm$KC == 1)
+
+REML criterion at convergence: 4578.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-5.2790 -0.3669 -0.0116  0.2329  5.6622 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.62334  0.7895                          
+          TSELFc      0.06234  0.2497   -0.63                  
+          PSELFc      0.02727  0.1651   -0.88  0.90            
+          SMEANc      4.20202  2.0499    0.97 -0.75 -0.93      
+          SDMEANc     8.57201  2.9278   -0.95  0.69  0.86 -0.99
+ Residual             0.66804  0.8173                          
+Number of obs: 1559, groups:  PID, 261
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.03424    0.09166  -0.374
+TSELFc       0.12868    0.03467   3.711
+SMEANc       0.64249    0.27820   2.309
+SDMEANc      0.39470    0.37166   1.062
+PSELFc       0.01701    0.02995   0.568
+
+Correlation of Fixed Effects:
+        (Intr) TSELFc SMEANc SDMEAN
+TSELFc  -0.110                     
+SMEANc   0.961 -0.116              
+SDMEANc -0.957  0.107 -0.995       
+PSELFc  -0.143  0.089 -0.127  0.124
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * EX + SMEANc * EX + SDMEANc * EX + PSELFc *  
+    EX + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 0)
+
+REML criterion at convergence: 39943.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.2191 -0.5730  0.0706  0.6109  4.7105 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.06250  0.2500                          
+          TSELFc      0.02920  0.1709    0.14                  
+          SMEANc      0.12859  0.3586    0.25  0.21            
+          SDMEANc     0.20323  0.4508   -0.29 -0.19 -0.75      
+          PSELFc      0.05306  0.2304    0.17 -0.12 -0.09  0.19
+ Residual             1.33190  1.1541                          
+Number of obs: 12250, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.06614    0.02023  -3.270
+TSELFc       0.26779    0.01433  18.692
+EX          -0.22635    0.05265  -4.299
+SMEANc       0.83321    0.03155  26.406
+SDMEANc      0.21192    0.03190   6.643
+PSELFc       0.15286    0.01724   8.865
+TSELFc:EX    0.14980    0.02012   7.446
+EX:SMEANc   -0.04395    0.20418  -0.215
+EX:SDMEANc   0.36888    0.09174   4.021
+EX:PSELFc   -0.08868    0.02011  -4.410
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc EX     SMEANc SDMEAN PSELFc TSELF: EX:SME EX:SDM
+TSELFc      0.077                                                        
+EX         -0.149  0.000                                                 
+SMEANc     -0.003  0.115  0.050                                          
+SDMEANc    -0.155 -0.130 -0.015 -0.755                                   
+PSELFc      0.107 -0.098  0.000 -0.050  0.131                            
+TSELFc:EX  -0.002 -0.292 -0.002 -0.002  0.003  0.017                     
+EX:SMEANc   0.019  0.000 -0.732 -0.073  0.043  0.000 -0.003              
+EX:SDMEANc -0.013  0.001  0.542  0.098 -0.077  0.001  0.000 -0.938       
+EX:PSELFc  -0.004  0.021 -0.001  0.000  0.002 -0.243 -0.110 -0.004  0.001
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00235844 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * OP + SMEANc * OP + SDMEANc * OP + PSELFc *  
+    OP + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 0)
+
+REML criterion at convergence: 40041.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.2507 -0.5726  0.0789  0.6160  4.7003 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.06274  0.2505                          
+          TSELFc      0.03075  0.1753    0.13                  
+          SMEANc      0.12254  0.3501    0.30  0.23            
+          SDMEANc     0.19971  0.4469   -0.32 -0.23 -0.75      
+          PSELFc      0.05541  0.2354    0.14 -0.11 -0.08  0.19
+ Residual             1.34226  1.1586                          
+Number of obs: 12250, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.07343    0.02041  -3.598
+TSELFc       0.29802    0.01458  20.438
+OP          -0.03231    0.04756  -0.679
+SMEANc       0.85617    0.03239  26.430
+SDMEANc      0.22642    0.03199   7.079
+PSELFc       0.10532    0.01754   6.004
+TSELFc:OP   -0.01126    0.02047  -0.550
+OP:SMEANc   -0.43165    0.07094  -6.085
+OP:SDMEANc   0.24728    0.06601   3.746
+OP:PSELFc    0.14138    0.02047   6.906
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc OP     SMEANc SDMEAN PSELFc TSELF: OP:SME OP:SDM
+TSELFc      0.073                                                        
+OP         -0.176  0.001                                                 
+SMEANc     -0.023  0.119  0.077                                          
+SDMEANc    -0.147 -0.151 -0.028 -0.752                                   
+PSELFc      0.086 -0.092  0.001 -0.042  0.135                            
+TSELFc:OP   0.001 -0.293 -0.004  0.000  0.002  0.016                     
+OP:SMEANc   0.074 -0.001  0.278 -0.247  0.142  0.001  0.001              
+OP:SDMEANc -0.025  0.004 -0.644  0.147 -0.117  0.002 -0.004 -0.839       
+OP:PSELFc   0.003  0.019 -0.002  0.000  0.002 -0.244 -0.138 -0.001 -0.004
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * AG + SMEANc * AG + SDMEANc * AG + PSELFc *  
+    AG + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 0)
+
+REML criterion at convergence: 40095.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0997 -0.5692  0.0708  0.6159  4.6684 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.06261  0.2502                          
+          TSELFc      0.03040  0.1744    0.12                  
+          SMEANc      0.12490  0.3534    0.27  0.23            
+          SDMEANc     0.19857  0.4456   -0.30 -0.22 -0.74      
+          PSELFc      0.05722  0.2392    0.15 -0.09 -0.08  0.18
+ Residual             1.34710  1.1606                          
+Number of obs: 12250, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.07936    0.02115  -3.751
+TSELFc       0.31680    0.01431  22.139
+AG           0.02963    0.02825   1.049
+SMEANc       0.83147    0.03368  24.689
+SDMEANc      0.23856    0.03179   7.505
+PSELFc       0.12727    0.01756   7.249
+TSELFc:AG   -0.11778    0.02147  -5.485
+AG:SMEANc   -0.15175    0.06653  -2.281
+AG:SDMEANc   0.09782    0.05078   1.926
+AG:PSELFc    0.04399    0.02151   2.046
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc AG     SMEANc SDMEAN PSELFc TSELF: AG:SME AG:SDM
+TSELFc      0.063                                                        
+AG         -0.336 -0.001                                                 
+SMEANc     -0.083  0.117  0.158                                          
+SDMEANc    -0.150 -0.149 -0.033 -0.720                                   
+PSELFc      0.094 -0.091 -0.001 -0.038  0.131                            
+TSELFc:AG   0.006 -0.237 -0.006  0.002 -0.003  0.017                     
+AG:SMEANc   0.105 -0.001 -0.163 -0.288  0.150  0.000  0.005              
+AG:SDMEANc -0.027  0.000  0.076  0.185 -0.146  0.000 -0.009 -0.935       
+AG:PSELFc   0.006  0.021 -0.005  0.003 -0.004 -0.193 -0.032  0.004 -0.010
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00444861 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * NE + SMEANc * NE + SDMEANc * NE + PSELFc *  
+    NE + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 0)
+
+REML criterion at convergence: 40038.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.2618 -0.5680  0.0683  0.6166  4.7113 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.06291  0.2508                          
+          TSELFc      0.03088  0.1757    0.13                  
+          SMEANc      0.12584  0.3547    0.27  0.22            
+          SDMEANc     0.20081  0.4481   -0.29 -0.20 -0.75      
+          PSELFc      0.05631  0.2373    0.16 -0.10 -0.08  0.17
+ Residual             1.34054  1.1578                          
+Number of obs: 12250, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.04390    0.02063  -2.129
+TSELFc       0.30234    0.01447  20.898
+NE          -0.16240    0.02992  -5.428
+SMEANc       0.62674    0.03841  16.318
+SDMEANc      0.38907    0.03633  10.711
+PSELFc       0.13907    0.01753   7.931
+TSELFc:NE   -0.02194    0.02028  -1.082
+NE:SMEANc    0.25562    0.05605   4.560
+NE:SDMEANc  -0.25569    0.03030  -8.438
+NE:PSELFc   -0.01842    0.02027  -0.909
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc NE     SMEANc SDMEAN PSELFc TSELF: NE:SME NE:SDM
+TSELFc      0.073                                                        
+NE         -0.287  0.000                                                 
+SMEANc      0.005  0.096  0.075                                          
+SDMEANc    -0.161 -0.120 -0.006 -0.813                                   
+PSELFc      0.101 -0.095  0.000 -0.035  0.106                            
+TSELFc:NE   0.003 -0.263 -0.003 -0.001  0.002  0.024                     
+NE:SMEANc   0.076  0.001 -0.196 -0.460  0.332  0.000  0.000              
+NE:SDMEANc -0.015 -0.002  0.163  0.578 -0.490 -0.002 -0.005 -0.708       
+NE:PSELFc   0.001  0.028 -0.003 -0.001  0.003 -0.218 -0.048 -0.003 -0.001
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00304345 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * CO + SMEANc * CO + SDMEANc * CO + PSELFc *  
+    CO + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 0)
+
+REML criterion at convergence: 40117.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.2015 -0.5720  0.0745  0.6157  4.5374 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.06228  0.2496                          
+          TSELFc      0.03081  0.1755    0.12                  
+          SMEANc      0.12485  0.3533    0.27  0.24            
+          SDMEANc     0.20024  0.4475   -0.30 -0.23 -0.75      
+          PSELFc      0.05725  0.2393    0.17 -0.10 -0.08  0.18
+ Residual             1.34997  1.1619                          
+Number of obs: 12250, groups:  PID, 262
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept) -0.07961    0.02060  -3.865
+TSELFc       0.29967    0.01457  20.563
+CO           0.03883    0.03394   1.144
+SMEANc       0.80411    0.03270  24.593
+SDMEANc      0.25752    0.03204   8.037
+PSELFc       0.14916    0.01772   8.416
+TSELFc:CO   -0.01011    0.01985  -0.509
+CO:SMEANc    0.01876    0.07225   0.260
+CO:SDMEANc  -0.04967    0.05160  -0.962
+CO:PSELFc   -0.06593    0.01981  -3.327
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc CO     SMEANc SDMEAN PSELFc TSELF: CO:SME CO:SDM
+TSELFc      0.069                                                        
+CO         -0.260  0.001                                                 
+SMEANc      0.020  0.123  0.074                                          
+SDMEANc    -0.190 -0.152 -0.007 -0.743                                   
+PSELFc      0.105 -0.092  0.001 -0.041  0.124                            
+TSELFc:CO   0.000 -0.286 -0.007 -0.003  0.004  0.022                     
+CO:SMEANc   0.056 -0.003 -0.601 -0.251  0.142 -0.002  0.006              
+CO:SDMEANc -0.006  0.005  0.498  0.195 -0.156  0.003 -0.009 -0.932       
+CO:PSELFc   0.000  0.027 -0.004 -0.001  0.002 -0.234 -0.079  0.003 -0.008
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00309154 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * SP + SMEANc * SP + SDMEANc * SP + PSELFc *  
+    SP + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 1)
+
+REML criterion at convergence: 59067.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0728 -0.6218  0.0023  0.6260  4.3788 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02505  0.1583                          
+          TSELFc      0.03534  0.1880    0.08                  
+          SMEANc      0.09496  0.3082    0.37  0.14            
+          SDMEANc     0.15019  0.3875   -0.31 -0.12 -0.68      
+          PSELFc      0.04704  0.2169   -0.07 -0.22 -0.11  0.24
+ Residual             1.76896  1.3300                          
+Number of obs: 16903, groups:  PID, 261
+
+Fixed effects:
+             Estimate Std. Error t value
+(Intercept)  0.003316   0.015370   0.216
+TSELFc       0.246480   0.014155  17.413
+SP           0.039242   0.039212   1.001
+SMEANc       0.851950   0.026160  32.567
+SDMEANc      0.056800   0.034021   1.670
+PSELFc       0.238517   0.015667  15.224
+TSELFc:SP   -0.156564   0.024811  -6.310
+SP:SMEANc   -0.202428   0.101039  -2.003
+SP:SDMEANc   0.431901   0.132154   3.268
+SP:PSELFc    0.078000   0.024769   3.149
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc SP     SMEANc SDMEAN PSELFc TSELF: SP:SME SP:SDM
+TSELFc      0.040                                                        
+SP         -0.223  0.000                                                 
+SMEANc      0.108  0.078  0.030                                          
+SDMEANc     0.004 -0.070 -0.062 -0.771                                   
+PSELFc     -0.038 -0.196  0.001 -0.070  0.147                            
+TSELFc:SP  -0.001 -0.175 -0.003  0.004  0.000  0.022                     
+SP:SMEANc   0.015  0.001 -0.296 -0.123  0.112  0.001 -0.001              
+SP:SDMEANc -0.034  0.000  0.377  0.112 -0.132 -0.001  0.000 -0.825       
+SP:PSELFc  -0.001  0.024 -0.008  0.005  0.000 -0.159 -0.023 -0.001 -0.002
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * DA + SMEANc * DA + SDMEANc * DA + PSELFc *  
+    DA + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 1)
+
+REML criterion at convergence: 59004.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0926 -0.6259 -0.0022  0.6292  4.4343 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02511  0.1585                          
+          TSELFc      0.03560  0.1887    0.07                  
+          SMEANc      0.09473  0.3078    0.36  0.12            
+          SDMEANc     0.15310  0.3913   -0.29 -0.11 -0.68      
+          PSELFc      0.04708  0.2170   -0.08 -0.22 -0.11  0.24
+ Residual             1.76169  1.3273                          
+Number of obs: 16903, groups:  PID, 261
+
+Fixed effects:
+              Estimate Std. Error t value
+(Intercept) -0.0004234  0.0152685  -0.028
+TSELFc       0.2420571  0.0142227  17.019
+DA          -0.1104941  0.0759277  -1.455
+SMEANc       0.8834592  0.0263846  33.484
+SDMEANc      0.0311058  0.0343841   0.905
+PSELFc       0.2325003  0.0156992  14.810
+TSELFc:DA   -0.1013246  0.0232018  -4.367
+DA:SMEANc   -0.5337992  0.0704115  -7.581
+DA:SDMEANc   0.2044509  0.1540946   1.327
+DA:PSELFc    0.1323249  0.0232572   5.690
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc DA     SMEANc SDMEAN PSELFc TSELF: DA:SME DA:SDM
+TSELFc      0.037                                                        
+DA         -0.117  0.000                                                 
+SMEANc      0.104  0.069  0.013                                          
+SDMEANc     0.000 -0.064 -0.027 -0.776                                   
+PSELFc     -0.046 -0.188  0.000 -0.068  0.146                            
+TSELFc:DA   0.001 -0.191 -0.003  0.002 -0.001  0.022                     
+DA:SMEANc   0.019  0.004 -0.219 -0.186  0.169  0.004 -0.018              
+DA:SDMEANc -0.028 -0.001  0.803  0.099 -0.115 -0.001  0.005 -0.626       
+DA:PSELFc   0.002  0.024 -0.007  0.002  0.000 -0.173 -0.104 -0.020  0.004
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * AFG + SMEANc * AFG + SDMEANc * AFG + PSELFc *  
+    AFG + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 1)
+
+REML criterion at convergence: 59113.7
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0821 -0.6273  0.0039  0.6297  4.4205 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02504  0.1582                          
+          TSELFc      0.03604  0.1899    0.06                  
+          SMEANc      0.09638  0.3105    0.34  0.13            
+          SDMEANc     0.15323  0.3914   -0.28 -0.12 -0.68      
+          PSELFc      0.04719  0.2172   -0.05 -0.22 -0.10  0.24
+ Residual             1.77328  1.3316                          
+Number of obs: 16903, groups:  PID, 261
+
+Fixed effects:
+             Estimate Std. Error t value
+(Intercept)  0.008283   0.015888   0.521
+TSELFc       0.229053   0.014155  16.182
+AFG          0.114530   0.079905   1.433
+SMEANc       0.830820   0.026449  31.412
+SDMEANc      0.098780   0.035481   2.784
+PSELFc       0.246763   0.015597  15.822
+TSELFc:AFG   0.014772   0.029432   0.502
+AFG:SMEANc  -0.059085   0.237029  -0.249
+AFG:SDMEANc -0.103342   0.174280  -0.593
+AFG:PSELFc   0.025376   0.029506   0.860
+
+Correlation of Fixed Effects:
+            (Intr) TSELFc AFG    SMEANc SDMEAN PSELFc TSELF: AFG:SM AFG:SD
+TSELFc       0.031                                                        
+AFG         -0.122  0.001                                                 
+SMEANc       0.060  0.076  0.018                                          
+SDMEANc      0.087 -0.069 -0.040 -0.773                                   
+PSELFc      -0.030 -0.194  0.001 -0.067  0.140                            
+TSELFc:AFG  -0.001 -0.129  0.001 -0.002  0.002  0.015                     
+AFG:SMEANc   0.012 -0.001 -0.842 -0.049  0.046 -0.001 -0.001              
+AFG:SDMEANc -0.044  0.000  0.757  0.085 -0.105  0.000 -0.003 -0.971       
+AFG:PSELFc  -0.001  0.017  0.000 -0.002  0.002 -0.117 -0.144 -0.002 -0.002
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00498088 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * AE + SMEANc * AE + SDMEANc * AE + PSELFc *  
+    AE + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 1)
+
+REML criterion at convergence: 59121.1
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0656 -0.6254  0.0006  0.6297  4.4064 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02520  0.1587                          
+          TSELFc      0.03578  0.1892    0.07                  
+          SMEANc      0.09608  0.3100    0.34  0.13            
+          SDMEANc     0.15339  0.3916   -0.28 -0.12 -0.68      
+          PSELFc      0.04722  0.2173   -0.06 -0.22 -0.10  0.23
+ Residual             1.77411  1.3320                          
+Number of obs: 16903, groups:  PID, 261
+
+Fixed effects:
+             Estimate Std. Error t value
+(Intercept)  0.002339   0.015165   0.154
+TSELFc       0.235318   0.014193  16.580
+AE           0.035507   0.069980   0.507
+SMEANc       0.836337   0.028186  29.672
+SDMEANc      0.081306   0.037162   2.188
+PSELFc       0.245690   0.015666  15.683
+TSELFc:AE   -0.056998   0.024772  -2.301
+AE:SMEANc    0.078268   0.107010   0.731
+AE:SDMEANc   0.007485   0.082974   0.090
+AE:PSELFc    0.021743   0.024728   0.879
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc AE     SMEANc SDMEAN PSELFc TSELF: AE:SME AE:SDM
+TSELFc      0.034                                                        
+AE         -0.119 -0.001                                                 
+SMEANc      0.127  0.072  0.001                                          
+SDMEANc    -0.025 -0.067 -0.017 -0.805                                   
+PSELFc     -0.033 -0.196 -0.001 -0.060  0.128                            
+TSELFc:AE  -0.003 -0.164  0.002  0.000  0.002  0.021                     
+AE:SMEANc   0.009  0.000 -0.431 -0.136  0.130  0.001 -0.004              
+AE:SDMEANc -0.045  0.001  0.802  0.222 -0.253  0.000  0.004 -0.433       
+AE:PSELFc  -0.004  0.023 -0.005  0.000  0.002 -0.148 -0.061 -0.001  0.004
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00405249 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * AI + SMEANc * AI + SDMEANc * AI + PSELFc *  
+    AI + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 1)
+
+REML criterion at convergence: 58955.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.1389 -0.6272 -0.0029  0.6272  4.4500 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02586  0.1608                          
+          TSELFc      0.03535  0.1880    0.08                  
+          SMEANc      0.09849  0.3138    0.34  0.12            
+          SDMEANc     0.15641  0.3955   -0.27 -0.11 -0.69      
+          PSELFc      0.04715  0.2171   -0.06 -0.23 -0.10  0.24
+ Residual             1.75547  1.3249                          
+Number of obs: 16903, groups:  PID, 261
+
+Fixed effects:
+             Estimate Std. Error t value
+(Intercept)  0.047073   0.015459   3.045
+TSELFc       0.225434   0.014131  15.953
+AI          -0.415352   0.042855  -9.692
+SMEANc       0.880686   0.026616  33.088
+SDMEANc      0.045581   0.034401   1.325
+PSELFc       0.245917   0.015654  15.709
+TSELFc:AI    0.034563   0.024658   1.402
+AI:SMEANc   -0.304862   0.074691  -4.082
+AI:SDMEANc   0.186676   0.130713   1.428
+AI:PSELFc    0.008822   0.024682   0.357
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc AI     SMEANc SDMEAN PSELFc TSELF: AI:SME AI:SDM
+TSELFc      0.039                                                        
+AI         -0.217  0.005                                                 
+SMEANc      0.103  0.070  0.019                                          
+SDMEANc     0.009 -0.069 -0.052 -0.776                                   
+PSELFc     -0.036 -0.195  0.005 -0.064  0.149                            
+TSELFc:AI   0.000 -0.171 -0.004  0.001  0.001  0.018                     
+AI:SMEANc   0.022  0.002 -0.413 -0.166  0.150  0.002 -0.007              
+AI:SDMEANc -0.036  0.000  0.512  0.110 -0.129 -0.001  0.003 -0.867       
+AI:PSELFc   0.001  0.020 -0.003  0.002  0.000 -0.154 -0.178 -0.002  0.000
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * ST + SMEANc * ST + SDMEANc * ST + PSELFc *  
+    ST + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 1)
+
+REML criterion at convergence: 59102.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0619 -0.6237  0.0033  0.6299  4.4066 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02514  0.1586                          
+          TSELFc      0.03605  0.1899    0.07                  
+          SMEANc      0.09538  0.3088    0.34  0.13            
+          SDMEANc     0.15238  0.3904   -0.28 -0.12 -0.68      
+          PSELFc      0.04715  0.2171   -0.05 -0.23 -0.10  0.24
+ Residual             1.77224  1.3313                          
+Number of obs: 16903, groups:  PID, 261
+
+Fixed effects:
+             Estimate Std. Error t value
+(Intercept) -0.008178   0.015473  -0.529
+TSELFc       0.233830   0.014205  16.461
+ST           0.188214   0.050511   3.726
+SMEANc       0.833551   0.026396  31.579
+SDMEANc      0.080622   0.034313   2.350
+PSELFc       0.250179   0.015637  15.999
+TSELFc:ST   -0.048094   0.026744  -1.798
+ST:SMEANc   -0.047556   0.088390  -0.538
+ST:SDMEANc  -0.223326   0.111912  -1.996
+ST:PSELFc   -0.024426   0.026735  -0.914
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc ST     SMEANc SDMEAN PSELFc TSELF: ST:SME ST:SDM
+TSELFc      0.034                                                        
+ST         -0.179  0.001                                                 
+SMEANc      0.109  0.076  0.012                                          
+SDMEANc     0.013 -0.070 -0.039 -0.774                                   
+PSELFc     -0.032 -0.200  0.002 -0.068  0.144                            
+TSELFc:ST  -0.002 -0.154 -0.005  0.002 -0.002  0.018                     
+ST:SMEANc   0.018  0.000 -0.639 -0.137  0.124  0.000  0.002              
+ST:SDMEANc -0.045 -0.001  0.090  0.127 -0.150 -0.001 -0.003 -0.490       
+ST:PSELFc  -0.002  0.019 -0.003  0.003 -0.003 -0.140 -0.091 -0.004 -0.001
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00219318 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * MA + SMEANc * MA + SDMEANc * MA + PSELFc *  
+    MA + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 1)
+
+REML criterion at convergence: 58893.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.1048 -0.6177  0.0070  0.6236  4.4216 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02572  0.1604                          
+          TSELFc      0.03505  0.1872    0.08                  
+          SMEANc      0.07756  0.2785    0.42  0.12            
+          SDMEANc     0.13370  0.3657   -0.33 -0.11 -0.61      
+          PSELFc      0.04518  0.2126   -0.07 -0.20 -0.09  0.23
+ Residual             1.75249  1.3238                          
+Number of obs: 16903, groups:  PID, 261
+
+Fixed effects:
+             Estimate Std. Error t value
+(Intercept) -0.004034   0.015405  -0.262
+TSELFc       0.188100   0.014226  13.222
+MA           0.199260   0.086677   2.299
+SMEANc       0.799076   0.026478  30.179
+SDMEANc      0.134395   0.034832   3.858
+PSELFc       0.248395   0.015540  15.984
+TSELFc:MA    0.285456   0.021219  13.453
+MA:SMEANc    0.256995   0.046271   5.554
+MA:SDMEANc  -0.299153   0.131750  -2.271
+MA:PSELFc   -0.056549   0.021288  -2.656
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc MA     SMEANc SDMEAN PSELFc TSELF: MA:SME MA:SDM
+TSELFc      0.040                                                        
+MA         -0.104  0.002                                                 
+SMEANc      0.070  0.059  0.018                                          
+SDMEANc     0.029 -0.060 -0.029 -0.776                                   
+PSELFc     -0.043 -0.165  0.002 -0.056  0.128                            
+TSELFc:MA   0.002 -0.218 -0.004  0.006 -0.001  0.014                     
+MA:SMEANc   0.048  0.006  0.390 -0.334  0.305  0.006 -0.025              
+MA:SDMEANc -0.040  0.000  0.806  0.139 -0.157 -0.001  0.006 -0.033       
+MA:PSELFc   0.004  0.016 -0.001  0.007 -0.003 -0.200 -0.259 -0.023  0.007
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.0021909 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * MRB + SMEANc * MRB + SDMEANc * MRB + PSELFc *  
+    MRB + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 1)
+
+REML criterion at convergence: 59111.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0725 -0.6247  0.0011  0.6286  4.4312 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02515  0.1586                          
+          TSELFc      0.03602  0.1898    0.07                  
+          SMEANc      0.09565  0.3093    0.34  0.13            
+          SDMEANc     0.15253  0.3906   -0.28 -0.12 -0.68      
+          PSELFc      0.04751  0.2180   -0.06 -0.22 -0.10  0.23
+ Residual             1.77301  1.3315                          
+Number of obs: 16903, groups:  PID, 261
+
+Fixed effects:
+             Estimate Std. Error t value
+(Intercept)  0.004003   0.015100   0.265
+TSELFc       0.233075   0.014257  16.348
+MRB         -0.559683   0.310769  -1.801
+SMEANc       0.847569   0.026080  32.498
+SDMEANc      0.067462   0.034204   1.972
+PSELFc       0.251691   0.015737  15.994
+TSELFc:MRB  -0.031406   0.023876  -1.315
+MRB:SMEANc  -0.671302   0.217521  -3.086
+MRB:SDMEANc  0.284361   0.233178   1.220
+MRB:PSELFc  -0.033426   0.023723  -1.409
+
+Correlation of Fixed Effects:
+            (Intr) TSELFc MRB    SMEANc SDMEAN PSELFc TSELF: MRB:SM MRB:SD
+TSELFc       0.034                                                        
+MRB         -0.030  0.000                                                 
+SMEANc       0.098  0.077  0.010                                          
+SDMEANc     -0.003 -0.072 -0.013 -0.766                                   
+PSELFc      -0.034 -0.192  0.000 -0.067  0.141                            
+TSELFc:MRB   0.002 -0.177  0.001  0.005 -0.003  0.022                     
+MRB:SMEANc   0.005  0.002  0.522 -0.049  0.045  0.002 -0.006              
+MRB:SDMEANc -0.019  0.000  0.509  0.062 -0.075 -0.001  0.001 -0.459       
+MRB:PSELFc   0.004  0.024  0.004  0.007 -0.004 -0.162 -0.133 -0.004  0.006
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00881516 (tol = 0.002, component 1)
+
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * MRG + SMEANc * MRG + SDMEANc * MRG + PSELFc *  
+    MRG + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 1)
+
+REML criterion at convergence: 59094.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.2012 -0.6257 -0.0011  0.6308  4.3435 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02516  0.1586                          
+          TSELFc      0.03577  0.1891    0.06                  
+          SMEANc      0.09658  0.3108    0.34  0.13            
+          SDMEANc     0.15334  0.3916   -0.27 -0.11 -0.68      
+          PSELFc      0.04719  0.2172   -0.05 -0.22 -0.10  0.23
+ Residual             1.77088  1.3307                          
+Number of obs: 16903, groups:  PID, 261
+
+Fixed effects:
+              Estimate Std. Error t value
+(Intercept)  0.0001377  0.0154503   0.009
+TSELFc       0.2332437  0.0141169  16.522
+MRG          0.0778954  0.0401625   1.940
+SMEANc       0.8184202  0.0266354  30.727
+SDMEANc      0.0768563  0.0343230   2.239
+PSELFc       0.2506472  0.0155958  16.071
+TSELFc:MRG  -0.0532746  0.0294223  -1.811
+MRG:SMEANc   0.3776271  0.0982240   3.845
+MRG:SDMEANc -0.4128423  0.1395951  -2.957
+MRG:PSELFc  -0.0403028  0.0296860  -1.358
+
+Correlation of Fixed Effects:
+            (Intr) TSELFc MRG    SMEANc SDMEAN PSELFc TSELF: MRG:SM MRG:SD
+TSELFc       0.032                                                        
+MRG         -0.225  0.000                                                 
+SMEANc       0.078  0.074  0.028                                          
+SDMEANc      0.041 -0.066 -0.062 -0.760                                   
+PSELFc      -0.033 -0.193  0.001 -0.068  0.142                            
+TSELFc:MRG   0.002 -0.130  0.001  0.000 -0.001  0.017                     
+MRG:SMEANc   0.020  0.001  0.297 -0.129  0.110  0.000  0.001              
+MRG:SDMEANc -0.040  0.000 -0.239  0.102 -0.122  0.000 -0.004 -0.979       
+MRG:PSELFc   0.003  0.019  0.005 -0.001  0.000 -0.117 -0.096  0.005 -0.009
+Linear mixed model fit by REML ['lmerMod']
+Formula: RATINGc ~ TSELFc * KC + SMEANc * KC + SDMEANc * KC + PSELFc *  
+    KC + (TSELFc + SMEANc + SDMEANc + PSELFc | PID)
+   Data: subset(fmimlm, fmimlm$motive == 1)
+
+REML criterion at convergence: 59098.1
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0089 -0.6242  0.0002  0.6304  4.4018 
+
+Random effects:
+ Groups   Name        Variance Std.Dev. Corr                   
+ PID      (Intercept) 0.02512  0.1585                          
+          TSELFc      0.03604  0.1898    0.07                  
+          SMEANc      0.09536  0.3088    0.34  0.13            
+          SDMEANc     0.15634  0.3954   -0.26 -0.11 -0.68      
+          PSELFc      0.04679  0.2163   -0.04 -0.23 -0.09  0.24
+ Residual             1.77165  1.3310                          
+Number of obs: 16903, groups:  PID, 261
+
+Fixed effects:
+              Estimate Std. Error t value
+(Intercept) -1.956e-03  1.573e-02  -0.124
+TSELFc       2.304e-01  1.412e-02  16.323
+KC           2.019e-02  9.919e-02   0.204
+SMEANc       8.420e-01  2.637e-02  31.935
+SDMEANc      5.951e-02  3.495e-02   1.703
+PSELFc       2.554e-01  1.551e-02  16.465
+TSELFc:KC   -2.133e-02  3.130e-02  -0.682
+KC:SMEANc   -4.786e-05  3.074e-01   0.000
+KC:SDMEANc   5.542e-02  3.993e-01   0.139
+KC:PSELFc   -1.535e-01  3.132e-02  -4.901
+
+Correlation of Fixed Effects:
+           (Intr) TSELFc KC     SMEANc SDMEAN PSELFc TSELF: KC:SME KC:SDM
+TSELFc      0.037                                                        
+KC         -0.096  0.001                                                 
+SMEANc      0.061  0.076  0.018                                          
+SDMEANc     0.082 -0.067 -0.034 -0.755                                   
+PSELFc     -0.024 -0.197  0.001 -0.059  0.144                            
+TSELFc:KC  -0.002 -0.109  0.010  0.001 -0.003  0.017                     
+KC:SMEANc   0.007  0.002  0.929 -0.037  0.033  0.001  0.010              
+KC:SDMEANc -0.017 -0.002 -0.926  0.033 -0.042 -0.001 -0.011 -0.998       
+KC:PSELFc  -0.001  0.019  0.016  0.001 -0.003 -0.099 -0.119  0.016 -0.018
+optimizer (nloptwrap) convergence code: 0 (OK)
+Model failed to converge with max|grad| = 0.00416505 (tol = 0.002, component 1)
+

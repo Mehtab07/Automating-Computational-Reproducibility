@@ -1,0 +1,85 @@
+      id                age_t1          sex_t1          no_daily    
+ Length:96          Min.   :18.00   Min.   :0.0000   Min.   :33.00  
+ Class :character   1st Qu.:20.00   1st Qu.:1.0000   1st Qu.:74.75  
+ Mode  :character   Median :21.00   Median :1.0000   Median :79.50  
+                    Mean   :22.46   Mean   :0.8125   Mean   :75.98  
+                    3rd Qu.:24.00   3rd Qu.:1.0000   3rd Qu.:81.00  
+                    Max.   :65.00   Max.   :1.0000   Max.   :82.00  
+ csd_state_nervous   csd_state_relaxed  csd_state_irritable csd_state_assertive
+ Min.   :-0.456660   Min.   :-0.47327   Min.   :-0.561941   Min.   :-0.484231  
+ 1st Qu.:-0.165087   1st Qu.:-0.15804   1st Qu.:-0.127108   1st Qu.:-0.140031  
+ Median : 0.002194   Median :-0.02401   Median :-0.014423   Median :-0.043281  
+ Mean   :-0.004544   Mean   :-0.00892   Mean   :-0.004203   Mean   :-0.006897  
+ 3rd Qu.: 0.157445   3rd Qu.: 0.13076   3rd Qu.: 0.100933   3rd Qu.: 0.110604  
+ Max.   : 0.502553   Max.   : 0.48975   Max.   : 0.403081   Max.   : 0.700187  
+ csd_state_unsociable csd_state_shy       csd_state_sociable csd_state_curious 
+ Min.   :-0.461338    Min.   :-0.462870   Min.   :-0.43652   Min.   :-0.43605  
+ 1st Qu.:-0.167806    1st Qu.:-0.132541   1st Qu.:-0.20637   1st Qu.:-0.16141  
+ Median :-0.007204    Median :-0.004136   Median :-0.03619   Median :-0.06541  
+ Mean   :-0.006810    Mean   :-0.011524   Mean   :-0.01107   Mean   :-0.01092  
+ 3rd Qu.: 0.152791    3rd Qu.: 0.103671   3rd Qu.: 0.17961   3rd Qu.: 0.12463  
+ Max.   : 0.640860    Max.   : 0.389551   Max.   : 0.61906   Max.   : 0.81913  
+ csd_state_creative  csd_state_witty    csd_state_hostile   csd_state_compliant
+ Min.   :-0.511921   Min.   :-0.44428   Min.   :-0.652310   Min.   :-0.69782   
+ 1st Qu.:-0.177350   1st Qu.:-0.19678   1st Qu.:-0.123910   1st Qu.:-0.19568   
+ Median :-0.008390   Median :-0.04374   Median : 0.018836   Median :-0.04133   
+ Mean   : 0.001711   Mean   :-0.01413   Mean   :-0.002862   Mean   :-0.01190   
+ 3rd Qu.: 0.180866   3rd Qu.: 0.10320   3rd Qu.: 0.104317   3rd Qu.: 0.15267   
+ Max.   : 0.622924   Max.   : 0.62923   Max.   : 0.444396   Max.   : 0.54304   
+ csd_state_sensitive csd_state_friendly csd_state_cynical   csd_state_helpful  
+ Min.   :-0.38787    Min.   :-0.42070   Min.   :-0.725711   Min.   :-0.481782  
+ 1st Qu.:-0.16169    1st Qu.:-0.15920   1st Qu.:-0.112547   1st Qu.:-0.162126  
+ Median :-0.01716    Median :-0.03047   Median : 0.012453   Median :-0.037348  
+ Mean   :-0.01276    Mean   :-0.01319   Mean   :-0.008259   Mean   :-0.008445  
+ 3rd Qu.: 0.11077    3rd Qu.: 0.10553   3rd Qu.: 0.129013   3rd Qu.: 0.150926  
+ Max.   : 0.44736    Max.   : 0.56940   Max.   : 0.503048   Max.   : 0.565536  
+ csd_state_diligent  csd_state_organised csd_state_negligent
+ Min.   :-0.475725   Min.   :-0.385705   Min.   :-0.45567   
+ 1st Qu.:-0.166489   1st Qu.:-0.179816   1st Qu.:-0.16964   
+ Median :-0.046409   Median :-0.012813   Median :-0.01922   
+ Mean   :-0.008954   Mean   :-0.006195   Mean   :-0.00741   
+ 3rd Qu.: 0.159768   3rd Qu.: 0.127954   3rd Qu.: 0.15121   
+ Max.   : 0.529122   Max.   : 0.702390   Max.   : 0.50086   
+ csd_state_selfesteem    csd_nob           csd_sim1           csd_sim2       
+ Min.   :-0.509003    Min.   :-0.8413   Min.   :-0.97424   Min.   :-1.38257  
+ 1st Qu.:-0.158974    1st Qu.:-0.1187   1st Qu.:-0.33118   1st Qu.:-0.22787  
+ Median :-0.013798    Median : 0.0117   Median : 0.07441   Median : 0.03165  
+ Mean   :-0.005257    Mean   : 0.0000   Mean   : 0.00000   Mean   : 0.00000  
+ 3rd Qu.: 0.142652    3rd Qu.: 0.1510   3rd Qu.: 0.30513   3rd Qu.: 0.29730  
+ Max.   : 0.584133    Max.   : 0.4405   Max.   : 1.02576   Max.   : 0.71059  
+    csd_sim3          csd_sim4           csd_sim5           csd_sim6       
+ Min.   :-1.7943   Min.   :-1.03308   Min.   :-1.37763   Min.   :-0.69206  
+ 1st Qu.:-0.2309   1st Qu.:-0.21658   1st Qu.:-0.32046   1st Qu.:-0.23925  
+ Median : 0.1519   Median :-0.04944   Median : 0.03658   Median : 0.03086  
+ Mean   : 0.0000   Mean   : 0.00000   Mean   : 0.00000   Mean   : 0.00000  
+ 3rd Qu.: 0.3368   3rd Qu.: 0.23086   3rd Qu.: 0.29619   3rd Qu.: 0.21817  
+ Max.   : 0.5151   Max.   : 1.05468   Max.   : 0.77247   Max.   : 0.76075  
+    csd_sim7            csd_sim8           csd_sim9          csd_sim10      
+ Min.   :-0.966245   Min.   :-1.70367   Min.   :-1.04073   Min.   :-1.4871  
+ 1st Qu.:-0.339483   1st Qu.:-0.17685   1st Qu.:-0.33998   1st Qu.:-0.2400  
+ Median : 0.005487   Median : 0.07749   Median :-0.03491   Median : 0.0609  
+ Mean   : 0.000000   Mean   : 0.00000   Mean   : 0.00000   Mean   : 0.0000  
+ 3rd Qu.: 0.329284   3rd Qu.: 0.32840   3rd Qu.: 0.25947   3rd Qu.: 0.2742  
+ Max.   : 1.105709   Max.   : 0.60574   Max.   : 1.05981   Max.   : 0.9921  
+      rses            swls             pa              na       
+ Min.   :1.200   Min.   :1.600   Min.   :2.000   Min.   :1.000  
+ 1st Qu.:2.500   1st Qu.:4.000   1st Qu.:3.800   1st Qu.:2.500  
+ Median :3.100   Median :5.000   Median :4.400   Median :3.000  
+ Mean   :2.991   Mean   :4.862   Mean   :4.179   Mean   :3.193  
+ 3rd Qu.:3.500   3rd Qu.:5.800   3rd Qu.:4.800   3rd Qu.:4.000  
+ Max.   :4.000   Max.   :7.000   Max.   :5.400   Max.   :6.000  
+      sccs      
+ Min.   :1.167  
+ 1st Qu.:2.167  
+ Median :2.750  
+ Mean   :2.799  
+ 3rd Qu.:3.438  
+ Max.   :4.750  
+         vars  n  mean   sd median trimmed  mad min max range  skew kurtosis
+age_t1      1 96 22.46 5.59   21.0   21.62 1.48  18  65    47  4.86    32.72
+sex_t1      2 96  0.81 0.39    1.0    0.88 0.00   0   1     1 -1.58     0.49
+no_daily    3 96 75.98 8.84   79.5   77.94 3.71  33  82    49 -2.46     6.82
+           se
+age_t1   0.57
+sex_t1   0.04
+no_daily 0.90

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='720.00pt' height='576.00pt' viewBox='0 0 720.00 576.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>
+</g>
+<defs>
+  <clipPath id='cpNTkuMDR8Njg5Ljc2fDU5LjA0fDUwMi41Ng=='>
+    <rect x='59.04' y='59.04' width='630.72' height='443.52' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpNTkuMDR8Njg5Ljc2fDU5LjA0fDUwMi41Ng==)'>
+<line x1='418.09' y1='117.97' x2='406.67' y2='87.56' style='stroke-width: 0.75; stroke: #FFA500;' />
+<polyline points='409.45,89.84 406.67,87.56 406.08,91.11 ' style='stroke-width: 0.75; stroke: #FFA500;' />
+<line x1='418.09' y1='117.97' x2='424.83' y2='127.92' style='stroke-width: 0.75; stroke: #FFA500;' />
+<polyline points='421.59,126.35 424.83,127.92 424.57,124.33 ' style='stroke-width: 0.75; stroke: #FFA500;' />
+<line x1='418.09' y1='117.97' x2='506.47' y2='73.77' style='stroke-width: 0.75; stroke: #FFA500;' />
+<polyline points='504.48,76.78 506.47,73.77 502.87,73.56 ' style='stroke-width: 0.75; stroke: #FFA500;' />
+<line x1='418.09' y1='117.97' x2='413.61' y2='229.52' style='stroke-width: 0.75; stroke: #FFA500;' />
+<polyline points='411.93,226.33 413.61,229.52 415.53,226.48 ' style='stroke-width: 0.75; stroke: #FFA500;' />
+</g>
+</svg>
