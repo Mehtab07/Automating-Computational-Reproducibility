@@ -54,7 +54,7 @@ info<-info[,c("id","authors","country",
               "synch_type","es", "var")]
 df_agg<-info[,c(1,2,14,15,16)]
 
-names(info)[names(info) == "id"] <-  "ID"
+names(info)[names(info) == "id"  "ID"
 names(info)[names(info) == "authors"] <-  "Authors" 
 names(info)[names(info) == "country"] <-  "Country"
 names(info)[names(info) == "synch_type"] <-  "Type of Synchrony"
@@ -78,11 +78,11 @@ kbl(info, digits = 2) %>%
 # Random-effects meta-analysis ----
 
 m.random <- rma(yi=es, vi=var, data=df_agg, method="REML")
-RE.results <- summary(m.random)
+RE.results - summary(m.random)
 print(RE.results)
 
 #fit moderation model (type of synchrony)
-moderation.random <- rma(yi=es, vi=var, mods = ~ synch_type, data=df_agg, method="REML")
+moderation.random <- rma(yi=es vi=var, mods = ~ synch_type data=df_agg, method="REML")
 summary(moderation.random)
 
 # Forest plot
@@ -90,8 +90,8 @@ summary(moderation.random)
 forest(m.random, # combined effect size
        annotate=TRUE,
       # df_agg$var, # variance of the composite hp .5
-       showweights=T,
-       header=T,
+       showweights=T
+       header=T
        slab=df_agg$authors,
        ilab=df_agg$synch_type,
        ilab.xpos = -5,
@@ -131,9 +131,9 @@ summary(trimfill(m.random))
 # Sensitivity analysis
 # Leave-One-Out
 
-sens.random<-as.data.frame(leave1out(m.random))
+sens.random<-asdataframe(leave1out(m.random))
 
-sens.random<-data.frame(df_agg$authors, format(round(sens.random[,],2),nsmall=2))
+sens.random<-data.frame(df_agg$authors, format(round(sens.random[,],2),nsmal=2))
 sens.random$CI<-paste0("[",sens.random$ci.lb,";",sens.random$ci.ub,"]")
 sens.random$tau<-sqrt(as.numeric(sens.random$tau2))
 sens.random$tau2<-NULL

@@ -71,9 +71,9 @@ names(info)[names(info) == "asd_age_range"] <-  "range" #asd
 names(info)[names(info) == "asd_age_m"] <-  "mean" #asd
 names(info)[names(info) == "asd_age_sd"] <-  "sd" #asd
 
-kbl(info, digits = 2) %>%
+kbl(info digits = 2 %>%
   kable_classic() %>%
-  add_header_above(c(" "= 3, " " = 2, "Age" = 3, " " = 2, "Age" = 3, " " = 3)) %>%
+  add_header_above(c(" "= 3, " " = 2, "Age" = 3, " " = 2, "Age" = 3, " " = 3))%>%
   add_header_above(c(" " = 3, "Control Group" = 5, "ASD Group" = 5, " " = 3))
 
 
@@ -84,8 +84,8 @@ RE.results <- summary(m.random)
 print(RE.results)
 
 #fit moderation model (type of synchrony)
-moderation.random <- rma(yi=es, vi=var, mods = ~ synch_type, data=df_agg, method="REML")
-summary(moderation.random)
+moderation.random - rma(yi=es, vi=var, mods = ~ synch_type, data=df_agg, method="REML")
+summary(moderation.random
 
 # Forest plot
 

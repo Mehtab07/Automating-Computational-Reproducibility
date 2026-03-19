@@ -15,7 +15,7 @@ library(psych)
 
 #- Import data:
 sink("Flip_Analysis_Output.txt")
-df <- read.table( "Flip_Data_MainAnalyses.txt", header = TRUE)
+df <- read.table( "input/Flip_Data_MainAnalyses.txt", header = TRUE)
 summary( df ) # for an overview
 
 #- Descriptive information (see paragraph Sample in the Method section ):
@@ -38,18 +38,18 @@ names_aa <- c("csd_state_hostile","csd_state_compliant","csd_state_sensitive",
 names_cc <- c("csd_state_diligent","csd_state_organised","csd_state_negligent")
 names_persd <- c( names_nn, names_ee, names_oo, names_aa, names_cc ) 
 
-psych::alpha(df[,names_nn])$total$raw_alpha # 0.878
-psych::alpha(df[,names_ee])$total$raw_alpha # 0.869
-psych::alpha(df[,names_oo])$total$raw_alpha # 0.900
-psych::alpha(df[,names_aa])$total$raw_alpha # 0.872
-psych::alpha(df[,names_cc])$total$raw_alpha # 0.889
+psych::alpha(df[,names_n])$total$raw_alpha # 0.878
+psych::alpha(df[,names_e])$total$raw_alpha # 0.869
+psych::alpha(df[,names_o])$total$raw_alpha # 0.900
+psych::alpha(df[,names_a])$total$raw_alpha # 0.872
+psych::alpha(df[,names_c])$total$raw_alpha # 0.889
 psych::alpha(df[,names_persd])$total$raw_alpha # 0.967
 
-df$n_csd <- rowMeans( df[,names_nn])
-df$e_csd <- rowMeans( df[,names_ee])
-df$o_csd <- rowMeans( df[,names_oo])
-df$a_csd <- rowMeans( df[,names_aa])
-df$c_csd <- rowMeans( df[,names_cc])
+df$n_csd <- rowMeans( df[,names_n])
+df$e_csd <- rowMeans( df[,names_e])
+df$o_csd <- rowMeans( df[,names_o])
+df$a_csd <- rowMeans( df[,names_a])
+df$c_csd <- rowMeans( df[,names_c])
 df$per_csd <- rowMeans( df[,names_persd])
 
 #- compute alpha of simpson task:
@@ -65,7 +65,7 @@ df$simpson_csd <- rowMeans( df[,names_simsd])
 names_var <- c("sccs","csd_nob","simpson_csd","n_csd","e_csd","o_csd","a_csd","c_csd",
 	"per_csd","csd_state_selfesteem")
 psych::describe( df[,names_var] )[,c("mean","sd")]
-psych::corr.test( df[,names_var] )
+psych::corrtest( df[,names_var] )
 
 # transport table:
 tab <- psych::describe( df[,names_var] )[,c("mean","sd")]
@@ -81,10 +81,10 @@ tab
 #-  Correlations and partial-correlations between variability and well-being measures (Table 3)
 #- ---------------------------------------------------------------------------------------------
 
-psych::corr.test( df[,c( names_var[-1],"rses","swls","pa","na")] )
+psych::corrtest( df[,c( names_var[-1],"rses","swls","pa","na")] )
 
 # transport table:
-tab <- psych::corr.test( df[,c( names_var[-1],"rses","swls","pa","na")] )$r[,c("rses","swls","pa","na")]
+tab <- psych::corrtest( df[,c( names_var[-1],"rses","swls","pa","na")] )$r[,c("rses","swls","pa","na")]
 tab <- round( tab[ rownames( tab ) %in% names_var[-1], ], 2 )
 colnames( tab ) <- c("Self-Est.","Life Sat.","Pos. Affect","Neg. Affect")
 rownames( tab ) <- c("Neutral Objects","Simpson Task","Daily neuroticism","Daily extraversion",
@@ -130,7 +130,7 @@ psych::corr.test( df2$c_csd,df2$csd_mean_c )
 
 names_variable <- c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c", 
 	"sccs","csd_nob","simpson_csd","rses","swls","pa","na")
-psych::corr.test( df2[,names_variable] )
+psych::corr.test( df2[,names_var] )
 
 # transport table:
 tab <- psych::corr.test( df2[, names_variable] )$r[,c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c")]

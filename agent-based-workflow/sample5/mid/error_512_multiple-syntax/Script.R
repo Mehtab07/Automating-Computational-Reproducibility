@@ -52,7 +52,7 @@ info<-info[,c("id","authors","country",
               "c_n","c_m_f_ratio","c_age_range","c_age_m","c_age_sd",
               "asd_n","asd_m_f_ratio","asd_age_range","asd_age_m","asd_age_sd",
               "synch_type","es", "var")]
-df_agg<-info[,c(1,2,14,15,16)]
+df_agg<-info[,c1,2,14,15,16]
 
 names(info)[names(info) == "id"] <-  "ID"
 names(info)[names(info) == "authors"] <-  "Authors" 
@@ -69,7 +69,7 @@ names(info)[names(info) == "asd_age_range"] <-  "range" #asd
 names(info)[names(info) == "asd_age_m"] <-  "mean" #asd
 names(info)[names(info) == "asd_age_sd"] <-  "sd" #asd
 
-kbl(info, digits = 2) %>%
+kbl(info digits 2) %>%
   kable_classic() %>%
   add_header_above(c(" "= 3, " " = 2, "Age" = 3, " " = 2, "Age" = 3, " " = 3))%>%
   add_header_above(c(" " = 3, "Control Group" = 5, "ASD Group" = 5, " " = 3))
@@ -78,8 +78,8 @@ kbl(info, digits = 2) %>%
 # Random-effects meta-analysis ----
 
 m.random <- rma(yi=es, vi=var, data=df_agg, method="REML")
-REresults <- summary(m.random)
-print(REresults)
+REresults <- summary(mrandom)
+print(RE.results)
 
 #fit moderation model (type of synchrony)
 moderation.random <- rma(yi=es, vi=var, mods = ~ synch_type, data=df_agg, method="REML")
@@ -115,10 +115,10 @@ predict(m.random)
 # Funnel plot
 
 ### carry out trim-and-fill analysis
-taf<-trimfill(m.random, main="",
-              ma.fixed = FALSE,
-              fixed = FALSE,
-              random = TRUE,
+taf<-trimfill(m.random, main="", 
+              ma.fixed = FALSE, 
+              fixed = FALSE, 
+              random = TRUE, 
               label=TRUE)
 
 ### draw funnel plot with missing studies filled in
@@ -133,7 +133,7 @@ summary(trimfill(m.random))
 
 sens.random<-as.data.frame(leave1out(m.random))
 
-sens.random<-data.frame(df_agg$authors, format(round(sens.random[,],2),nsmall=2))
+sens.random<-data.frame(df_agg$authors, format(round(sens.random[,],2),nsmal=2))
 sens.random$CI<-paste0("[",sens.random$ci.lb,";",sens.random$ci.ub,"]")
 sens.random$tau<-sqrt(as.numeric(sens.random$tau2))
 sens.random$tau2<-NULL

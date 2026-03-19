@@ -23,9 +23,9 @@ linterp <- function(x, y, x.out){
   for(i in 1:n.out){
     x0 <- x.out[i]
     if(x0 < X.min){
-      y.out[i] <- a * (x0 - X.min) + Y.min
+      y.out[i] <- a * ("missing code") + Y.min
     }else if(x0 > X.max){
-      y.out[i] <- a * (x0 - X.max) + Y.max
+      y.out[i] <- a * ("Missing code") + Y.max
     }else if(any(X == x0)){
       y.out[i] <- mean(Y[which(X == x0)])
     }else{
@@ -38,40 +38,26 @@ linterp <- function(x, y, x.out){
 }
 
 magSus <- read.table(file = "./data_input/magSus.csv", header = T, sep = ",")
-# Use existing column names instead of overriding them
-# The actual columns are: Depth, age, Gamma.Density, MS.Loop..negs.removed.
+colnames(magSus) <- c("depth", "age", "gammaDensity", "MS")
 
 char <- read.table(file = "./data_input/magSus_charcoal.csv", header = T, sep = ",")
-# Use existing column names instead of overriding them
-# The actual columns are: Age..MAL1B.1C.from.Ivory.et.al.2016.age..kyr.,
-# Charcoal..abundance.normalized.by.sedimentation.rate., Lake.Level..PC1.5pt.Smooth.
+colnames(char) <- c("age", "char", "lake")
 
-MSdownsampled <- cbind("age" = char[[1]],  # Use first column (Age..MAL1B.1C.from.Ivory.et.al.2016.age..kyr.)
+MSdownsampled <- cbind("age" = char$age,
                        "MS_downsampled" = linterp(x = magSus$age,
-                                                  y = magSus$MS.Loop..negs.removed.,  # Use correct column name
-                                                  x.out = char[[1]]))  # Use first column
+                                                  y = magSus$MS, 
+                                                  x.out = char$age))
 
 write.table(x = MSdownsampled, 
             file = "./data_output/MagSusDownsampled.csv", 
             row.names = F, 
             sep = ",")
 
-# Check if the Excel file exists before trying to read it
-if(file.exists("./data_input/Core2A_MagSusCharcoal.xlsx")) {
-  core2a_Charcoal <- read.xlsx(xlsxFile = "./data_input/Core2A_MagSusCharcoal.xlsx", sheet = 1)
-  core2a_MagSus <- read.xlsx(xlsxFile = "./data_input/Core2A_MagSusCharcoal.xlsx", sheet = 2)
-  core2a_downsampled <- cbind("Depth" = core2a_Charcoal$Depth,
-                              "MS_downsampled" = linterp(x = core2a_MagSus$Depth,
-                                                         y = core2a_MagSus$MagSus,
-                                                         x.out = core2a_Charcoal$Depth))
-  write.table(x = core2a_downsampled,
-              file = "./data_output/Core2A_MagSusDownsampled.csv",
-              row.names = F,
-              sep = ",")
-} else {
-  # Create a simple output file to indicate the file was missing
-  write.table(x = data.frame("Depth" = numeric(0), "MS_downsampled" = numeric(0)),
-              file = "./data_output/Core2A_MagSusDownsampled.csv",
-              row.names = F,
-              sep = ",")
-}
+core2a_Charcoal <- read.xlsx(xlsxFile = "./data_input/Core2A_MagSusCharcoal.xlsx", sheet = 1)
+core2a_MagSus <- read.xlsx(xlsxFile = "./data_input/Core2A_MagSusCharcoal.xlsx", sheet = 2)
+core2a_downsampled <- cbind("Depth" = core2a_Charcoal$Depth,
+                            "MS_downsampled" = linterp("missing code"))
+write.table(x = core2a_downsampled, 
+            file = "./data_output/Core2A_MagSusDownsampled.csv", 
+            row.names = F, 
+            sep = ",")

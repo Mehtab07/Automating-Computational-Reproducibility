@@ -29,7 +29,7 @@ selection <- PRISMA_data(selection);
 flowd <- PRISMA_flowdiagram(selection,fontsize = 12, interactive = FALSE, previous = FALSE, other = TRUE);
 flowd
 
-df <- read_csv("df.csv")
+df <- read_csv("cd/df.csv")
 
 # Effect size ----
 df <- escalc(measure="SMD",
@@ -48,7 +48,7 @@ df <- escalc(measure="SMD",
 df_agg<-MAd::agg(data=df, id=id, es=yi, var=vi, method = 'BHHR', cor = .50)  # change .50 to .70 or .90 to run analyses with different hypothesized correlation among outcomes 
 
 # Descriptives ----
-df_info<-read.csv("df_info.csv")
+df_info<-read.csv("cd/df_info.csv")
 info<- Reduce(function(x,y) merge(x,y,by="id",all=TRUE) ,list(df_agg,df_info))
 info<-info[,c("id","authors","country",
               "c_n","c_m_f_ratio","c_age_range","c_age_m","c_age_sd",

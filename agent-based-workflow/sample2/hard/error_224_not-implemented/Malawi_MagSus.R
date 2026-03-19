@@ -2,44 +2,13 @@
 start_time <- Sys.time()
 graphics.off()
 
-# Install and load required packages
-if (!require(openxlsx, quietly = TRUE)) {
-  install.packages("openxlsx")
-  library(openxlsx)
-} else {
-  library(openxlsx)
-}
+library(openxlsx)
 
 linterp <- function(x, y, x.out){
-  bad <- is.na(x) | is.na(y)
-  X <- x[!bad]
-  Y <- y[!bad]
-  Y <- Y[order(X)]
-  X <- X[order(X)]
-  a <- coef(lm(Y ~ X))[2] # slope
-
-  data.length <- length(X)
-  X.min <- X[1]
-  X.max <- X[data.length]
-  Y.min <- Y[1]
-  Y.max <- Y[data.length]
-
-  n.out <- length(x.out)
-  y.out <- numeric(n.out)
-  for(i in 1:n.out){
-    x0 <- x.out[i]
-    if(x0 < X.min){
-      y.out[i] <- a * (x0 - X.min) + Y.min
-    }else if(x0 > X.max){
-      y.out[i] <- a * (x0 - X.max) + Y.max
-    }else if(any(X == x0)){
-      y.out[i] <- mean(Y[which(X == x0)])
-    }else{
-      j <- max(which(X < x0))
-      y.out[i] <- (Y[j + 1] - Y[j]) / (X[j + 1] - X[j]) * (x0 - X[j]) + Y[j]
+  stop("not implemented")
     }
   }
-
+  
   return(y.out)
 }
 

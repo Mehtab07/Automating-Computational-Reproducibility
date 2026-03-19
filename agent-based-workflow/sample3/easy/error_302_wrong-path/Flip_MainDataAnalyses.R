@@ -15,7 +15,7 @@ library(psych)
 
 #- Import data:
 sink("Flip_Analysis_Output.txt")
-df <- read.table( "Flip_Data_MainAnalyses.txt", header = TRUE )
+df <- read.table( "Data_Flip_Data_MainAnalyses.txt", header = TRUE )
 summary( df ) # for an overview
 
 #- Descriptive information (see paragraph Sample in the Method section ):
@@ -115,23 +115,9 @@ tab2
 #- ######################
 
 df2 <- read.table( "Flip_Data_ExtraAnalyses.txt", header = TRUE )
-# Compute the csd variables from the raw data that exists in df2
-names_n <- c("csd_state_nervous","csd_state_relaxed","csd_state_irritable")
-names_e <- c("csd_state_assertive","csd_state_unsociable","csd_state_shy","csd_state_sociable")
-names_o <- c("csd_state_curious","csd_state_creative","csd_state_witty")
-names_a <- c("csd_state_hostile","csd_state_compliant","csd_state_sensitive",
-	"csd_state_friendly","csd_state_cynical","csd_state_helpful")
-names_c <- c("csd_state_diligent","csd_state_organised","csd_state_negligent")
+df2 <- merge( df2, df, by = "id" )
 
-# Add the computed columns to df2
-df2$n_csd <- rowMeans( df2[,names_n])
-df2$e_csd <- rowMeans( df2[,names_e])
-df2$o_csd <- rowMeans( df2[,names_o])
-df2$a_csd <- rowMeans( df2[,names_a])
-df2$c_csd <- rowMeans( df2[,names_c])
-df2$per_csd <- rowMeans( df2[,c( names_n, names_e, names_o, names_a, names_c )] )
-
-#- correlations between csd_mean and averaged csds for Big Five traits
+#- correlations between csd_mean and averaged csds for Big Five traits 
 #  (mentioned in the text in Appendix A):
 
 psych::corr.test( df2$n_csd,df2$csd_mean_n )

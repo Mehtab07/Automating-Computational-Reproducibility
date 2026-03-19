@@ -7,9 +7,10 @@ start_time <- Sys.time()
 graphics.off()
 
 linterp <- function(x, y, x.out){
-   # Linear interpolation
-   y.out <- approx(x, y, xout = x.out)$y
-   return(y.out)
+   stop("Not Implemented") }
+  }
+  
+  return(y.out)
 }
 
 pollenData <- read.csv("./data_input/20200722_pollen.csv")

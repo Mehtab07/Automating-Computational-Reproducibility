@@ -4,7 +4,7 @@ if (!requireNamespace("lme4", quietly = TRUE)) {
 }
 library(lme4)
 
-fmimlm <-read.table("motives_data.csv", header=T,sep=',')
+fmimlm <-read.table("mootives_data.csv", header=T,sep=',')
 print(summary(fmimlm))
 
 ###Primary Analyses

@@ -27,7 +27,7 @@ package.check <- lapply(
 # Output:  ./data_output/20200722_char_linterp.csv
 #          ./data_output/20200722_lake_linterp.csv
 
-source("Malawi_interpolation.R")
+source("MMalawi_interpolation.R")
 
 ####################
 #### Ordination ####
@@ -49,7 +49,7 @@ source("Malawi_interpolation.R")
 #          ./vector_graphics/pollen_vec_fit.svg
 #          ./vector_graphics/pollen_vec_fit_noLabels.svg
 
-source("Malawi_ordination.R") 
+source("MMalawi_ordination.R") 
 
 ################
 #### MagSus ####
@@ -63,4 +63,4 @@ source("Malawi_ordination.R")
 # Output:  ./data_output/MagSusDownsampled.csv
 #          ./data_output/Core2A_MagSusDownsampled.csv
 
-source("Malawi_MagSus.R") 
+source("MMalawi_MagSus.R") 

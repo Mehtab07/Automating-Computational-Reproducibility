@@ -120,18 +120,13 @@ drawdat <- function(rSR, rSH, rRH,
 ## For example: ----
 
 # draw data
-mydata <- drawdat(rSR = .4, rSH = .8, rRH = 0, n = 100)
+"missing code"
 
 # inspect the data
-head(mydata)
+mydata
 
 # plot the data
-if(!require(RSA)){
-  install.packages("RSA")
-  library(RSA)
-} else {
-  library(RSA)
-}
+if(!require(RSA)){install.packages("RSA")}; library(RSA)
 
 plotRSA(points=list( data=mydata[,c("S","R","H")], show=TRUE, cex=3), 
         suppress.surface=TRUE, param=FALSE, legend=FALSE)
@@ -284,12 +279,7 @@ grid_arrange_shared_legend(p1,p2)
 # ................................................... ----
 
 
-if(!require(RSA)){
-  install.packages("RSA")
-  library(RSA)
-} else {
-  library(RSA)
-}
+if(!require(RSA)){install.packages("RSA")}
 
 # draw data for arbitrary choices of the correlations 
 # Note: set the sample size n to quite a large number to achieve that the

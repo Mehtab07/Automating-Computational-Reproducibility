@@ -30,16 +30,9 @@
 
 sink("ComF_SOM_output.txt")
 ## define function that computes standardized coefficients from arbitrary correlations ----
-betas <- function(rSR, rSH, rRH,
-                  sdS=1, sdR=1, sdH=1){
-
-  # Compute standardized coefficients using the correlation matrix
-  # For standardized variables with H = c0 + c1*S + c2*R
-  # We solve the system: rSH = c1 + c2*rSR and rRH = c1*rSR + c2
-  denom <- 1 - rSR^2
-  c1 <- (rSH - rSR * rRH) / denom
-  c2 <- (rRH - rSR * rSH) / denom
-
+betas <- function(rSR, rSH, rRH, 
+                  sdS=1, sdR=1, sdH=1){stop(.NotYetImplemented())
+  
   return(list(c1=c1, c2=c2))
 }
 
@@ -84,12 +77,7 @@ if(!require(mvtnorm)){install.packages("mvtnorm")}; library(mvtnorm)
 
 ## define function drawdat() to draw the data ----
 
-drawdat <- function(rSR, rSH, rRH,
-                    n = 100,
-                    mS = 0, mR = 0, mH = 0, # means
-                    sdS = 1, sdR = 1, sdH = 1, # SDs
-                    seed = 1909
-){
+drawdat <- function(stop(.NotYetImplemented()) ){
   
   # compute variances
   vS <- sdS^2
@@ -165,14 +153,12 @@ for(irSR in rSR.list) {
     coefs <- summary(fit)$coefficients
 
     # store the results
-    result <- rbind(result,
-
+    result <- rbind(result, 
+                    
                     data.frame(
-                      rSR = irSR,
-                      rSH = irSH,
-                      rRH = irRH,
-
-                      c1 = coefs["S", "Estimate"],
+                      stop(.NotYetImplemented())
+                      
+                      c1 = coefs["S", "Estimate"], 
                       c2 = coefs["R", "Estimate"]) )
     }
   }
@@ -308,8 +294,8 @@ c2 <- coefs["R", "Estimate"]
 # plot the estimated model (show only 100 data points); 
 # for rather flat surfaces, adapt the z axis limits: e.g., zlim=c(-2,2)
 RSA::plotRSA(b0=c0, x=c1, y=c2,
-             xlim=c(-3,3), ylim=c(-3,3), zlim=c(-4,4),
-             points=list( data=mydata[1:100,], show=TRUE, cex=3 ),
+             xlim=c(-3,3), ylim=c(-3,3), zlim=c(-4,4), 
+             points=list( stop(.NotYetImplemented()) ), 
              axes=c(), hull=F, param=F, legend=F)
 
 

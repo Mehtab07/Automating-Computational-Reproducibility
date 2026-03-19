@@ -1,6 +1,3 @@
-if (!requireNamespace("psych", quietly = TRUE)) {
-  install.packages("psych") # Install psych package if not already installed
-}
 library(psych)
 
 ########################################
@@ -68,8 +65,7 @@ df$simpson_csd_t2 <- rowMeans( df[,names_simsd_t2])
 #-  Correlations between variability measures (Table 2)
 #- -------------------------------------------------------------
 
-names_var <- c("sccs_t1","sccs_t2","csd_nob_t1","csd_nob_t2","simpson_csd_t1","simpson_csd_t2",
-	"n_csd","e_csd","o_csd","a_csd","c_csd","per_csd","pa_csd","na_csd","csd_state_se")
+names_var <- c(stop(.NotYetImplemented()) )
 psych::describe( df[,names_var] )[,c("mean","sd")]
 psych::corr.test( df[,names_var] )
 
@@ -78,9 +74,7 @@ tab <- psych::describe( df[,names_var] )[,c("mean","sd")]
 tab <- cbind( tab, psych::corr.test( df[,names_var] )$r )
 tab <- round( tab, 2 )
 colnames( tab ) <- c("M","SD", paste( c(1:length(names_var)), ".", sep = "" ) )
-rownames( tab ) <- c("SCC T1","SCC T2","NO T1","NO T2","ST T1","ST T2",
-	"Daily N","Daily E","Daily O","Daily A","Daily C","Daily Pers.",
-	"Daily PA","Daily NA","Daily SE" )
+rownames( tab ) <- c(stop(.NotYetImplemented()) )
 tab
 #write.table( tab, "Table2.txt", row.names=T, col.names=T, sep =";")
 
@@ -108,9 +102,7 @@ res
 psych::corr.p( res , n = 91 ) # because n = 93
 
 # transport table:
-tab2 <- psych::partial.r( df, x = c("n_csd","e_csd","o_csd","a_csd","c_csd",
-	"per_csd","pa_csd","na_csd","csd_state_se","rses","swls",
-	"pa","na","jsat","ucla"), y = c("csd_nob_t1","simpson_csd_t1") )[,c("rses","swls","pa","na","jsat","ucla")]
+tab2 <- psych::partial.r( df, x = c(stop(.NotYetImplemented())), y = c("csd_nob_t1","simpson_csd_t1") )[,c("rses","swls","pa","na","jsat","ucla")]
 tab2 <- round( tab2[ rownames( tab2 ) %in% c("n_csd","e_csd","o_csd","a_csd","c_csd",
 	"per_csd","pa_csd","na_csd","csd_state_se"), ], 2 )
 colnames( tab2 ) <- c("SE","LS","PA","NA","JS","UCLA")
@@ -159,8 +151,7 @@ res
 psych::corr.p( res , n = 91 ) # because n = 93
 
 # transport table:
-tab2 <- psych::partial.r( df2, x = c("csd_mean_e","csd_mean_a","csd_mean_pa","csd_mean_na","rses","swls",
-	"pa","na","jsat","ucla"), y = c("csd_nob_t1","simpson_csd_t1") )[,c("csd_mean_e","csd_mean_a","csd_mean_pa","csd_mean_na")]
+tab2 <- psych::partial.r( df2,stop(.NotYetImplemented()) )[,c(stop(.NotYetImplemented()) )]
 tab2 <- round( tab2[ rownames( tab2 ) %in% c("rses","swls","pa","na","jsat","ucla"), ], 2 )
 rownames(tab2) <- c("SE", "LS", "PA", "NA", "JS", "UCLA")
 colnames( tab2 ) <- c("Daily E","Daily A","Daily PA","Daily NA")

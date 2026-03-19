@@ -333,7 +333,7 @@ if(!require(colorspace)){install.packages("colorspace")}; library(colorspace)
 # library(RSA)
 
 # load function to draw data and function to compute colors and point sizes that yield 3d effect
-source("ComF_helpers.R")
+source("xoxo/ComF_helpers.R")
 
 
 

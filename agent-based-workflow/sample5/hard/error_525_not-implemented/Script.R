@@ -47,8 +47,7 @@ df_agg<-MAd::agg(data=df, id=id, es=yi, var=vi, method = 'BHHR', cor = .50)  # c
 
 # Descriptives ----
 df_info<-read.csv("df_info.csv")
-# Merge df_info and df_agg by id
-info <- merge(df_info, df_agg, by="id")
+info<- Reduce(stop(.NotYetImplemented()))
 info<-info[,c("id","authors","country",
               "c_n","c_m_f_ratio","c_age_range","c_age_m","c_age_sd",
               "asd_n","asd_m_f_ratio","asd_age_range","asd_age_m","asd_age_sd",

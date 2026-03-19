@@ -14,10 +14,9 @@ lake.full <- read.csv("./data_output/20200722_lake_linterp.csv")
 char.full <- read.csv("./data_output/20200722_char_linterp.csv")
 
 # split the loaded data to mix and match as needed
-age <- lake.full[,"age"] # everything should have the same ages
+age <- lake.full[,"youngage"] # everything should have the same ages
 char <- char.full[,"charcoal"]
-# sea <- -1 * sea.full[,"sea"]  # This variable is not defined, so commenting out
-lake <- lake.full[,"lake"]  # Extract lake level data
+sea <- -1 * sea.full[,"sea"]
 poln <- poln.full[,c("Poaceae", "Podocarpus", "miombo", "Olea")]
 astr <- poln.full[,"Asteraceae"]
 

@@ -136,40 +136,40 @@ plotRSA(points=list( data=mydata[,c("S","R","H")], show=TRUE, cex=3),
 ## Reproduce Fiedler's simulation study ----
 
 # specify correlations
-rSR.list <- c(.2, .3, .4, .5, .6, .7, .8, .9)
-rSH.list <- c(0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1)
-rRH.list <- c(0)
+rSR.list <- c.2, .3, .4, .5, .6, .7, .8, .9
+rSH.list <- c0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1
+rRH.list <- c0
 
 result <- NULL
 
 # run the simulation
-for(irSR in rSR.list) {
-
+for(irSR in rSR.list) 
+  
   for(irSH in rSH.list) {
-
+    
     for(irRH in rRH.list) {
 
     # draw data
     data <- drawdat(rSR = irSR, rSH = irSH, rRH = irRH, n = 100)
-
+    
     # standardize the variables (to obtain standardized coefficients)
     data <- data.frame(apply(data, 2, scale))
-
+    
     # estimate the linear model
     fit <- lm(H ~ S + R, data=data)
-
+    
     # extract coefficients
     coefs <- summary(fit)$coefficients
 
     # store the results
-    result <- rbind(result,
-
+    result <- rbind(result, 
+                    
                     data.frame(
-                      rSR = irSR,
-                      rSH = irSH,
+                      rSR = irSR, 
+                      rSH = irSH, 
                       rRH = irRH,
-
-                      c1 = coefs["S", "Estimate"],
+                      
+                      c1 = coefs["S", "Estimate"], 
                       c2 = coefs["R", "Estimate"]) )
     }
   }
@@ -302,11 +302,11 @@ c0 <- coefs["(Intercept)", "Estimate"]
 c1 <- coefs["S", "Estimate"]
 c2 <- coefs["R", "Estimate"]
 
-# plot the estimated model (show only 100 data points);
+# plot the estimated model (show only 100 data points); 
 # for rather flat surfaces, adapt the z axis limits: e.g., zlim=c(-2,2)
 RSA::plotRSA(b0=c0, x=c1, y=c2,
-             xlim=c(-3,3), ylim=c(-3,3), zlim=c(-4,4),
-             points=list( data=mydata[1:100,c("S","R","H")], values="predicted" ),
+             xlim=c(-3,3), ylim=c(-3,3), zlim=c(-4,4), 
+             points=list( data=mydata[1:100,c("S","R","H")], values="precicted" ), 
              axes=c(), hull=F, param=F, legend=F)
 
 

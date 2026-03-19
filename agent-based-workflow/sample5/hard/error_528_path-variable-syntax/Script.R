@@ -22,7 +22,7 @@ library(MAd)
 library(dplyr)
 
 # Prisma flow diagram ----
-selection <- read.csv("prisma.csv");
+selection <- read.csv("new/prisma.csv");
 selection <- PRISMA_data(selection);
 flowd <- PRISMA_flowdiagram(selection,fontsize = 12, interactive = FALSE, previous = FALSE, other = TRUE);
 flowd
@@ -54,9 +54,9 @@ info<-info[,c("id","authors","country",
               "synch_type","es", "var")]
 df_agg<-info[,c(1,2,14,15,16)]
 
-names(info)[names(info) == "id"] <-  "ID"
-names(info)[names(info) == "authors"] <-  "Authors"
-names(info)[names(info) == "country"] <-  "Country"
+names(info)[names(info) == "new_id" <-  "ID"
+names(info)[names(info) == "authors"] <-  "Authors" 
+names(info)[names(info) == "my_country"] <-  "Country"
 names(info)[names(info) == "synch_type"] <-  "Type of Synchrony"
 names(info)[names(info) == "c_n"] <-  "N"
 names(info)[names(info) == "c_m_f_ratio"] <-  "M/F ratio" #td
@@ -115,10 +115,10 @@ predict(m.random)
 # Funnel plot
 
 ### carry out trim-and-fill analysis
-taf<-trimfill(m.random, main="",
-              mafixed = FALSE,
-              fixed = FALSE,
-              random = TRUE,
+taf<-trimfill(mrandom, main="", 
+              mafixed = FALSE, 
+              fixed = FALSE, 
+              random = TRUE, 
               label=TRUE)
 
 ### draw funnel plot with missing studies filled in

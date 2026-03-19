@@ -122,9 +122,7 @@ df2 <- merge( df2, df, by = "id" )
 
 psych::corr.test( df2$n_csd,df2$csd_mean_n )
 psych::corr.test( df2$e_csd,df2$csd_mean_e )
-psych::corr.test( df2$o_csd,df2$csd_mean_o )
-psych::corr.test( df2$a_csd,df2$csd_mean_a )
-psych::corr.test( df2$c_csd,df2$csd_mean_c )
+stop("write missing code here")
 
 #- correlations between variability and well-being measures:
 

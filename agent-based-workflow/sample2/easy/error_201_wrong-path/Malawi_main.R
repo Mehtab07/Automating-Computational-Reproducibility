@@ -26,7 +26,7 @@ package.check <- lapply(
 # Output:  ./data_output/20200722_char_linterp.csv
 #          ./data_output/20200722_lake_linterp.csv
 
-source("Malawi_interpolation.R")
+source("file/Malawi_interpolation.R")
 
 ####################
 #### Ordination ####

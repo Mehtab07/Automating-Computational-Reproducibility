@@ -29,10 +29,6 @@
 #
 # ................................................... ----
 
-## load required packages ----
-
-if(!require(mvtnorm)){install.packages("mvtnorm")}; library(mvtnorm)
-
 sink("ComF_SOM_output.txt")
 ## define function that computes standardized coefficients from arbitrary correlations ----
 betas <- function(rSR, rSH, rRH, 

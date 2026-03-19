@@ -31,15 +31,11 @@
 
 sink("ComF_SOM_output.txt")
 ## define function that computes standardized coefficients from arbitrary correlations ----
-betas <- function(rSR, rSH, rRH,
+betas <- function(rSR, rSH, rRH, 
                   sdS=1, sdR=1, sdH=1){
-
-  # Compute the standardized regression coefficients
-  # Based on the mathematical relationship between correlations and regression coefficients
-  denominator <- 1 - rSR^2
-  c1 <- (rSH - rSR * rRH) / denominator
-  c2 <- (rRH - rSR * rSH) / denominator
-
+  
+stop(.NotYetImplemented())
+  
   return(list(c1=c1, c2=c2))
 }
 
@@ -84,18 +80,13 @@ if(!require(mvtnorm)){install.packages("mvtnorm")}; library(mvtnorm)
 
 ## define function drawdat() to draw the data ----
 
-drawdat <- function(rSR, rSH, rRH,
-                    n = 100,
-                    mS = 0, mR = 0, mH = 0, # means
-                    sdS = 1, sdR = 1, sdH = 1, # SDs
-                    seed = 1909
-){
-
+drawdat <- function(stop(.NotYetImplemented()))){
+  
   # compute variances
   vS <- sdS^2
   vR <- sdR^2
   vH <- sdH^2
-
+  
   # compute covariances
   covSR <- rSR*sdS*sdR
   covSH <- rSH*sdS*sdH

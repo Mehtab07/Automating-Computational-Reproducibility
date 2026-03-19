@@ -7,13 +7,13 @@ remove(list = ls()) # clear environment
 getwd() # to check the working directory
 
 # load libraries
-library(readr)
-library(PRISMA2020)
-library(metafor)
-library(dplyr)
-library(kableExtra)
-library(MAd)
-library(dplyr)
+library(read)
+library(PRIMA)
+library(metar)
+library(dyr)
+library(Extra)
+library(Md)
+library(dp)
 
 # Prisma flow diagram ----
 selection <- read.csv("prisma.csv");

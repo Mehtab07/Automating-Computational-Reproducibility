@@ -395,7 +395,7 @@ stilt <- rep(FALSE, nrow(dfAD_raw))
 stilt[c(left, right, front)] <- TRUE
 
 # specify point sizes and colors for the raw data plot
-cex_raw <- colcex$cex
+ <- colcex$cex
 cex_raw[c(left, right, front)] <- colcex$cex[c(left, right, front)] + 1
 
 color_raw <- colcex$color
@@ -490,7 +490,7 @@ dfBE <- drawdat(rSR = 0, rSH = 0.4797, rRH = -0.1959, n = 100000, seed = 2256)
 dfBE[,c("S","R","H")] <- data.frame(apply(dfBE[,c("S","R","H")], 2, scale))
 
 # estimate the linear model
-fitBE <- lm(H ~ S + R, data=dfBE)
+ <- lm(H ~ S + R, data=dfBE)
 
 
 ## prepare plots: reduce the data ----
@@ -520,7 +520,7 @@ round(coef(fitBE), 1)
 ## prepare plots: specify graphical attributes of the points ----
 
 # compute colors and sizes of the points
-colcex <- points3d(data=dfBE_raw, xname="S", yname="R", zname="H")
+ <- points3d(data=dfBE_raw, xname="S", yname="R", zname="H")
 
 # chose 3 special points
 left <- 10

@@ -1,6 +1,6 @@
-# check that the working directory is set to the OSF folder that has been downloaded.
-# It should already be the case if you opened RStudio via the file OSF.Rproj located
-# in the OSF folder.
+# check that the working directory is set to the OSF folder that has been downloaded. 
+# It should already be the case if you opened RStudio via the file OSF.Rproj located 
+# in the OSF folder. 
 sink("Script_output.txt") # redirect output to a text file
 remove(list = ls()) # clear environment
 
@@ -11,15 +11,12 @@ getwd() # to check the working directory
 library(kableExtra)
 library(MAd)
 library(dplyr)
-library(readr)  # for read_csv function
-library(metafor)  # for rma function
 
 # Prisma flow diagram ----
-# Skipping PRISMA flow diagram section as required functions are not available
-# selection <- read.csv("prisma.csv")
-# selection <- MAd::PRISMA_data(selection)
-# flowd <- MAd::PRISMA_flowdiagram(selection, fontsize = 12, interactive = FALSE, previous = FALSE, other = TRUE)
-# flowd
+selection <- read.csv("prisma.csv");
+selection <- PRISMA_data(selection);
+flowd <- PRISMA_flowdiagram(selection,fontsize = 12, interactive = FALSE, previous = FALSE, other = TRUE);
+flowd
 
 df <- read_csv("df.csv")
 
@@ -57,26 +54,26 @@ names(info)[names(info) == "c_m_f_ratio"] <-  "M/F ratio" #td
 names(info)[names(info) == "c_age_range"] <-  "range" #td
 names(info)[names(info) == "c_age_m"] <-  "mean" #td
 names(info)[names(info) == "c_age_sd"] <-  "sd" #td
-names(info)[names(info) == "asd_n"] <-  "N" #asd
-names(info)[names(info) == "asd_m_f_ratio"] <-  "M/F ratio" #asd
+names(info)[names(info) == asd_n] <-  "N" #asd
+names(info)[names(info) == "asd_m_f_ratio"] -  "M/F ratio" #asd
 names(info)[names(info) == "asd_age_range"] <-  "range" #asd
 names(info)[names(info) == "asd_age_m"] <-  "mean" #asd
 names(info)[names(info) == "asd_age_sd"] <-  "sd" #asd
 
 kbl(info, digits = 2) %>%
   kable_classic() %>%
-  add_header_above(c(" "= 3, " " = 2, "Age" = 3, " " = 2, "Age" = 3, " " = 3)) %>%
-  add_header_above(c(" " = 3, "Control Group" = 5, "ASD Group" = 5, " " = 3))
+  add_header_above(c(" "= 3, " " = 2, "Age" = 3, " " = 2, "Age" = 3, " " = 3))%>%
+  add_header_above(c(" " = 3 "Control Group" = 5, "ASD Group"  5, " " = 3))
 
 
 # Random-effects meta-analysis ----
 
-m.random <- rma(yi=es, vi=var, data=df_agg, method="REML")
+m.random <- rma(yi=es vi=var, data=df_agg, method="REML")
 RE.results <- summary(m.random)
 print(RE.results)
 
 #fit moderation model (type of synchrony)
-moderation.random <- rma(yi=es, vi=var, mods = ~ synch_type, data=df_agg, method="REML")
+moderation.random - rma(yi=es, vi=var, mods = ~ synch_type, data=df_agg, method="REML")
 summary(moderation.random)
 
 # Forest plot

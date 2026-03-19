@@ -28,17 +28,17 @@
   </clipPath>
 </defs>
 <g clip-path='url(#cpNTkuMDR8Njg5Ljc2fDU5LjA0fDUwMi41Ng==)'>
-<line x1='418.09' y1='117.97' x2='406.67' y2='87.56' style='stroke-width: 0.75; stroke: #FFA500;' />
-<polyline points='409.45,89.84 406.67,87.56 406.08,91.11 ' style='stroke-width: 0.75; stroke: #FFA500;' />
-<line x1='418.09' y1='117.97' x2='424.83' y2='127.92' style='stroke-width: 0.75; stroke: #FFA500;' />
-<polyline points='421.59,126.35 424.83,127.92 424.57,124.33 ' style='stroke-width: 0.75; stroke: #FFA500;' />
-<line x1='418.09' y1='117.97' x2='506.47' y2='73.77' style='stroke-width: 0.75; stroke: #FFA500;' />
-<polyline points='504.48,76.78 506.47,73.77 502.87,73.56 ' style='stroke-width: 0.75; stroke: #FFA500;' />
-<line x1='418.09' y1='117.97' x2='413.61' y2='229.52' style='stroke-width: 0.75; stroke: #FFA500;' />
-<polyline points='411.93,226.33 413.61,229.52 415.53,226.48 ' style='stroke-width: 0.75; stroke: #FFA500;' />
-<text x='404.21' y='82.92' text-anchor='middle' style='font-size: 12.00px; font-weight: 0;fill: #FFA500; font-family: "TeX Gyre Heros";' textLength='20.02px' lengthAdjust='spacingAndGlyphs'>age</text>
-<text x='429.28' y='138.72' text-anchor='middle' style='font-size: 12.00px; font-weight: 0;fill: #FFA500; font-family: "TeX Gyre Heros";' textLength='45.35px' lengthAdjust='spacingAndGlyphs'>charcoal</text>
-<text x='519.59' y='71.45' text-anchor='middle' style='font-size: 12.00px; font-weight: 0;fill: #FFA500; font-family: "TeX Gyre Heros";' textLength='22.01px' lengthAdjust='spacingAndGlyphs'>lake</text>
-<text x='413.34' y='239.95' text-anchor='middle' style='font-size: 12.00px; font-weight: 0;fill: #FFA500; font-family: "TeX Gyre Heros";' textLength='32.67px' lengthAdjust='spacingAndGlyphs'>asters</text>
+<line x1='321.20' y1='170.72' x2='330.46' y2='123.94' style='stroke-width: 0.75; stroke: #FFA500;' />
+<polyline points='331.62,127.35 330.46,123.94 328.08,126.65 ' style='stroke-width: 0.75; stroke: #FFA500;' />
+<line x1='321.20' y1='170.72' x2='315.45' y2='187.43' style='stroke-width: 0.75; stroke: #FFA500;' />
+<polyline points='314.76,183.89 315.45,187.43 318.17,185.07 ' style='stroke-width: 0.75; stroke: #FFA500;' />
+<line x1='321.20' y1='170.72' x2='260.09' y2='86.96' style='stroke-width: 0.75; stroke: #FFA500;' />
+<polyline points='263.38,88.42 260.09,86.96 260.47,90.54 ' style='stroke-width: 0.75; stroke: #FFA500;' />
+<line x1='321.20' y1='170.72' x2='323.63' y2='242.90' style='stroke-width: 0.75; stroke: #FFA500;' />
+<polyline points='321.72,239.85 323.63,242.90 325.32,239.73 ' style='stroke-width: 0.75; stroke: #FFA500;' />
+<text x='331.75' y='119.30' text-anchor='middle' style='font-size: 12.00px; font-weight: 0;fill: #FFA500; font-family: "TeX Gyre Heros";' textLength='20.02px' lengthAdjust='spacingAndGlyphs'>age</text>
+<text x='313.19' y='198.23' text-anchor='middle' style='font-size: 12.00px; font-weight: 0;fill: #FFA500; font-family: "TeX Gyre Heros";' textLength='45.35px' lengthAdjust='spacingAndGlyphs'>charcoal</text>
+<text x='255.30' y='84.64' text-anchor='middle' style='font-size: 12.00px; font-weight: 0;fill: #FFA500; font-family: "TeX Gyre Heros";' textLength='22.01px' lengthAdjust='spacingAndGlyphs'>lake</text>
+<text x='323.85' y='253.34' text-anchor='middle' style='font-size: 12.00px; font-weight: 0;fill: #FFA500; font-family: "TeX Gyre Heros";' textLength='32.67px' lengthAdjust='spacingAndGlyphs'>asters</text>
 </g>
 </svg>

@@ -1,53 +1,12 @@
-# check that the working directory is set to the OSF folder that has been downloaded.
-# It should already be the case if you opened RStudio via the file OSF.Rproj located
-# in the OSF folder.
+# check that the working directory is set to the OSF folder that has been downloaded. 
+# It should already be the case if you opened RStudio via the file OSF.Rproj located 
+# in the OSF folder. 
 sink("Script_output.txt") # redirect output to a text file
 remove(list = ls()) # clear environment
 
 getwd() # to check the working directory
 
 # load libraries
-# Install required packages if not already installed
-if (!require("metafor")) {
-  install.packages("metafor", repos="https://cran.rstudio.com/")
-}
-if (!require("MAd")) {
-  install.packages("MAd", repos="https://cran.rstudio.com/")
-}
-if (!require("knitr")) {
-  install.packages("knitr", repos="https://cran.rstudio.com/")
-}
-if (!require("kableExtra")) {
-  install.packages("kableExtra", repos="https://cran.rstudio.com/")
-}
-if (!require("magrittr")) {
-  install.packages("magrittr", repos="https://cran.rstudio.com/")
-}
-if (!require("readr")) {
-  install.packages("readr", repos="https://cran.rstudio.com/")
-}
-
-# Load libraries
-library(metafor)
-library(MAd)
-library(knitr)
-library(kableExtra)
-library(magrittr)
-library(readr)
-
-# Define PRISMA_data function (since PRISMAstatement package is not available)
-PRISMA_data <- function(data) {
-  # Simple function that returns the data as-is
-  return(data)
-}
-
-# Define PRISMA_flowdiagram function (simple placeholder)
-PRISMA_flowdiagram <- function(data, fontsize=12, interactive=FALSE, previous=FALSE, other=TRUE) {
-  # Simple function that just prints a message
-  cat("PRISMA Flow Diagram would be generated here\n")
-  return(data)
-}
-
 
 # Prisma flow diagram ----
 selection <- read.csv("prisma.csv");
@@ -150,7 +109,7 @@ taf<-trimfill(m.random, main="",
               label=TRUE)
 
 ### draw funnel plot with missing studies filled in
-funnel(taf, legend=TRUE, xlab="Hedge's g")
+funnel(taf legend=TRUE xlab="Hedge's g")
 
 summary(trimfill(m.random))
 

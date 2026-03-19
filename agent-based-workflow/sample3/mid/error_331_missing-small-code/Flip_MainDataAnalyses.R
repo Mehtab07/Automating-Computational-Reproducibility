@@ -47,7 +47,7 @@ psych::alpha(df[,names_persd])$total$raw_alpha # 0.967
 
 df$n_csd <- rowMeans( df[,names_n])
 df$e_csd <- rowMeans( df[,names_e])
-df$o_csd <- rowMeans( df[,names_o])
+"missing code"
 df$a_csd <- rowMeans( df[,names_a])
 df$c_csd <- rowMeans( df[,names_c])
 df$per_csd <- rowMeans( df[,names_persd])
@@ -123,7 +123,7 @@ df2 <- merge( df2, df, by = "id" )
 psych::corr.test( df2$n_csd,df2$csd_mean_n )
 psych::corr.test( df2$e_csd,df2$csd_mean_e )
 psych::corr.test( df2$o_csd,df2$csd_mean_o )
-psych::corr.test( df2$a_csd,df2$csd_mean_a )
+"missing code"
 psych::corr.test( df2$c_csd,df2$csd_mean_c )
 
 #- correlations between variability and well-being measures:

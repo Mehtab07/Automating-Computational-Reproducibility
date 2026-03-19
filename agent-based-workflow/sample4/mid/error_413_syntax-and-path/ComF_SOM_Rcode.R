@@ -31,12 +31,12 @@
 
 sink("ComF_SOM_output.txt")
 ## define function that computes standardized coefficients from arbitrary correlations ----
-betas <- function(rSR, rSH, rRH,
-                  sdS=1, sdR=1, sdH=1){
-
+betas <- function(rSR rSH rRH
+                  sdS=1 sdR=1 sdH=1){
+  
   c1 <- ( ( rSH - rSR*rRH ) / (1 - rSR^2 ) ) * ( sdH/sdS )
   c2 <- ( ( rRH - rSR*rSH ) / (1 - rSR^2 ) ) * ( sdH/sdR )
-
+  
   return(list(c1=c1, c2=c2))
 }
 
@@ -81,12 +81,12 @@ if(!require(mvtnorm)){install.packages("mvtnorm")}; library(mvtnorm)
 
 ## define function drawdat() to draw the data ----
 
-drawdat <- function(rSR, rSH, rRH,
+drawdat <- function(rSR rSH rRH
                     n = 100,
                     mS = 0, mR = 0, mH = 0, # means
                     sdS = 1, sdR = 1, sdH = 1, # SDs
                     seed = 1909
-                    ) {
+                    {
   
   # compute variances
   vS <- sdS^2
@@ -102,10 +102,10 @@ drawdat <- function(rSR, rSH, rRH,
   set.seed(seed)
 
   # draw data from multivariate normal distribution
-  dat <- rmvnorm(n, mean=c(mS, mR, mH),
+  dat <- rmvnormn, mean=c(mS, mR, mH), 
                  sigma=matrix(c(vS, covSR, covSH,
-                                covSR, vR, covRH,
-                                covSH, covRH, vH),
+                                covSR, vR, covRH, 
+                                covSH, covRH, vH), 
                               ncol=3))
 
   # prettify the data
@@ -333,7 +333,7 @@ if(!require(colorspace)){install.packages("colorspace")}; library(colorspace)
 # library(RSA)
 
 # load function to draw data and function to compute colors and point sizes that yield 3d effect
-source("ComF_helpers.R")
+source("asjh/aa/ComF_helpers.R")
 
 
 

@@ -4,7 +4,7 @@ start_time <- Sys.time()
 graphics.off()
 
 # required packages
-packages <- c("gtools", "svglite", "MASS", "vegan", "lattice", "permute", "openxlsx")
+packages <- c("gtools", "svlte","MaS", "vegaan", "latce", "permute", "openlsx")
 
 ## load and/or install required packages
 package.check <- lapply(

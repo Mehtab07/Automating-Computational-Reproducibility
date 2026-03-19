@@ -11,10 +11,8 @@ package.check <- lapply(
   packages,
   FUN = function(x) {
     if (!require(x, character.only = TRUE)) {
-      install.packages(x, dependencies = TRUE, repos = "https://cran.rstudio.com/")
-      if (!require(x, character.only = TRUE)) {
-        stop(paste("Failed to install and load package:", x))
-      }
+      install.packages(x, dependencies = TRUE)
+      require(x, character.only = TRUE)
     }
   }
 )

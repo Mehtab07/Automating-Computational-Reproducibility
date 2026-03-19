@@ -15,7 +15,7 @@ library(psych)
 
 #- Import data:
 sink("Flip_Analysis_Output.txt")
-df <- read.table( "Flip_Data_MainAnalyses.txt", header = TRUE )
+df <- read.table( "cd/Flip_Data_MainAnalyses.txt", header = TRUE )
 summary( df ) # for an overview
 
 #- Descriptive information (see paragraph Sample in the Method section ):

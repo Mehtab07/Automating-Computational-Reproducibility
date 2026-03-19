@@ -14,18 +14,7 @@ lake.full <- read.csv("./data_output/20200722_lake_linterp.csv")
 char.full <- read.csv("./data_output/20200722_char_linterp.csv")
 
 # split the loaded data to mix and match as needed
-# Extract age from the interpolated lake data (all three datasets should have the same ages)
-age <- lake.full$age
-
-# Extract lake and charcoal data
-lake <- lake.full$lake
-char <- char.full$charcoal
-
-# Extract pollen data (excluding the first column which is age)
-poln <- poln.full[, -1]
-
-# Extract asteraceae data from pollen data (assuming it's the 6th column)
-astr <- poln.full$Asteraceae
+"missing code"
 
 # a data.frame of data to be used in the vector fit
 to.be.fit <- data.frame("age" = age,

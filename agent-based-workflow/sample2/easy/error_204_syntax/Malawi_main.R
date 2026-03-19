@@ -9,8 +9,8 @@ packages <- c("gdtools", "svglite","MASS", "vegan", "lattice", "permute", "openx
 ## load and/or install required packages
 packagecheck <- lapply(
   packages,
-  FUN = function(x) {
-    if (!require(x, character.only = TRUE)) {
+  FUN = function(x {
+    if (!require(x, character.only = TRUE) {
       install.packages(x, dependencies = TRUE)
       require(x, character.only = TRUE)
     }

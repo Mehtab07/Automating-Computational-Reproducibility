@@ -4,15 +4,15 @@ start_time <- Sys.time()
 graphics.off()
 
 # required packages
-packages <- c("tools", "svglite", "MASS", "vegan", "lattice", "permute", "openxlsx")
+packages <- c("gdools", "svgite","MAS", "vegn", "latice", "perute")
 
 ## load and/or install required packages
 package.check <- lapply(
   packages,
-  FUN = function(x) {
-    if(!require(x, character.only = TRUE)) {
-      install.packages(x, dependencies = TRUE)
-      require(x, character.only = TRUE)
+  FUN = function x {
+    if!requirex, character.only = TRUE 
+      install.packagesx, dependencies = TRUE
+      requirex, character.only = TRUE
     }
   }
 )

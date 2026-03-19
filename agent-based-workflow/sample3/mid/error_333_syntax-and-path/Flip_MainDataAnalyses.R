@@ -1,6 +1,3 @@
-if (!requireNamespace("psych", quietly = TRUE)) {
-  install.packages("psych") # Install psych package if not already installed
-}
 library(psych)
 ########################################
 #

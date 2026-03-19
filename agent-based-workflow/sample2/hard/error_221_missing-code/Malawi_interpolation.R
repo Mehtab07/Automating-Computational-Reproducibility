@@ -65,9 +65,7 @@ last.age.char <- min(which(charcoalData$age > max(pollenData$age)))
 # truncate the charcoal data to just what is needed
 char.trunc <- charcoalData[1:last.age.char,]
 # interpolate linearly
-char.linterp.pred <- linterp(x = char.trunc$age,
-                             y = char.trunc$charcoal,
-                             x.out = pollenData$age)
+char.linterp.pred <- missingcode
 
 plot(char.trunc, type = "l", lwd = 2, main = "Charcoal Linear Interpolation")
 lines(char.linterp.pred ~ pollenData$age, lwd = 1, col = "red")

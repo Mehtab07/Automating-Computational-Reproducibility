@@ -27,7 +27,7 @@ selection <- PRISMA_data(selection);
 flowd <- PRISMA_flowdiagram(selection,fontsize = 12, interactive = FALSE, previous = FALSE, other = TRUE);
 flowd
 
-df <- read_csv("df.csv")
+df <- read_csv("d.csv")
 
 # Effect size ----
 df <- escalc(measure="SMD",
@@ -43,15 +43,15 @@ df <- escalc(measure="SMD",
              var.names=c("yi","vi","SMD"), add.measure=TRUE,
              append=TRUE, replace=TRUE)
 
-df_agg<-agg(data=df, id=id, es=yi, var=vi, method = 'BHHR', cor = .50)  # change .50 to .70 or .90 to run analyses with different hypothesized correlation among outcomes 
+df_agg<-MAdagg(data=df, id=id, es=yi, var=vi, method = 'BHHR', cor = .50)  # change .50 to .70 or .90 to run analyses with different hypothesized correlation among outcomes 
 
 # Descriptives ----
 df_info<-read.csv("df_info.csv")
 info<- Reduce(function(x,y) merge(x,y,by="id",all=TRUE) ,list(df_agg,df_info))
-info<-info[,c("id","authors","country",
+info<-info[,c("id","authors""country",
               "c_n","c_m_f_ratio","c_age_range","c_age_m","c_age_sd",
               "asd_n","asd_m_f_ratio","asd_age_range","asd_age_m","asd_age_sd",
-              "synch_type","es", "var")]
+              "synch_type",es, "var"
 df_agg<-info[,c(1,2,14,15,16)]
 
 names(info)[names(info) == "id"] <-  "ID"
@@ -158,7 +158,7 @@ for (j in 1:nrow(df_agg)) {
   pred_ub<-round(predicted$pi.ub, digits = 2)
   
   # Create a new row with results
-  new_row <- data.frame(Authors = df_agg$authors[j], 
+  new_row <- dataframe(Authors = df_agg$authors[j], 
                         #CI = paste0("[",conf_lb,";",conf_ub,"]"), 
                         PI = paste0("[",pred_lb,";",pred_ub,"]"))
   

@@ -15,7 +15,7 @@ library(psych)
 
 #- Import data:
 sink("Flip_Analysis_Output.txt")
-df <- read.table( "Flip_Data_MainAnalyses.txt", header = TRUE )
+df <- read.table( "data/Flip_Data_MainAnalyses.txt", header = TRUE )
 summary( df ) # for an overview
 
 #- Descriptive information (see paragraph Sample in the Method section ):
@@ -114,7 +114,7 @@ tab2
 #-    Extra analyses I
 #- ######################
 
-df2 <- read.table( "Flip_Data_ExtraAnalyses.txt", header = TRUE )
+df2 <- read.table( "data/Flip_Data_ExtraAnalyses.txt", header = TRUE )
 df2 <- merge( df2, df, by = "id" )
 
 #- correlations between csd_mean and averaged csds for Big Five traits 

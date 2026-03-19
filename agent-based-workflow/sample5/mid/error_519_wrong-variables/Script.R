@@ -51,12 +51,12 @@ info<- Reduce(function(x,y) merge(x,y,by="id",all=TRUE) ,list(df_agg,df_info))
 info<-info[,c("id","authors","country",
               "c_n","c_m_f_ratio","c_age_range","c_age_m","c_age_sd",
               "asd_n","asd_m_f_ratio","asd_age_range","asd_age_m","asd_age_sd",
-              "synch_type","es", "var")]
+              "synch_type","es", "variable")]
 df_agg<-info[,c(1,2,14,15,16)]
 
-names(info)[names(info) == "id"] <-  "ID"
-names(info)[names(info) == "authors"] <-  "Authors"
-names(info)[names(info) == "country"] <-  "Country"
+names(info)[names(info) == "myid"] <-  "ID"
+names(info)[names(info) == "authors"] <-  "Authors" 
+names(info)[names(info) == "mycountry"] <-  "Country"
 names(info)[names(info) == "synch_type"] <-  "Type of Synchrony"
 names(info)[names(info) == "c_n"] <-  "N"
 names(info)[names(info) == "c_m_f_ratio"] <-  "M/F ratio" #td

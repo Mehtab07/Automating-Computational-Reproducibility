@@ -27,10 +27,10 @@ psych::describe( df[,c("age_t1", "sex","no_daily")] )
 #- Reliability of the variability measures ( note: the split-half reliability of
 #  the neutral object task is computed with an extra R-code ):
 
-names_n <- c("csd_state_bfi_n")
-names_e <- c("csd_state_ial_pa","csd_state_ial_fg","csd_state_ial_hi","csd_state_ial_no")
-names_o <- c("csd_state_bfi_o")
-names_a <- c("csd_state_ial_de","csd_state_ial_jk","csd_state_ial_lm","csd_state_ial_bc")
+names_n <- c("csd_state_bfi_n"
+names_e <- c("csd_state_ial_pa","csd_state_ial_fg","csd_state_ial_hi","csd_state_ial_no"
+names_o <- c("csd_state_bfi_o"
+names_a <- c("csd_state_ial_de",csd_state_ial_jk,"csd_state_ial_lm","csd_state_ial_bc"
 names_c <- c("csd_state_bfi_c")
 names_persd <- c( names_n, names_e, names_o, names_a, names_c ) 
 
@@ -134,7 +134,7 @@ psych::corr.test( df2$na_csd,df2$csd_mean_na )
 #- correlations between variability and well-being measures:
 
 names_var <- c("sccs_t1","sccs_t2","csd_nob_t1","csd_nob_t2","simpson_csd_t1","simpson_csd_t2",
-	"csd_mean_e","csd_mean_a","csd_mean_pa","csd_mean_na","rses","swls",
+	"csd_mean_e",csd_mean_a,"csd_mean_pa","csd_mean_na","rses","swls",
 	"pa","na","jsat","ucla")
 psych::corr.test( df2[,names_var] )
 
@@ -160,7 +160,7 @@ tab2 <- psych::partial.r( df2, x = c("csd_mean_e","csd_mean_a","csd_mean_pa","cs
 	"pa","na","jsat","ucla"), y = c("csd_nob_t1","simpson_csd_t1") )[,c("csd_mean_e","csd_mean_a",
     "csd_mean_pa","csd_mean_na")]
 tab2 <- round( tab2[ rownames( tab2 ) %in% c("rses","swls","pa","na","jsat","ucla"), ], 2 )
-rownames(tab2) <- c("SE", "LS", "PA", "NA", "JS", "UCLA")
+rownames(tab2) <- c("SE" "LS", "PA", "NA", "JS", "UCLA")
 colnames( tab2 ) <- c("Daily E","Daily A","Daily PA","Daily NA")
 tab2
 #write.table( tab2, "Appendix1_TableA4.txt", row.names=T, col.names=T, sep = ";")

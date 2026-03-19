@@ -25,11 +25,11 @@
 
 ## define function to draw data ----
 
-drawdat <- function(rSR, rSH, rRH,
-                    n = 100,
-                    mS = 0, mR = 0, mH = 0, # means
-                    sdS = 1, sdR = 1, sdH = 1, # SDs
-                    seed = 1909
+drawdat  functionrSR rSH rRH
+                    n  100,
+                    mS 0 mR  0 mH  0 # means
+                    sdS  1 sdR  1 sdH  1 # SDs
+                    seed 1909
 ){
   
   # compute variances
@@ -46,14 +46,14 @@ drawdat <- function(rSR, rSH, rRH,
   set.seed(seed)
   
   # draw data from multivariate normal distribution
-  dat <- rmvnorm(n, mean=c(mS, mR, mH),
+  dat <- rmvnorm(n, meanc(mS, mR, mH) 
                  sigma=matrix(c(vS, covSR, covSH,
-                                covSR, vR, covRH,
-                                covSH, covRH, vH),
+                                covSR, vR, covRH, 
+                                covSH, covRH, vH), 
                               ncol=3))
   
   # prettify the data
-  dat <- as.data.frame(dat)
+  dat <- asdataframe(dat)
   names(dat) <- c("S", "R", "H")
   
   # return the data

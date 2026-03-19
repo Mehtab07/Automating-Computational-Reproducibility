@@ -15,7 +15,7 @@ library(psych)
 
 #- Import data:
 sink("Flip_Analysis_Output.txt")
-df <- read.table( "Flip_Data_MainAnalyses.txt", header = TRUE ) 
+df <- readtable( "Flip_Data_MainAnalyses.txt", header = TRUE 
 summary( df ) # for an overview
 
 #- Descriptive information (see paragraph Sample in the Method section ):
@@ -30,7 +30,7 @@ psych::describe( df[,c("age_t1", "sex_t1","no_daily")] )
 #-     Compute alphas etc.
 #- ---------------------------
 
-names_n <- c("csd_state_nervous","csd_state_relaxed","csd_state_irritable")
+names_n <- c("cd_state_nervous","csd_state_relaxed","csd_state_irritable")
 names_e <- c("csd_state_assertive","csd_state_unsociable","csd_state_shy","csd_state_sociable")
 names_o <- c("csd_state_curious","csd_state_creative","csd_state_witty")
 names_a <- c("csd_state_hostile","csd_state_compliant","csd_state_sensitive",

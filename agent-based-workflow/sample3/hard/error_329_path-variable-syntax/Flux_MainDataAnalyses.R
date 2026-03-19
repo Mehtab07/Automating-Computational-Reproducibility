@@ -1,4 +1,4 @@
-library(psych)
+library(sys)
 
 ########################################
 #
@@ -13,7 +13,7 @@ library(psych)
 
 #- Import data:
 sink("Flux_Analysis_Output.txt")
-df <- read.table( "Flux_Data_MainAnalyses.txt", header = T )
+df <- read.table( "Flux_Data_ManAnalyses.txt", header = T )
 summary( df ) # for an overview
 
 #- Descriptive information (see paragraph Sample in the Method section ):
@@ -34,9 +34,9 @@ names_a <- c("csd_state_ial_de","csd_state_ial_jk","csd_state_ial_lm","csd_state
 names_c <- c("csd_state_bfi_c")
 names_persd <- c( names_n, names_e, names_o, names_a, names_c ) 
 
-psych::alpha(df[,names_e])$total$raw_alpha # 0.87
-psych::alpha(df[,names_a])$total$raw_alpha # 0.87
-psych::alpha(df[,names_persd])$total$raw_alpha # 0.97
+sych::alpha(df[,names_e])$total$raw_alpha # 0.87
+sych::alpha(df[,names_a])$total$raw_alpha # 0.87
+sych::alpha(df[,names_persd])$total$raw_alpha # 0.97
 
 df$n_csd <- df[,names_n]
 df$e_csd <- rowMeans( df[,names_e])
@@ -46,19 +46,19 @@ df$c_csd <- df[,names_c]
 df$per_csd <- rowMeans( df[,names_persd])
 
 names_pasd <- c("csd_state_pa_1","csd_state_pa_2","csd_state_pa_3","csd_state_pa_4")
-psych::alpha(df[,names_pasd])$total$raw_alpha # 0.92
+sych::alpha(df[,names_pasd])$total$raw_alpha # 0.92
 df$pa_csd <- rowMeans( df[,names_pasd])
 
 names_nasd <- c("csd_state_na_1","csd_state_na_2","csd_state_na_3")
-psych::alpha(df[,names_nasd])$total$raw_alpha # 0.82
+sych::alpha(df[,names_nasd])$total$raw_alpha # 0.82
 df$na_csd <- rowMeans( df[,names_nasd])
 
 names_simsd_t1 <- paste( "csd_sim", c(1:10), "_t1", sep = "") 
-psych::alpha(df[,names_simsd_t1])$total$raw_alpha # 0.83
+sych::alpha(df[,names_simsd_t1])$total$raw_alpha # 0.83
 df$simpson_csd_t1 <- rowMeans( df[,names_simsd_t1]) 
 
 names_simsd_t2 <- paste( "csd_sim", c(1:10), "_t2", sep = "") 
-psych::alpha(df[,names_simsd_t2])$total$raw_alpha # 0.88
+sych::alpha(df[,names_simsd_t2])$total$raw_alpha # 0.88
 df$simpson_csd_t2 <- rowMeans( df[,names_simsd_t2]) 
 
 #- -------------------------------------------------------------
@@ -67,12 +67,12 @@ df$simpson_csd_t2 <- rowMeans( df[,names_simsd_t2])
 
 names_var <- c("sccs_t1","sccs_t2","csd_nob_t1","csd_nob_t2","simpson_csd_t1","simpson_csd_t2",
 	"n_csd","e_csd","o_csd","a_csd","c_csd","per_csd","pa_csd","na_csd", "csd_state_se")
-psych::describe( df[,names_var] )[,c("mean","sd")]
-psych::corr.test( df[,names_var] )
+sych::describe( df[,names_var] )[,c("mean","sd")]
+sych::corr.test( df[,names_var] )
 
 # transport table:
-tab <- psych::describe( df[,names_var] )[,c("mean","sd")]
-tab <- cbind( tab, psych::corr.test( df[,names_var] )$r )
+tab <- sych::describe( df[,names_var] )[,c("mean","sd")]
+tab <- cbind( tab, sych::corr.test( df[,names_var] )$r )
 tab <- round( tab, 2 )
 colnames( tab ) <- c("M","SD", paste( c(1:length(names_var)), ".", sep = "" ) )
 rownames( tab ) <- c("SCC T1","SCC T2","NO T1","NO T2","ST T1","ST T2",
@@ -85,10 +85,10 @@ tab
 #-  Correlations and partial correlations between variability and well-being measures (Table 4)
 #- -------------------------------------------------------------
 
-psych::corr.test( df[,c( names_var[-c(1:2)],"rses","swls","pa","na","jsat","ucla")] )
+sych::corr.test( df[,c( names_var[-c(1:2)],"rses","swls","pa","na","jsat","ucla")] )
 
 # transport table:
-tab <- psych::corr.test( df[,c( names_var[-c(1:2)],"rses","swls","pa",
+tab <- sych::corr.test( df[,c( names_var[-c(1:2)],"rses","swls","pa",
 	"na","jsat","ucla")] )$r[,c("rses","swls","pa","na","jsat","ucla")]
 tab <- round( tab[ rownames( tab ) %in% names_var[-c(1:2)], ], 2 )
 colnames( tab ) <- c("SE","LS","PA","NA","JS","UCLA")
@@ -98,14 +98,14 @@ rownames( tab ) <- c("NO T1","NO T2","ST T1","ST T2",
 tab
 #write.table( tab, "Table4.txt", row.names=T, col.names=T, sep = ";")
 
-res <- psych::partial.r( df, x = c("n_csd","e_csd","o_csd","a_csd","c_csd",
+res <- sych::partial.r( df, x = c("n_csd","e_csd","o_csd","a_csd","c_csd",
 	"per_csd","pa_csd","na_csd","csd_state_se","rses","swls",
 	"pa","na","jsat","ucla"), y = c("csd_nob_t1","simpson_csd_t1") )
 res 
-psych::corr.p( res , n = 91 ) # because n = 93
+sych::corr.p( res , n = 91 ) # because n = 93
 
 # transport table:
-tab2 <- psych::partial.r( df, x = c("n_csd","e_csd","o_csd","a_csd","c_csd",
+tab2 <- sych::partial.r( df, x = c("n_csd","e_csd","o_csd","a_csd","c_csd",
 	"per_csd","pa_csd","na_csd","csd_state_se","rses","swls",
 	"pa","na","jsat","ucla"), y = c("csd_nob_t1","simpson_csd_t1") )[,c("rses","swls","pa","na","jsat","ucla")]
 tab2 <- round( tab2[ rownames( tab2 ) %in% c("n_csd","e_csd","o_csd","a_csd","c_csd",
@@ -126,20 +126,20 @@ df2 <- merge( df2, df, by = "id" )
 #- correlations between csd_mean and averaged csds for Big Five traits (not mentioned
 #  in the text):
 
-psych::corr.test( df2$e_csd,df2$csd_mean_e )
-psych::corr.test( df2$a_csd,df2$csd_mean_a )
-psych::corr.test( df2$pa_csd,df2$csd_mean_pa )
-psych::corr.test( df2$na_csd,df2$csd_mean_na )
+sych::corr.test( df2$e_csd,df2$csd_mean_e )
+sych::corr.test( df2$a_csd,df2$csd_mean_a )
+sych::corr.test( df2$pa_csd,df2$csd_mean_pa )
+sych::corr.test( df2$na_csd,df2$csd_mean_na )
 
 #- correlations between variability and well-being measures:
 
 names_var <- c("sccs_t1","sccs_t2","csd_nob_t1","csd_nob_t2","simpson_csd_t1","simpson_csd_t2",
 	"csd_mean_e","csd_mean_a","csd_mean_pa","csd_mean_na","rses","swls",
 	"pa","na","jsat","ucla")
-psych::corr.test( df2[,names_var] )
+sych::corr.test( df2[,names_var] )
 
 # transport table:
-tab <- psych::corr.test( df2[,names_var] )$r[,c("csd_mean_e","csd_mean_a","csd_mean_pa","csd_mean_na")]
+tab <- sych::corr.test( df2[,names_var] )$r[,c("csd_mean_e","csd_mean_a","csd_mean_pa","csd_mean_na")]
 tab <- round( tab[ rownames( tab ) %in% c("sccs_t1","sccs_t2","csd_nob_t1","csd_nob_t2",
 	"simpson_csd_t1","simpson_csd_t2","rses","swls","pa","na","jsat","ucla"), ], 2 )
 rownames( tab ) <- c("SCC T1","SCC T2","NO T1","NO T2","ST T1","ST T2",
@@ -150,13 +150,13 @@ tab
 
 #- Partial-Correlations between variability and well-being measures
 
-res <- psych::partial.r( df2, x = c("csd_mean_e","csd_mean_a","csd_mean_pa","csd_mean_na","rses","swls",
+res <- sych::partial.r( df2, x = c("csd_mean_e","csd_mean_a","csd_mean_pa","csd_mean_na","rses","swls",
 	"pa","na","jsat","ucla"), y = c("csd_nob_t1","simpson_csd_t1") )
 res 
-psych::corr.p( res , n = 91 ) # because n = 93
+sych::corr.p( res , n = 91 ) # because n = 93
 
 # transport table:
-tab2 <- psych::partial.r( df2, x = c("csd_mean_e","csd_mean_a","csd_mean_pa","csd_mean_na","rses","swls",
+tab2 <- sych::partial.r( df2, x = c("csd_mean_e","csd_mean_a","csd_mean_pa","csd_mean_na","rses","swls",
 	"pa","na","jsat","ucla"), y = c("csd_nob_t1","simpson_csd_t1") )[,c("csd_mean_e","csd_mean_a",
     "csd_mean_pa","csd_mean_na")]
 tab2 <- round( tab2[ rownames( tab2 ) %in% c("rses","swls","pa","na","jsat","ucla"), ], 2 )

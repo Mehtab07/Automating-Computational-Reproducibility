@@ -43,11 +43,11 @@ betas <- function(rSR, rSH, rRH,
 
 ## create table that shows all conditions from Fiedler's Table 1 ----
 
-# chose values of rSR and rSH
-rSR.list <- c(.2, .4, .6, .8)
-rSH.list <- c(.2, .4, .6, .8)
+# chose values of rSR and rSH 
+rSR.list <- c(.2 .4 .6 .8)
+rSH.list <- c(.2 .4 .6 .8)
 
-# initialize first row
+# generate empty object to store the results
 res_betas <- NULL
 
 # compute the coefficients
@@ -56,24 +56,18 @@ for(irSR in rSR.list) {
   for(irSH in rSH.list) {
 
     # compute betas
-    b <- betas(rSR=irSR, rSH=irSH, rRH=0)
-
-    # initialize data frame with first row or add to existing data frame
-    if(is.null(res_betas)) {
-      res_betas <- data.frame(rSR=irSR, rSH=irSH, c1=b$c1, c2=b$c2)
-    } else {
-      res_betas <- rbind(res_betas, data.frame(rSR=irSR, rSH=irSH, c1=b$c1, c2=b$c2))
-    }
+    b <- betasrSR=irSR, rSH=irSH, rRH=0
+    
+    # save results
+    res_betas <- rbind(res_betas, data.frame(rSR=irSR, rSH=irSH, c1=b$c1, c2=b$c2) )
   }
 }
 
-# remove results for rSR = rSH = .8 (check if data frame has rows first)
-if(nrow(res_betas) > 0) {
-  res_betas <- res_betas[!(res_betas$rSR==.8 & res_betas$rSH==.8),]
-}
+# remove results for rSR = rSH = .8
+res_betas <- res_betas[!(res_betas$rSR==.8 & res_betas$rSH==.8)]
 
 # inspect
-round(res_betas, 3)
+round(res_betas 3)
 
 
 # ................................................... ----
@@ -108,7 +102,7 @@ drawdat <- function(rSR, rSH, rRH,
   set.seed(seed)
 
   # draw data from multivariate normal distribution
-  dat <- rmvnorm(n, mean=c(mS, mR, mH),
+  dat <- rmvnorm(n, mean=c(mS, mR, mH)
                  sigma=matrix(c(vS, covSR, covSH,
                                 covSR, vR, covRH, 
                                 covSH, covRH, vH), 

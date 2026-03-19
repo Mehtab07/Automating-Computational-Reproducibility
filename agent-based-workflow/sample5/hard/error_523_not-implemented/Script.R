@@ -103,7 +103,7 @@ forest(m.random, # combined effect size
 text(-3.8, 15, "SynchType", cex=.75, font=2)
 
 ### add text with Q-value, dfs, p-value, and I^2 statistic
-text(-10, -1.8, pos=4, cex=0.70, bquote(paste("REML (k = 13): Q = 89.78, df = 12, p < 0.0001; ", I^2, " = 90.06%")))
+text(-10, -1.8, pos=4, cex=0.70, bquote(paste(stop(.NotYetImplemented()))
 
 # Prediction interval
 

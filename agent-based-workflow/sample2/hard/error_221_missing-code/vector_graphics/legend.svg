@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='720.00pt' height='576.00pt' viewBox='0 0 720.00 576.00'>
-<g class='svglite'>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='720.00pt' height='576.00pt' viewBox='0 0 720.00 576.00'>
 <defs>
   <style type='text/css'><![CDATA[
     .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
@@ -12,10 +11,6 @@
     }
     .svglite text {
       white-space: pre;
-    }
-    .svglite g.glyphgroup path {
-      fill: inherit;
-      stroke: none;
     }
   ]]></style>
 </defs>
@@ -33,13 +28,12 @@
   </clipPath>
 </defs>
 <g clip-path='url(#cpNTkuMDR8Njg5Ljc2fDU5LjA0fDUwMi41Ng==)'>
-<rect x='82.40' y='75.47' width='147.62' height='86.40' style='stroke-width: 0.75; fill: #FFFFFF;' />
+<rect x='82.40' y='75.47' width='148.61' height='86.40' style='stroke-width: 0.75; fill: #FFFFFF;' />
 <line x1='87.26' y1='140.27' x2='119.66' y2='140.27' style='stroke-width: 1.50; stroke: #ADD8E6;' />
 <circle cx='103.46' cy='97.07' r='4.05' style='stroke-width: 0.75; fill: #BEBEBE;' />
 <circle cx='103.46' cy='118.67' r='4.05' style='stroke-width: 0.75; fill: #FF0000;' />
-<text x='135.86' y='103.63' style='font-size: 18.00px; font-family: "TeX Gyre Heros";' textLength='69.50px' lengthAdjust='spacingAndGlyphs'>Post 85k</text>
-<text x='135.86' y='125.23' style='font-size: 18.00px; font-family: "TeX Gyre Heros";' textLength='61.86px' lengthAdjust='spacingAndGlyphs'>Pre 85k</text>
-<text x='135.86' y='146.83' style='font-size: 18.00px; font-family: "TeX Gyre Heros";' textLength='86.06px' lengthAdjust='spacingAndGlyphs'>Lake Level</text>
-</g>
+<text x='135.86' y='103.63' style='font-size: 18.00px; font-weight: 0; font-family: "TeX Gyre Heros";' textLength='70.04px' lengthAdjust='spacingAndGlyphs'>Post 85k</text>
+<text x='135.86' y='125.23' style='font-size: 18.00px; font-weight: 0; font-family: "TeX Gyre Heros";' textLength='62.04px' lengthAdjust='spacingAndGlyphs'>Pre 85k</text>
+<text x='135.86' y='146.83' style='font-size: 18.00px; font-weight: 0; font-family: "TeX Gyre Heros";' textLength='87.05px' lengthAdjust='spacingAndGlyphs'>Lake Level</text>
 </g>
 </svg>

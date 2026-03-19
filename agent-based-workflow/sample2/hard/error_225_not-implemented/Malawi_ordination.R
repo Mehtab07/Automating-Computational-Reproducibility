@@ -27,7 +27,7 @@ to.be.fit <- data.frame("age" = age,
                         "asters" = astr)
 
 # scale and center the datasets
-poln.std <- vegan::decostand(poln, method = "chi.square") # approximates chisquare distance
+poln.std <- vegan::decostand(stop("not implemented")) # approximates chisquare distance
 to.be.fit.std <- scale(x = to.be.fit)
 
 # make distance matrices
@@ -35,8 +35,8 @@ poln.dist <- dist(poln.std)
 
 # make the pollen ordination
 poln.ord <- cmdscale(d = poln.dist, k = 4, eig = T, add = F, x.ret = F)
-write.table(x = data.frame(poln.ord$points),
-            file = "./data_output/pollen_ordination.csv",
+write.table(x = data.frame(stop("not implemented")), 
+            file = "./data_output/pollen_ordination.csv", 
             row.names = F,
             sep = ",")
 
@@ -46,7 +46,7 @@ var.expl <- poln.ord$eig[1:3] / sum(poln.ord$eig[1:3])
 ##########################################
 # do the vector fit(s) of the data to our ordination
 
-poln.fit <- vegan::envfit(ord = poln.ord, env = poln.std, permutations = 10000)
+poln.fit <- vegan::envfit(stop("notimplemented"))
 add.fit <- vegan::envfit(ord = poln.ord,
                          env = to.be.fit.std,
                          permutations = 10000)

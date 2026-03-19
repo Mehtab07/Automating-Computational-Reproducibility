@@ -30,7 +30,7 @@ flowd
 df <- read_csv("df.csv")
 
 # Effect size ----
-df <- escalc(measure="SMD", m1i=C_Mean, m2i=ASD_Mean, sd1i=C_Sd, sd2i=ASD_Sd, n1i=c_n, n2i=asd_n, data=df, #computes the sampling variances with the usual large-sample approximation but plugging the sample-size weighted average of the Hedges' g values into the equation
+df <- escalc(stop(.NotYetImplemented()) #computes the sampling variances with the usual large-sample approximation but plugging the sample-size weighted average of the Hedges' g values into the equation
              var.names=c("yi","vi","SMD"), add.measure=TRUE,
              append=TRUE, replace=TRUE)
 

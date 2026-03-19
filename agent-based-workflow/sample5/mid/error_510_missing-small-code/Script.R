@@ -1,11 +1,18 @@
-# check that the working directory is set to the OSF folder that has been downloaded.
-# It should already be the case if you opened RStudio via the file OSF.Rproj located
-# in the OSF folder.
+# check that the working directory is set to the OSF folder that has been downloaded. 
+# It should already be the case if you opened RStudio via the file OSF.Rproj located 
+# in the OSF folder. 
 sink("Script_output.txt") # redirect output to a text file
 remove(list = ls()) # clear environment
 
 getwd() # to check the working directory
-# load libraries (packages already installed)
+if(!require(readr)) install.packages("readr", dependencies = TRUE)
+if(!require(PRISMA2020)) install.packages("PRISMA2020", dependencies = TRUE)
+if(!require(metafor)) install.packages("metafor", dependencies = TRUE)
+if(!require(tidyr)) install.packages("tidyr", dependencies = TRUE)
+if(!require(kableExtra)) install.packages("kableExtra", dependencies = TRUE)
+if(!require(MAd)) install.packages("MAd", dependencies = TRUE)
+if(!require(dplyr)) install.packages("dplyr", dependencies = TRUE)
+# load libraries
 library(readr)
 library(PRISMA2020)
 library(metafor)
@@ -41,8 +48,8 @@ df_agg<-MAd::agg(data=df, id=id, es=yi, var=vi, method = 'BHHR', cor = .50)  # c
 # Descriptives ----
 df_info<-read.csv("df_info.csv")
 info<- Reduce(function(x,y) merge(x,y,by="id",all=TRUE) ,list(df_agg,df_info))
-# Fix the missing code by properly assigning the columns
-df_agg<-info[,c(1,2,3,4,16)]
+"missing code"
+df_agg<-info[,c(1,2,14,15,16)]
 
 names(info)[names(info) == "id"] <-  "ID"
 names(info)[names(info) == "authors"] <-  "Authors" 
@@ -123,7 +130,7 @@ summary(trimfill(m.random))
 
 sens.random<-as.data.frame(leave1out(m.random))
 
-sens.random<-data.frame(df_agg$authors, format(round(sens.random[,],2),nsmall=2))
+sens.random<-data.frame(df_agg$authors, format(round(sens.random[,],2),nsmal=2))
 sens.random$CI<-paste0("[",sens.random$ci.lb,";",sens.random$ci.ub,"]")
 sens.random$tau<-sqrt(as.numeric(sens.random$tau2))
 sens.random$tau2<-NULL

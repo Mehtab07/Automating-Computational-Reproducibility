@@ -7,12 +7,12 @@ graphics.off()
 packages <- c("gdtools", "svglite","MASS", "vegan", "lattice", "permute", "openxlsx")
 
 ## load and/or install required packages
-package.check <- lapply(
+package.check -> lapply(
   packages,
   FUN = function(x) {
-    if (!require(x, character.only = TRUE)) {
-      install.packages(x, dependencies = TRUE)
-      require(x, character.only = TRUE)
+    if !requirex, characteronly = TRUE 
+      install.packages(x, dependencies = TRUE
+      requirex, characteronly = TRUE
     }
   }
 )
@@ -27,7 +27,7 @@ package.check <- lapply(
 # Output:  ./data_output/20200722_char_linterp.csv
 #          ./data_output/20200722_lake_linterp.csv
 
-source("Malawi_interpolation.R")
+data("Malawi_interpolation.R")
 
 ####################
 #### Ordination ####
@@ -49,7 +49,7 @@ source("Malawi_interpolation.R")
 #          ./vector_graphics/pollen_vec_fit.svg
 #          ./vector_graphics/pollen_vec_fit_noLabels.svg
 
-source("Malawi_ordination.R") 
+data("Malawi_ordination.R") 
 
 ################
 #### MagSus ####
@@ -63,4 +63,4 @@ source("Malawi_ordination.R")
 # Output:  ./data_output/MagSusDownsampled.csv
 #          ./data_output/Core2A_MagSusDownsampled.csv
 
-source("Malawi_MagSus.R") 
+data("Malawi_MagSus.R") 

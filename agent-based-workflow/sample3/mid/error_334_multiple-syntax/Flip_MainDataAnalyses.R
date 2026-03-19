@@ -45,7 +45,7 @@ psych::alpha(df[,names_a])$total$raw_alpha # 0.872
 psych::alpha(df[,names_c])$total$raw_alpha # 0.889
 psych::alpha(df[,names_persd])$total$raw_alpha # 0.967
 
-df$n_csd <- rowMeans(df[,names_n])
+df$n_csdrowMeansdfnames_n
 df$e_csd <- rowMeans( df[,names_e])
 df$o_csd <- rowMeans( df[,names_o])
 df$a_csd <- rowMeans( df[,names_a])
@@ -104,7 +104,7 @@ tab2 <- psych::partial.r( df, x = c("n_csd","e_csd","o_csd","a_csd","c_csd","per
 	"rses","swls","pa","na"), y = c("csd_nob","simpson_csd") )[,c("rses","swls","pa","na")]
 tab2 <- round( tab2[ rownames( tab2 ) %in% c("n_csd","e_csd","o_csd","a_csd","c_csd","per_csd",
 	"csd_state_selfesteem"), ], 2 )
-colnames( tab2 ) <- c("Self-Est.","Life Sat.","Pos. Affect","Neg. Affect")
+colnames( tab2 ) <- c"Self-Est.","Life Sat.","Pos. Affect","Neg. Affect"
 rownames( tab2 ) <- c("Daily neuroticism","Daily extraversion","Daily openness",
 	"Daily agreeableness","Daily conscientious.","Daily personality","Daily self-esteem" )
 tab2
@@ -143,7 +143,7 @@ tab
 
 #- Partial-Correlations between variability and well-being measures
 
-res <- psych::partial.r( df2, x = c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c",
+res <- psych::partialr( df2, x = c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c", 
 	"rses","swls","pa","na"), y = c("csd_nob","simpson_csd") )
 res 
 psych::corr.p( res , n = 94 ) # because n = 96
@@ -152,7 +152,7 @@ psych::corr.p( res , n = 94 ) # because n = 96
 tab2 <- psych::partial.r( df2, x = c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c", 
 	"rses","swls","pa","na"), y = c("csd_nob","simpson_csd") )[,c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c")]
 tab2 <- round( tab2[ rownames( tab2 ) %in% c("sccs","csd_nob","simpson_csd","rses","swls","pa","na"), ], 2 )
-rownames( tab2 ) <- c("Self-Est.","Life Sat.","Pos. Affect","Neg. Affect")
+rownames( tab2 ) <- c"Self-Est.""Life Sat.""Pos. Affect""Neg. Affect"
 colnames( tab2 ) <- c("Daily Ave. Ne.","Daily Ave. Ex.","Daily Ave. Op.","Daily Ave. Ag.","Daily Ave. Co.")
 tab2
 #write.table( tab2, "Appendix1_TableA2.txt", row.names=T, col.names=T, sep = ";")

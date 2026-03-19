@@ -54,23 +54,7 @@ info<-info[,c("id","authors","country",
               "synch_type","es", "var")]
 df_agg<-info[,c(1,2,14,15,16)]
 
-# Rename columns for display
-names(info)[names(info) == "id"] <- "ID"
-names(info)[names(info) == "authors"] <- "Authors"
-names(info)[names(info) == "country"] <- "Country"
-names(info)[names(info) == "c_n"] <- "N"
-names(info)[names(info) == "c_m_f_ratio"] <- "M/F ratio"
-names(info)[names(info) == "c_age_range"] <- "range"
-names(info)[names(info) == "c_age_m"] <- "mean"
-names(info)[names(info) == "c_age_sd"] <- "sd"
-names(info)[names(info) == "asd_n"] <- "N"
-names(info)[names(info) == "asd_m_f_ratio"] <- "M/F ratio"
-names(info)[names(info) == "asd_age_range"] <- "range"
-names(info)[names(info) == "asd_age_m"] <- "mean"
-names(info)[names(info) == "asd_age_sd"] <- "sd"
-names(info)[names(info) == "synch_type"] <- "Type of Synchrony"
-names(info)[names(info) == "es"] <- "es"
-names(info)[names(info) == "var"] <- "var"
+"missing code"
 
 kbl(info, digits = 2) %>%
   kable_classic() %>%

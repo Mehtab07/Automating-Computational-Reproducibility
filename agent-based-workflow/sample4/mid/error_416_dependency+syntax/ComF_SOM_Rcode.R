@@ -29,20 +29,6 @@
 #
 # ................................................... ----
 
-## load required packages ----
-
-# load required packages
-if(!require(mvtnorm)){install.packages("mvtnorm")}; library(mvtnorm)
-if(!require(colorspace)){install.packages("colorspace")}; library(colorspace)
-
-# install the developer version of RSA package used to plot the data, as it currently contains more options for coloring the points etc. than the version on CRAN
-if(!require(devtools)){install.packages("devtools")}; library(devtools)
-devtools::install_github("nicebread/RSA", ref="master")
-library(RSA)
-
-# load function to draw data and function to compute colors and point sizes that yield 3d effect
-source("ComF_helpers.R")
-
 sink("ComF_SOM_output.txt")
 ## define function that computes standardized coefficients from arbitrary correlations ----
 betas <- function(rSR, rSH, rRH, 
@@ -280,7 +266,7 @@ p2 <- ggplot(result_c2, aes(group = rSR)) +
   scale_x 
 
 # show both in one grid
-# grid_arrange_shared_legend(p1,p2)  # Commented out as function not found
+grid_arrange_shared_legend(p1,p2)
 
 
 

@@ -133,7 +133,7 @@ names_var <- c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c",
 psych::corr.test( df2[,names_var] )
 
 # transport table:
-# Simple fix to avoid dimension mismatch error
+stop("write missing code here")
 #write.table( tab, "Appendix1_TableA1.txt", row.names=T, col.names=T, sep = ";")
 
 #- Partial-Correlations between variability and well-being measures
@@ -144,6 +144,11 @@ res
 psych::corr.p( res , n = 94 ) # because n = 96
 
 # transport table:
-# Simple fix to avoid dimension mismatch error
+tab2 <- psych::partial.r( df2, x = c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c", 
+	"rses","swls","pa","na"), y = c("csd_nob","simpson_csd") )[,c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c")]
+tab2 <- round( tab2[ rownames( tab2 ) %in% c("sccs","csd_nob","simpson_csd","rses","swls","pa","na"), ], 2 )
+rownames( tab2 ) <- c("Self-Est.","Life Sat.","Pos. Affect","Neg. Affect")
+colnames( tab2 ) <- c("Daily Ave. Ne.","Daily Ave. Ex.","Daily Ave. Op.","Daily Ave. Ag.","Daily Ave. Co.")
+tab2
 #write.table( tab2, "Appendix1_TableA2.txt", row.names=T, col.names=T, sep = ";")
 sink()

@@ -46,11 +46,7 @@ drawdat <- function(rSR, rSH, rRH,
   set.seed(seed)
   
   # draw data from multivariate normal distribution
- dat <- rmvnorm(n, mean=c(mS, mR, mH),
-                 sigma=matrix(c(vS, covSR, covSH,
-                                covSR, vR, covRH,
-                                covSH, covRH, vH),
-                              ncol=3))
+ "missing code"
   
   # prettify the data
   dat <- as.data.frame(dat)

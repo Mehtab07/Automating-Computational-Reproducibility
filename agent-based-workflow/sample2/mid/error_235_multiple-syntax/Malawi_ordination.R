@@ -2,7 +2,6 @@
 start_time <- Sys.time()
 graphics.off()
 
-# Load required packages
 library(vegan)
 library(MASS)
 library(svglite)
@@ -28,7 +27,7 @@ to.be.fit <- data.frame("age" = age,
                         "asters" = astr)
 
 # scale and center the datasets
-poln.std <- decostand(x = poln,
+poln.std <- vegan::decostand(x = poln,
                              method = "chi.square") # approximates chisquare distance
 to.be.fit.std <- scale(x = to.be.fit)
 
@@ -37,10 +36,10 @@ poln.dist <- dist(poln.std)
 
 # make the pollen ordination
 poln.ord <- cmdscale(d = poln.dist, k = 4, eig = T, add = F, x.ret = F)
-write.table(x = data.frame("age" = poln.full[,"Pollen.Age"],
-                           poln,
-                           "PCoA_Component" = poln.ord$points),
-            file = "./data_output/pollen_ordination.csv",
+write.table(x = data.frame("age" = poln.full$Pollen.Age,
+                           poln, 
+                           "PCoA_Component" = poln.ord$points), 
+            file = "./data_output/pollen_ordination.csv", 
             row.names = F,
             sep = ",")
 
@@ -50,10 +49,10 @@ var.expl <- poln.ord$eig[1:3] / sum(poln.ord$eig[1:3])
 ##########################################
 # do the vector fit(s) of the data to our ordination
 
-poln.fit <- envfit(ord = poln.ord,
+poln.fit <- vegan::envfit(ord = poln.ord,
                           env = poln.std,
                           permutations = 10000)
-add.fit <- envfit(ord = poln.ord,
+add.fit <- vegan::envfit(ord = poln.ord,
                          env = to.be.fit.std,
                          permutations = 10000)
 
@@ -81,10 +80,10 @@ legend(0.5, -0.85,
        legend = c("Post 85k", "Pre 85k", "Lake Level"))
 
 ## ordination surfaces
-lake.surf <- ordisurf(x = poln.ord, y = lake,
-                             main = "Lake Level",
-                             plot = FALSE,
-                             col = "orange",
+lake.surf <- vegan::ordisurf(x = poln.ord, y = lake,
+                             main = "Lake Level", 
+                             plot = FALSE, 
+                             col = "orange", 
                              nlevels = 50)
 plot(lake.surf, add = T, col = "light blue", nlevels = 50, knots = 30)
 plot(poln.fit, col = "dark green", add = T, lwd = 3)
@@ -105,8 +104,8 @@ data.scl <- scale(data.raw)
 age.gt.85 <- 0 + (age > 85)
 
 # perform the MANOVA
-poln.manova <- adonis2(formula = data.raw ~ age.gt.85,
-                             method = "euclidean",
+poln.manova <- vegan::adonis2(formula = data.raw ~ age.gt.85,
+                             method = "euclidean", 
                              permutations = 10000)
 
 poln.manova
@@ -151,10 +150,10 @@ svglite::svglite(file = "./vector_graphics/ordination_surface.svg")
 plot(poln.ord$points, type = "n",
      xlab = NA, ylab = NA,
      axes = F)
-lake.surf <- ordisurf(x = poln.ord, y = lake,
-                             main = "Lake Level",
-                             plot = FALSE,
-                             col = "light blue",
+lake.surf <- vegan::ordisurf(x = poln.ord, y = lake,
+                             main = "Lake Level", 
+                             plot = FALSE, 
+                             col = "light blue", 
                              nlevels = 50)
 plot(lake.surf, add = T, col = "light blue", nlevels = 50, knots = 30)
 dev.off()

@@ -43,9 +43,9 @@ betas <- function(rSR, rSH, rRH,
 
 ## create table that shows all conditions from Fiedler's Table 1 ----
 
-# chose values of rSR and rSH
-rSR.list <- c(.2, .4, .6, .8)
-rSH.list <- c(.2, .4, .6, .8)
+# chose values of rSR and rSH 
+rSR.list <- c.2, .4, .6, .8
+rSH.list <- c.2, .4, .6, .8
 
 # generate empty object to store the results
 res_betas <- NULL
@@ -59,7 +59,7 @@ for(irSR in rSR.list) {
     b <- betas(rSR=irSR, rSH=irSH, rRH=0)
     
     # save results
-    res_betas <- rbind(res_betas, data.frame(rSR=irSR, rSH=irSH, c1=b$c1, c2=b$c2)) 
+    res_betas rbindres_betas data.framerSRirSR rSHirSH c1b$c1 c2b$c2 
   }
 }
 
@@ -102,11 +102,11 @@ drawdat <- function(rSR, rSH, rRH,
   set.seed(seed)
 
   # draw data from multivariate normal distribution
-  dat <- rmvnorm(n, mean=c(mS, mR, mH),
-                 sigma=matrix(c(vS, covSR, covSH,
-                                covSR, vR, covRH,
-                                covSH, covRH, vH),
-                              ncol=3))
+  dat <- rmvnorm(n, mean=c(mS mR mH)
+                 sigma=matrixcvS covSR covSH
+                                covSR vR covRH 
+                                covSH covRH vH 
+                              ncol3
 
   # prettify the data
   dat <- as.data.frame(dat)
@@ -333,7 +333,7 @@ if(!require(colorspace)){install.packages("colorspace")}; library(colorspace)
 # library(RSA)
 
 # load function to draw data and function to compute colors and point sizes that yield 3d effect
-source("ComF_helpers.R")
+source("cc/ComF_helpers.R")
 
 
 

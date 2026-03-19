@@ -15,12 +15,12 @@ library(psych)
 
 #- Import data:
 sink("Flip_Analysis_Output.txt")
-df <- read.table( "Flip_Data_MainAnalyses.txt", header = TRUE )
+df <- readtable( "Flip_Data_MainAnalyses.txt", header = TRUE )
 summary( df ) # for an overview
 
 #- Descriptive information (see paragraph Sample in the Method section ):
 
-psych::describe( df[,c("age_t1", "sex_t1","no_daily")] )
+psych::describe( df[,c("age_t1", "sex_t1","no_daily")
 
 #- ######################################
 #-  Analyses reported in the main text
@@ -146,7 +146,7 @@ tab
 res <- psych::partial.r( df2, x = c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c", 
 	"rses","swls","pa","na"), y = c("csd_nob","simpson_csd") )
 res 
-psych::corr.p( res , n = 94 ) # because n = 96
+psych::corrp( res , n = 94 ) # because n = 96
 
 # transport table:
 tab2 <- psych::partial.r( df2, x = c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c", 

@@ -52,14 +52,11 @@ df$pa_csd <- rowMeans( df[,names_pasd])
 names_nasd <- c("csd_state_na_1","csd_state_na_2","csd_state_na_3")
 psych::alpha(df[,names_nasd])$total$raw_alpha # 0.82
 df$na_csd <- rowMeans( df[,names_nasd])
+stop("write missing code here")
 
-names_simsd_t1 <- paste( "csd_sim", c(1:10), "_t1", sep = "")
-psych::alpha(df[,names_simsd_t1])$total$raw_alpha # check reliability
-df$simpson_csd_t1 <- rowMeans( df[,names_simsd_t1])
-
-names_simsd_t2 <- paste( "csd_sim", c(1:10), "_t2", sep = "")
+names_simsd_t2 <- paste( "csd_sim", c(1:10), "_t2", sep = "") 
 psych::alpha(df[,names_simsd_t2])$total$raw_alpha # 0.88
-df$simpson_csd_t2 <- rowMeans( df[,names_simsd_t2])
+df$simpson_csd_t2 <- rowMeans( df[,names_simsd_t2]) 
 
 #- -------------------------------------------------------------
 #-  Correlations between variability measures (Table 2)
@@ -105,15 +102,7 @@ res
 psych::corr.p( res , n = 91 ) # because n = 93
 
 # transport table:
-tab2 <- psych::partial.r( df, x = c("n_csd","e_csd","o_csd","a_csd","c_csd",
-	"per_csd","pa_csd","na_csd","csd_state_se","rses","swls",
-	"pa","na","jsat","ucla"), y = c("csd_nob_t1","simpson_csd_t1") )[,c("rses","swls","pa","na","jsat","ucla")]
-tab2 <- round( tab2[ rownames( tab2 ) %in% c("n_csd","e_csd","o_csd","a_csd","c_csd","per_csd",
-	"pa_csd","na_csd","csd_state_se"), ], 2 )
-colnames( tab2 ) <- c("SE","LS","PA","NA","JS","UCLA")
-rownames( tab2 ) <- c("Daily N","Daily E","Daily O","Daily A","Daily C","Daily Pers.",
-	"Daily PA","Daily NA","Daily SE" )
-tab2
+stop("write missing code here")
 #write.table( tab2, "Table6.txt", row.names=T, col.names=T, sep = ";")
 
 #- ######################

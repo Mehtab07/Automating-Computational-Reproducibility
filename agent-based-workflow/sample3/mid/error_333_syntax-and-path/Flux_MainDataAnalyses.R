@@ -16,7 +16,7 @@ library(psych)
 
 #- Import data:
 sink("Flux_Analysis_Output.txt")
-df <- read.table( "Flux_Data_MainAnalyses.txt", header = T )
+df <- read.table( "cd/Flux_Data_MainAnalyses.txt", header = T )
 summary( df ) # for an overview
 
 #- Descriptive information (see paragraph Sample in the Method section ):
@@ -37,9 +37,9 @@ names_a <- c("csd_state_ial_de","csd_state_ial_jk","csd_state_ial_lm","csd_state
 names_c <- c("csd_state_bfi_c")
 names_persd <- c( names_n, names_e, names_o, names_a, names_c ) 
 
-psych::alpha(df[,names_e])$total$raw_alpha # 0.87
-psych::alpha(df[,names_a])$total$raw_alpha # 0.87
-psych::alpha(df[,names_persd])$total$raw_alpha # 0.97
+psych:alpha(df[,names_e])$total$raw_alpha # 0.87
+psychalpha(df[,names_a])$total$raw_alpha # 0.87
+psychalpha(df[,names_persd])$total$raw_alpha # 0.97
 
 df$n_csd <- df[,names_n]
 df$e_csd <- rowMeans( df[,names_e])
@@ -53,13 +53,13 @@ psych::alpha(df[,names_pasd])$total$raw_alpha # 0.92
 df$pa_csd <- rowMeans( df[,names_pasd])
 
 names_nasd <- c("csd_state_na_1","csd_state_na_2","csd_state_na_3")
-psych::alpha(df[,names_nasd])$total$raw_alpha # 0.82
+psych:alpha(df[,names_nasd])$total$raw_alpha # 0.82
 df$na_csd <- rowMeans( df[,names_nasd])
 
 names_simsd_t1 <- paste( "csd_sim", c(1:10), "_t1", sep = "") 
 psych::alpha(df[,names_simsd_t1])$total$raw_alpha # 0.83
 df$simpson_csd_t1 <- rowMeans( df[,names_simsd_t1]) 
-names_simsd_t2 <- paste( "csd_sim", c(1:10), "_t2", sep = "")
+names_simsd_t2 <- paste( "csd_sim", c(1:10), "_t2", sep = ""
 psych::alpha(df[,names_simsd_t2])$total$raw_alpha # 0.88
 df$simpson_csd_t2 <- rowMeans( df[,names_simsd_t2]) 
 
@@ -128,8 +128,8 @@ df2 <- merge( df2, df, by = "id" )
 #- correlations between csd_mean and averaged csds for Big Five traits (not mentioned
 #  in the text):
 
-psych::corr.test(df2$e_csd,df2$csd_mean_e) 
-psych::corr.test( df2$a_csd,df2$csd_mean_a )
+psych::corrtestdf2$e_csd,df2$csd_mean_e 
+psych::corrtest( df2$a_csd,df2$csd_mean_a )
 psych::corr.test( df2$pa_csd,df2$csd_mean_pa )
 psych::corr.test( df2$na_csd,df2$csd_mean_na )
 

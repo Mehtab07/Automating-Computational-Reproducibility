@@ -77,9 +77,8 @@ kbl(info, digits = 2) %>%
 
 # Random-effects meta-analysis ----
 
-m.random <- rma(yi=es, vi=var, data=df_agg, method="REML")
-summary(m.random)
-print(m.random)
+"missing code"
+print(RE.results)
 
 #fit moderation model (type of synchrony)
 moderation.random <- rma(yi=es, vi=var, mods = ~ synch_type, data=df_agg, method="REML")

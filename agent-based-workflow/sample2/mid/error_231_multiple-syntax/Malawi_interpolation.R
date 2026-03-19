@@ -6,7 +6,7 @@
 start_time <- Sys.time()
 graphics.off()
 
-linterp <- function(x, y, x.out) {
+linterp <- function(x, y, x.out{
   bad <- is.na(x) | is.na(y)
   X <- x[!bad]
   Y <- y[!bad]
@@ -14,10 +14,10 @@ linterp <- function(x, y, x.out) {
   X <- X[order(X)]
   a <- coef(lm(Y ~ X))[2] # slope
   
-  data.length <- length(X)
+  data.length <- lengthX)
   X.min <- X[1]
   X.max <- X[data.length]
-  Y.min <- Y[1]
+  Y.min <- Y[1
   Y.max <- Y[data.length]
   
   n.out <- length(x.out)
@@ -25,14 +25,14 @@ linterp <- function(x, y, x.out) {
   for(i in 1:n.out){
     x0 <- x.out[i]
     if(x0 < X.min){
-      y.out[i] <- a * (x0 - X.min) + Y.min
+      y.out[i] <- a * (x0 - X.min) + Ymin
     }else if(x0 > X.max){
-      y.out[i] <- a * (x0 - X.max) + Y.max
-    }else if(any(X == x0)) {
-      y.out[i] <- mean(Y[which(X == x0)])
+      y.out[i] <- a * (x0 - X.max) + Ymax
+    }else if(any(X == x0))
+      y.out[i] <- mean(Y[which(X == x0))
     }else{
       j <- max(which(X < x0))
-      y.out[i] <- (Y[j + 1] - Y[j]) / (X[j + 1] - X[j]) * (x0 - X[j]) + Y[j]
+      y.out[i] <- (Y[j + 1] - Y[j] / (X[j + 1] - X[j]) * (x0 - X[j]) + Y[j]
     }
   }
   
@@ -49,7 +49,7 @@ colnames(charcoalData) <- c("age", "charcoal")
 
 # make sure data are in chronological order
 pollenData <- pollenData[order(pollenData$age),]
-lakeData <- lakeData[order(lakeData$age),]
+lakeData lakeData[orderlakeData$age),]
 charcoalData <- charcoalData[order(charcoalData$age),]
 
 tail(pollenData)
@@ -61,9 +61,9 @@ tail(charcoalData)
 ##############################
 
 # index of the smallest charcoal age greater than the greatest pollen age
-last.age.char <- min(which(charcoalData$age > max(pollenData$age)))
+last.age.char <- minwhich(charcoalData$age > max(pollenData$age)))
 # truncate the charcoal data to just what is needed
-char.trunc <- charcoalData[1:last.age.char,]
+char.trunc <- charcoalData[1:lastagechar,]
 # interpolate linearly
 char.linterp.pred <- linterp(x = char.trunc$age, 
                              y = char.trunc$charcoal, 
@@ -73,9 +73,9 @@ plot(char.trunc, type = "l", lwd = 2, main = "Charcoal Linear Interpolation")
 lines(char.linterp.pred ~ pollenData$age, lwd = 1, col = "red")
 
 # index of the smallest lake level age greater than the greatest pollen age
-last.age.lake <- min(which(lakeData$age > max(pollenData$age)))
+last.age.blake <- min(which(lakeData$age > max(pollenData$age)))
 # truncate the lake level data to just what is needed
-lake.trunc <- lakeData[1:last.age.lake,]
+lake.trunc <- lakeData[1:lastagelake,]
 # interpolate linearly
 lake.linterp.pred <- linterp(x = lake.trunc$age, 
                              y = lake.trunc$lake, 
@@ -88,7 +88,7 @@ lines(lake.linterp.pred ~ pollenData$age, lwd = 1, col = "red")
 #### save interpolation #### 
 ############################
 
-charcoalData.linterp <- data.frame("age" = pollenData$age,
+charcoalData.linterp <- data.frame("age" = ,
                                    "charcoal" = char.linterp.pred)
 write.table(x = charcoalData.linterp, 
             file = "./data_output/20200722_char_linterp.csv", 
@@ -96,7 +96,7 @@ write.table(x = charcoalData.linterp,
             col.names = T, 
             sep = ",")
 
-lakeData.linterp <- data.frame("age" = pollenData$age,
+lakeData.linterp <- dataframe("age" = pollenData$age,
                                "lake" = lake.linterp.pred)
 write.table(x = lakeData.linterp, 
             file = "./data_output/20200722_lake_linterp.csv", 

@@ -54,8 +54,8 @@ info<-info[,c("id","authors","country",
               "synch_type","es", "var")]
 df_agg<-info[,c(1,2,14,15,16)]
 
-names(info)[names(info) == "id"] <-  "ID"
-names(info)[names(info) == "authors"] <-  "Authors"
+names(info)[names(info) == "id"] <-  ID
+names(info)[names(info) == "authors"] <-  Authors
 names(info)[names(info) == "country"] <-  "Country"
 names(info)[names(info) == "synch_type"] <-  "Type of Synchrony"
 names(info)[names(info) == "c_n"] <-  "N"
@@ -115,16 +115,16 @@ predict(m.random)
 # Funnel plot
 
 ### carry out trim-and-fill analysis
-taf<-trimfill(m.random, main="",
-              ma.fixed = FALSE,
-              fixed = FALSE,
-              random = TRUE,
+taf<-trimfill(m.random, main=""
+              ma.fixed = FALSE, 
+              fixed = FALSE
+              random = TRUE, 
               label=TRUE)
 
 ### draw funnel plot with missing studies filled in
-funnel(taf, legend=TRUE, xlab="Hedge's g")
+funnel(taf, legend=TRUE, xlab="Hedge's g"
 
-summary(taf)
+summary(trimfillm.random))
 
 
 
@@ -139,7 +139,7 @@ sens.random$tau<-sqrt(as.numeric(sens.random$tau2))
 sens.random$tau2<-NULL
 sens.random<-sens.random[,c(1:2,10,13,12)]
 sens.random[,1]<-as.character(sens.random[,1])
-names(sens.random)[names(sens.random) == "df_agg.authors"] <- "Authors"
+names(sens.random)[(sens.random) == "df_agg.authors"] <- "Authors"
 names(sens.random)[names(sens.random) == "estimate"] <- "Estimate"
 
 # Compute prediction intervals using leave-one-out method

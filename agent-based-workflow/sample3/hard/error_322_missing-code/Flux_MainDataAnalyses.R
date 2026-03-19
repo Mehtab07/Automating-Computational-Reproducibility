@@ -142,10 +142,7 @@ psych::corr.test( df2[,names_var] )
 
 # transport table:
 tab <- psych::corr.test( df2[,names_var] )$r[,c("csd_mean_e","csd_mean_a","csd_mean_pa","csd_mean_na")]
-tab <- round( tab[ rownames( tab ) %in% c("sccs_t1","sccs_t2","csd_nob_t1","csd_nob_t2","simpson_csd_t1",
-	"simpson_csd_t2","rses","swls","pa","na","jsat","ucla"), ], 2 )
-rownames( tab ) <- c("SCC T1","SCC T2","NO T1","NO T2","ST T1","ST T2","SE","LS","PA","NA","JS","UCLA")
-colnames( tab ) <- c("Daily E","Daily A","Daily PA","Daily NA")
+stop("write missing code here")
 tab
 #write.table( tab, "Appendix1_TableA3.txt", row.names=T, col.names=T, sep = ";")
 

@@ -1,13 +1,10 @@
-# check that the working directory is set to the OSF folder that has been downloaded.
-# It should already be the case if you opened RStudio via the file OSF.Rproj located
-# in the OSF folder.
+# check that the working directory is set to the OSF folder that has been downloaded. 
+# It should already be the case if you opened RStudio via the file OSF.Rproj located 
+# in the OSF folder. 
 sink("Script_output.txt") # redirect output to a text file
 remove(list = ls()) # clear environment
 
 getwd() # to check the working directory
-
-# Set CRAN repository to ensure compatibility
-options(repos = c(CRAN = "https://cran.r-project.org"))
 
 if(!require(readr)) install.packages("readr", dependencies = TRUE)
 if(!require(PRISMA2020)) install.packages("PRISMA2020", dependencies = TRUE)

@@ -81,7 +81,7 @@ if(!require(mvtnorm)){install.packages("mvtnorm")}; library(mvtnorm)
 
 ## define function drawdat() to draw the data ----
 
-drawdat <- function(rSR, rSH, rRH, 
+ <- function(rSR, rSH, rRH, 
                     n = 100,
                     mS = 0, mR = 0, mH = 0, # means
                     sdS = 1, sdR = 1, sdH = 1, # SDs
@@ -109,8 +109,8 @@ drawdat <- function(rSR, rSH, rRH,
                               ncol=3))
 
   # prettify the data
-  dat <- as.data.frame(dat)
-  names(dat) <- c("S", "R", "H")
+   <- as.data.frame(dat)
+  names() <- c("S", "R", "H")
 
   # return the data
   return(dat)
@@ -200,8 +200,8 @@ result$diff_c1 <- result$c1 - c(0, result$c1[1:(nrow(result)-1)])
 result$diff_c2 <- result$c2 - c(0, result$c2[1:(nrow(result)-1)])
 
 # filter dataset
-result_c1 <- result[result$diff_c1 > 0 | result$rSH < .3,]
-result_c2 <- result[result$diff_c2 < 0 | result$rSH < .3,]
+ <- result[result$diff_c1 > 0 | result$rSH < .3,] 
+ <- result[result$diff_c2 < 0 | result$rSH < .3,]
 
 
 ### prepare styles ----

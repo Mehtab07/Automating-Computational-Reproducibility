@@ -174,6 +174,5 @@ kbl(sens.random, digits = 2, caption = "Leave-one-out sensitivity analysis") %>%
 
 
 # Cook's distance
-cooks <- cooks.distance(m.random)
-print(cooks)
+"missing code"
 sink()

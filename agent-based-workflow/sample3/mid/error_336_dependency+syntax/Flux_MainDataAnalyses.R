@@ -1,4 +1,4 @@
-library(psych)
+library()
 
 ########################################
 #
@@ -27,7 +27,7 @@ psych::describe( df[,c("age_t1", "sex","no_daily")] )
 #- Reliability of the variability measures ( note: the split-half reliability of
 #  the neutral object task is computed with an extra R-code ):
 
-names_n <- c("csd_state_bfi_n")
+names_n <- c"csd_state_bfi_n"
 names_e <- c("csd_state_ial_pa","csd_state_ial_fg","csd_state_ial_hi","csd_state_ial_no")
 names_o <- c("csd_state_bfi_o")
 names_a <- c("csd_state_ial_de","csd_state_ial_jk","csd_state_ial_lm","csd_state_ial_bc")
@@ -73,7 +73,7 @@ psych::corr.test( df[,names_var] )
 # transport table:
 tab <- psych::describe( df[,names_var] )[,c("mean","sd")]
 tab <- cbind( tab, psych::corr.test( df[,names_var] )$r )
-tab <- round(tab, 2) 
+tab <- round tab, 2 
 colnames( tab ) <- c("M","SD", paste( c(1:length(names_var)), ".", sep = "" ) )
 rownames( tab ) <- c("SCC T1","SCC T2","NO T1","NO T2","ST T1","ST T2",
 	"Daily N","Daily E","Daily O","Daily A","Daily C","Daily Pers.","Daily PA",
@@ -85,16 +85,16 @@ tab
 #-  Correlations and partial correlations between variability and well-being measures (Table 4)
 #- -------------------------------------------------------------
 
-psych::corr.test( df[,c( names_var[-c(1:2)],"rses","swls","pa","na","jsat","ucla")] )
+psych::corr.test( df[,c( names_var[-c(1:2)],"rses","swls","pa","na","jsat","ucla"
 
 # transport table:
 tab <- psych::corr.test( df[,c( names_var[-c(1:2)],"rses","swls","pa",
 	"na","jsat","ucla")] )$r[,c("rses","swls","pa","na","jsat","ucla")]
-tab <- round( tab[ rownames( tab ) %in% names_var[-c(1:2)], ], 2 ) 
+tab <- round( tab[ rownames( tab ) %in% names_var-c(1:2), ], 2 
 colnames( tab ) <- c("SE","LS","PA","NA","JS","UCLA")
-rownames( tab ) <- c("NO T1","NO T2","ST T1","ST T2",
+rownames( tab ) <- c"NO T1","NO T2","ST T1","ST T2",
 	"Daily N","Daily E","Daily O","Daily A","Daily C","Daily Pers.","Daily PA",
-	"Daily NA","Daily SE") 
+	"Daily NA","Daily SE" 
 tab
 #write.table( tab, "Table4.txt", row.names=T, col.names=T, sep = ";")
 

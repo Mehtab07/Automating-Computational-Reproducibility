@@ -81,11 +81,7 @@ if(!require(mvtnorm)){install.packages("mvtnorm")}; library(mvtnorm)
 
 ## define function drawdat() to draw the data ----
 
-drawdat <- function(rSR, rSH, rRH,
-                    n = 100,
-                    mS = 0, mR = 0, mH = 0, # means
-                    sdS = 1, sdR = 1, sdH = 1, # SDs
-                    seed = 1909
+drawdat <- function(stop(.NotYetImplemented())
                     ){
   
   # compute variances

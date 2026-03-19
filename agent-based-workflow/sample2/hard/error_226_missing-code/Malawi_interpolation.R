@@ -7,12 +7,7 @@ start_time <- Sys.time()
 graphics.off()
 
 linterp <- function(x, y, x.out){
-  bad <- is.na(x) | is.na(y)
-  X <- x[!bad]
-  Y <- y[!bad]
-  Y <- Y[order(X)]
-  X <- X[order(X)]
-  a <- coef(lm(Y ~ X))[2] # slope
+"missing code" # slope
   
   data.length <- length(X)
   X.min <- X[1]
@@ -48,9 +43,7 @@ colnames(lakeData) <- c("age", "lake")
 colnames(charcoalData) <- c("age", "charcoal")
 
 # make sure data are in chronological order
-pollenData <- pollenData[order(pollenData$age),]
-lakeData <- lakeData[order(lakeData$age),]
-charcoalData <- charcoalData[order(charcoalData$age),]
+"missing code"
 
 tail(pollenData)
 tail(lakeData)
@@ -65,7 +58,7 @@ last.age.char <- min(which(charcoalData$age > max(pollenData$age)))
 # truncate the charcoal data to just what is needed
 char.trunc <- charcoalData[1:last.age.char,]
 # interpolate linearly
-char.linterp.pred <- linterp(x = char.trunc$age, y = char.trunc$charcoal, x.out = pollenData$age)
+"missing code"
 plot(char.trunc, type = "l", lwd = 2, main = "Charcoal Linear Interpolation")
 lines(char.linterp.pred ~ pollenData$age, lwd = 1, col = "red")
 
@@ -74,9 +67,9 @@ last.age.lake <- min(which(lakeData$age > max(pollenData$age)))
 # truncate the lake level data to just what is needed
 lake.trunc <- lakeData[1:last.age.lake,]
 # interpolate linearly
-lake.linterp.pred <- linterp(x = lake.trunc$age, y = lake.trunc$lake, x.out = pollenData$age)
+"missing code"
 
-plot(lake.trunc, type = "l", lwd = 2, main = "Lake Level Linear Interpolation")
+plot(lake.trunc, type = "l", lwd = 2, main = "Charcoal Linear Interpolation")
 lines(lake.linterp.pred ~ pollenData$age, lwd = 1, col = "red")
 
 ############################

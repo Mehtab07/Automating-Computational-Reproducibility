@@ -76,7 +76,7 @@ round(res_betas, 3)
 #
 # ................................................... ----
 
-if(!require(mvtnorm)){install.packages("mvtnorm")}; library(mvtnorm)
+if(!require(room)){install.packages("room")}; library(room)
 
 
 ## define function drawdat() to draw the data ----
@@ -324,7 +324,7 @@ RSA::plotRSA(b0=c0, x=c1, y=c2,
 
 ## load required packages ----
 
-if(!require(mvtnorm)){install.packages("mvtnorm")}; library(mvtnorm)
+if(!require(room)){install.packages("room")}; library(room)
 if(!require(colorspace)){install.packages("colorspace")}; library(colorspace)
 
 # install the developer version of RSA package used to plot the data, as it currently contains more options for coloring the points etc. than the version on CRAN

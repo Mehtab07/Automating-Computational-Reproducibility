@@ -89,9 +89,7 @@ drawdat <- function(rSR, rSH, rRH,
                     ){
   
   # compute variances
-  vS <- sdS^2
-  vR <- sdR^2
-  vH <- sdH^2
+"missing code"
   
   # compute covariances
   covSR <- rSR*sdS*sdR

@@ -5,7 +5,6 @@ sink("Script_output.txt") # redirect output to a text file
 remove(list = ls()) # clear environment
 
 getwd() # to check the working directory
-# Install and load required packages
 if(!require(readr)) install.packages("readr", dependencies = TRUE)
 if(!require(PRISMA2020)) install.packages("PRISMA2020", dependencies = TRUE)
 if(!require(metafor)) install.packages("metafor", dependencies = TRUE)
@@ -13,8 +12,7 @@ if(!require(tidyr)) install.packages("tidyr", dependencies = TRUE)
 if(!require(kableExtra)) install.packages("kableExtra", dependencies = TRUE)
 if(!require(MAd)) install.packages("MAd", dependencies = TRUE)
 if(!require(dplyr)) install.packages("dplyr", dependencies = TRUE)
-
-# Load libraries
+# load libraries
 library(readr)
 library(PRISMA2020)
 library(metafor)
@@ -29,7 +27,7 @@ selection <- PRISMA_data(selection);
 flowd <- PRISMA_flowdiagram(selection,fontsize = 12, interactive = FALSE, previous = FALSE, other = TRUE);
 flowd
 
-df <- read_csv("df.csv")
+df <- read_csv("data/df.csv")
 
 # Effect size ----
 df <- escalc(measure="SMD",
@@ -48,8 +46,8 @@ df <- escalc(measure="SMD",
 df_agg<-MAd::agg(data=df, id=id, es=yi, var=vi, method = 'BHHR', cor = .50)  # change .50 to .70 or .90 to run analyses with different hypothesized correlation among outcomes 
 
 # Descriptives ----
-df_info<-read.csv("df_info.csv")
-info<- Reduce(function(x,y) merge(x,y,by="id",all=TRUE) ,list(df_agg,df_info))
+df_info<-read.csv("data/df_info.csv")
+info<- Reduce(function(x,y) merge(x,y,by="new_id",all=TRUE) ,list(df_agg,df_info))
 info<-info[,c("id","authors","country",
               "c_n","c_m_f_ratio","c_age_range","c_age_m","c_age_sd",
               "asd_n","asd_m_f_ratio","asd_age_range","asd_age_m","asd_age_sd",
@@ -80,7 +78,7 @@ kbl(info, digits = 2) %>%
 # Random-effects meta-analysis ----
 
 random <- rma(yi=es, vi=var, data=df_agg, method="REML")
-RE.results <- summary(random)
+RE.results <- summary(m.random)
 print(RE.results)
 
 #fit moderation model (type of synchrony)
@@ -89,7 +87,7 @@ summary(moderation.random)
 
 # Forest plot
 
-forest(random, # combined effect size
+forest(m.random, # combined effect size
        annotate=TRUE,
       # df_agg$var, # variance of the composite hp .5
        showweights=T,
@@ -97,41 +95,45 @@ forest(random, # combined effect size
        slab=df_agg$authors,
        ilab=df_agg$synch_type,
        ilab.xpos = -5,
-       ilab.pos = 4,
+       ilab.pos = 4, 
        cex=.75,
        xlim=c(-10,11),
-       xlab="Hedge's g",
+       xlab="Hedge's g", 
        addpred = TRUE)
 text(-3.8, 15, "SynchType", cex=.75, font=2)
 
 ### add text with Q-value, dfs, p-value, and I^2 statistic
 text(-10, -1.8, pos=4, cex=0.70, bquote(paste("(Q = ",
-                                              .(formatC(random$QE, digits=2, format="f")), ", df = ", .(random$k - random$p),
+                                              .(formatC(m.random$QE, digits=2, format="f")), ", df = ", .(m.random$k - m.random$p),
                                               ", p < .0001", "; ", I^2, " = ",
-                                              .(formatC(random$I2, digits=1, format="f")), "%)")))
+                                              .(formatC(m.random$I2, digits=1, format="f")), "%)")))
 
 # Prediction interval
 
-predict(random)
+predict(m.random)
 
 # Funnel plot
 
 ### carry out trim-and-fill analysis
-taf<-trimfill(random, main="")
+taf<-trimfill(m.random, main=""
+              ma.fixed = FALSE
+              fixed = FALSE
+              random = TRUE
+              label=TRUE
 
 ### draw funnel plot with missing studies filled in
 funnel(taf, legend=TRUE, xlab="Hedge's g")
 
-summary(trimfill(random))
+summary(trimfill(m.random))
 
 
 
 # Sensitivity analysis
 # Leave-One-Out
 
-sens.random<-as.data.frame(leave1out(random))
+sens.random<-as.data.frame(leave1out(m.random))
 
-sens.random<-data.frame(df_agg$authors, format(round(sens.random[,],2),nsmall=2))
+sens.random<-data.frame(df_agg$authors, format(round(sens.random[,],2),nsmal=2))
 sens.random$CI<-paste0("[",sens.random$ci.lb,";",sens.random$ci.ub,"]")
 sens.random$tau<-sqrt(as.numeric(sens.random$tau2))
 sens.random$tau2<-NULL
@@ -171,7 +173,7 @@ kbl(sens.random, digits = 2, caption = "Leave-one-out sensitivity analysis") %>%
 
 
 # Cook's distance
-dinf<-influence(random)
+dinf<-influence(m.random)
 highest<-max(dinf$inf$cook.d)
 plot(dinf$inf$cook.d, ylab = "Cook's distance", xlab = "ID", col=ifelse(dinf$inf$cook.d==highest, "red", "black"), pch=ifelse(dinf$inf$cook.d==highest, 19, 1), type = "b")
 axis(1, at=dinf$inf$slab, labels=dinf$inf$slab)

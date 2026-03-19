@@ -31,18 +31,10 @@
 
 sink("ComF_SOM_output.txt")
 ## define function that computes standardized coefficients from arbitrary correlations ----
-betas <- function(rSR, rSH, rRH,
+betas <- function(rSR, rSH, rRH, 
                   sdS=1, sdR=1, sdH=1){
 
-  # For standardized variables (sdS=sdR=sdH=1), compute coefficients
-  # Formula for standardized coefficients in regression with two predictors:
-  # c1 = (rSH - rSR * rRH) / (1 - rSR^2)
-  # c2 = (rRH - rSR * rSH) / (1 - rSR^2)
-
-  denominator <- 1 - rSR^2
-  c1 <- (rSH - rSR * rRH) / denominator
-  c2 <- (rRH - rSR * rSH) / denominator
-
+  stop("Function not implemented.")
   return(list(c1=c1, c2=c2))
 }
 

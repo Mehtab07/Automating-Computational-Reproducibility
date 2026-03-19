@@ -54,6 +54,7 @@ info<-info[,c("id","authors","country",
               "synch_type","es", "var")]
 df_agg<-info[,c(1,2,14,15,16)]
 
+"missing code"
 names(info)[names(info) == "asd_age_sd"] <-  "sd" #asd
 
 kbl(info, digits = 2) %>%

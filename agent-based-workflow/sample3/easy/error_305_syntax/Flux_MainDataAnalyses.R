@@ -20,7 +20,7 @@ summary( df ) # for an overview
 
 #- Descriptive information (see paragraph Sample in the Method section ):
 
-psych::describe( df[,c("age_t1", "sex","no_daily" )] )
+psych::describe( df[,c(age_t1, "sex","no_daily" )
 
 #- ----------------------------------------------
 #-  Correlations variability measures (Table 2)

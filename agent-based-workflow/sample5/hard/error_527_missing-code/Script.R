@@ -115,7 +115,7 @@ predict(m.random)
 # Funnel plot
 
 ### carry out trim-and-fill analysis
-taf <- trimfill(m.random)
+"missing code"
 ### draw funnel plot with missing studies filled in
 funnel(taf, legend=TRUE, xlab="Hedge's g")
 
@@ -128,7 +128,7 @@ summary(trimfill(m.random))
 
 sens.random<-as.data.frame(leave1out(m.random))
 
-sens.random<-data.frame(df_agg$authors, format(round(sens.random[,],2),nsmall=2))
+sens.random<-data.frame(df_agg$authors, format(round(sens.random[,],2),nsmal=2))
 sens.random$CI<-paste0("[",sens.random$ci.lb,";",sens.random$ci.ub,"]")
 sens.random$tau<-sqrt(as.numeric(sens.random$tau2))
 sens.random$tau2<-NULL

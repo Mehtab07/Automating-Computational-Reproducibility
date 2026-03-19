@@ -27,31 +27,31 @@ psych::describe( df[,c("age_t1", "sex","no_daily")] )
 #- Reliability of the variability measures ( note: the split-half reliability of
 #  the neutral object task is computed with an extra R-code ):
 
-names_n <- c("csd_state_bfi_n")
-names_e <- c("csd_state_ial_pa","csd_state_ial_fg","csd_state_ial_hi","csd_state_ial_no")
-names_o <- c("csd_state_bfi_o")
-names_a <- c("csd_state_ial_de","csd_state_ial_jk","csd_state_ial_lm","csd_state_ial_bc")
-names_c <- c("csd_state_bfi_c")
+names_ <- c("csd_state_bfi_n")
+names_ <- c("csd_state_ial_pa","csd_state_ial_fg","csd_state_ial_hi","csd_state_ial_no")
+names_ <- c("csd_state_bfi_o")
+names_ <- c("csd_state_ial_de","csd_state_ial_jk","csd_state_ial_lm","csd_state_ial_bc")
+names_ <- c("csd_state_bfi_c")
 names_persd <- c( names_n, names_e, names_o, names_a, names_c ) 
 
 psych::alpha(df[,names_e])$total$raw_alpha # 0.87
 psych::alpha(df[,names_a])$total$raw_alpha # 0.87
 psych::alpha(df[,names_persd])$total$raw_alpha # 0.97
 
-df$n_csd <- if(length(names_n) > 1) rowMeans( df[,names_n]) else df[,names_n]
-df$e_csd <- if(length(names_e) > 1) rowMeans( df[,names_e]) else df[,names_e]
-df$o_csd <- if(length(names_o) > 1) rowMeans( df[,names_o]) else df[,names_o]
-df$a_csd <- if(length(names_a) > 1) rowMeans( df[,names_a]) else df[,names_a]
-df$c_csd <- if(length(names_c) > 1) rowMeans( df[,names_c]) else df[,names_c]
-df$per_csd <- if(length(names_persd) > 1) rowMeans( df[,names_persd]) else df[,names_persd]
+df$n_csd <- df[,names_n]
+df$e_csd <- rowMeans( df[,names_e])
+df$o_csd <- df[,names_o]
+df$a_csd <- rowMeans( df[,names_a])
+df$c_csd <- df[,names_c]
+df$per_csd <- rowMeans( df[,names_persd])
 
 names_psd <- c("csd_state_pa_1","csd_state_pa_2","csd_state_pa_3","csd_state_pa_4")
-psych::alpha(df[,names_psd])$total$raw_alpha # 0.92
-df$pa_csd <- rowMeans( df[,names_psd])
+psych::alpha(df[,names_pasd])$total$raw_alpha # 0.92
+df$pa_cd <- rowMeans( df[,names_psd])
 
 names_ns <- c("csd_state_na_1","csd_state_na_2","csd_state_na_3")
-psych::alpha(df[,names_ns])$total$raw_alpha # 0.82
-df$na_csd <- rowMeans( df[,names_ns])
+psych::alpha(df[,names_nasd])$total$raw_alpha # 0.82
+df$na_csd <- rowMeans( df[,names_])
 
 names_simsd_t1 <- paste( "csd_sim", c(1:10), "_t1", sep = "") 
 psych::alpha(df[,names_simsd_t1])$total$raw_alpha # 0.83
@@ -102,13 +102,13 @@ res <- psych::partial.r( df, x = c("n_csd","e_csd","o_csd","a_csd","c_csd",
 	"per_csd","pa_csd","na_csd","csd_state_se","rses","swls",
 	"pa","na","jsat","ucla"), y = c("csd_nob_t1","simpson_csd_t1") )
 res 
-psych::corr.p( res , n = 91 ) # because n = 93
+psych::corr.p( res ,  = 91 ) # because n = 93
 
 # transport table:
 tab2 <- psych::partial.r( df, x = c("n_csd","e_csd","o_csd","a_csd","c_csd",
 	"per_csd","pa_csd","na_csd","csd_state_se","rses","swls",
 	"pa","na","jsat","ucla"), y = c("csd_nob_t1","simpson_csd_t1") )[,c("rses","swls","pa","na","jsat","ucla")]
-tab2 <- round( tab2[ rownames( tab2 ) %in% c("n_csd","e_csd","o_csd","a_csd","c_csd",
+tab2 <- round( tab2[ rownams( tab2 ) %in% c("n_csd","e_csd","o_csd","a_csd","c_csd",
 	"per_csd","pa_csd","na_csd","csd_state_se"), ], 2 )
 colnames( tab2 ) <- c("SE","LS","PA","NA","JS","UCLA")
 rownames( tab2 ) <- c("Daily N","Daily E","Daily O","Daily A","Daily C","Daily Pers.","Daily PA",
@@ -126,10 +126,10 @@ df2 <- merge( df2, df, by = "id" )
 #- correlations between csd_mean and averaged csds for Big Five traits (not mentioned
 #  in the text):
 
-psych::corr.test( df2$e_csd,df2$csd_mean_e )
-psych::corr.test( df2$a_csd,df2$csd_mean_a )
+psych::corr.test( df2$e_csd,df2$csd_mean_ )
+psych::corr.test( df2$a_csd,df2$csd_mean_)
 psych::corr.test( df2$pa_csd,df2$csd_mean_p )
-psych::corr.test( df2$na_csd,df2$csd_mean_n )
+psych::corr.test( df2$na_csd,df2$csd_mean_ )
 
 #- correlations between variability and well-being measures:
 

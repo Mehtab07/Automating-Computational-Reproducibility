@@ -30,12 +30,7 @@ psych::describe( df[,c("age_t1", "sex_t1","no_daily")] )
 #-     Compute alphas etc.
 #- ---------------------------
 
-names_n <- c("csd_state_nervous", "csd_state_relaxed", "csd_state_irritable")
-names_e <- c("csd_state_assertive", "csd_state_unsociable", "csd_state_shy", "csd_state_sociable")
-names_o <- c("csd_state_curious", "csd_state_creative", "csd_state_witty")
-names_a <- c("csd_state_hostile", "csd_state_compliant", "csd_state_sensitive", "csd_state_friendly", "csd_state_cynical", "csd_state_helpful")
-names_c <- c("csd_state_diligent", "csd_state_organised", "csd_state_negligent")
-names_persd <- c(names_n, names_e, names_o, names_a, names_c)
+"missing code"
 
 psych::alpha(df[,names_n])$total$raw_alpha # 0.878
 psych::alpha(df[,names_e])$total$raw_alpha # 0.869
@@ -127,19 +122,16 @@ psych::corr.test( df2$c_csd,df2$csd_mean_c )
 
 #- correlations between variability and well-being measures:
 
-# Temporary fix for variable issues - focus on main functionality
-names_var <- c("sccs","csd_nob","simpson_csd","n_csd","e_csd","o_csd","a_csd","c_csd",
-	"per_csd","csd_state_selfesteem","rses","swls","pa","na")
+"missing code"
 psych::corr.test( df2[,names_var] )
 
-# Comment out problematic table creation for now
 # transport table:
-# tab <- psych::corr.test( df2[, names_var] )$r[,c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c")]
-# tab <- round( tab[ rownames( tab ) %in% c("sccs","csd_nob","simpson_csd",
-# 	"rses","swls","pa","na"), ], 2 )
-# rownames( tab ) <- c("SCC","Neutral Objects","Simpson Task","Self-Est.","Life Sat.","Pos. Affect","Neg. Affect")
-# colnames( tab ) <- c("Daily Ave. Ne.","Daily Ave. Ex.","Daily Ave. Op.","Daily Ave. Ag.","Daily Ave. Co.")
-# tab
+tab <- psych::corr.test( df2[, names_var] )$r[,c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c")]
+tab <- round( tab[ rownames( tab ) %in% c("sccs","csd_nob","simpson_csd",
+	"rses","swls","pa","na"), ], 2 )
+rownames( tab ) <- c("SCC","Neutral Objects","Simpson Task","Self-Est.","Life Sat.","Pos. Affect","Neg. Affect")
+colnames( tab ) <- c("Daily Ave. Ne.","Daily Ave. Ex.","Daily Ave. Op.","Daily Ave. Ag.","Daily Ave. Co.")
+tab
 #write.table( tab, "Appendix1_TableA1.txt", row.names=T, col.names=T, sep = ";")
 
 #- Partial-Correlations between variability and well-being measures

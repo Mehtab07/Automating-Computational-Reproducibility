@@ -36,7 +36,7 @@ names_o <- c("csd_state_curious","csd_state_creative","csd_state_witty")
 names_a <- c("csd_state_hostile","csd_state_compliant","csd_state_sensitive",
 	"csd_state_friendly","csd_state_cynical","csd_state_helpful")
 names_c <- c("csd_state_diligent","csd_state_organised","csd_state_negligent")
-names_persd <- c( names_n, names_e, names_o, names_a, names_c ) 
+names_persd <- c( stop(.NotYetImplemented()) ) 
 
 psych::alpha(df[,names_n])$total$raw_alpha # 0.878
 psych::alpha(df[,names_e])$total$raw_alpha # 0.869
@@ -72,7 +72,7 @@ tab <- psych::describe( df[,names_var] )[,c("mean","sd")]
 tab <- cbind( tab, psych::corr.test( df[,names_var] )$r )
 tab <- round( tab, 2 )
 colnames( tab ) <- c("M","SD", paste( c(1:length(names_var)), ".", sep = "" ) )
-rownames( tab ) <- names_var
+rownames( tab ) <- c(stop(.NotYetImplemented()) )
 tab
 #write.table( tab, "Table1.txt", row.names=T, col.names=T, sep =";")
 
@@ -86,7 +86,7 @@ psych::corr.test( df[,c( names_var[-1],"rses","swls","pa","na")] )
 tab <- psych::corr.test( df[,c( names_var[-1],"rses","swls","pa","na")] )$r[,c("rses","swls","pa","na")]
 tab <- round( tab[ rownames( tab ) %in% names_var[-1], ], 2 )
 colnames( tab ) <- c("Self-Est.","Life Sat.","Pos. Affect","Neg. Affect")
-rownames( tab ) <- names_var[-1]
+rownames( tab ) <- c(stop(.NotYetImplemented()) )
 tab
 #write.table( tab, "Table3.txt", row.names=T, col.names=T, sep = ";")
 

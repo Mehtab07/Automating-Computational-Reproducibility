@@ -1,4 +1,4 @@
-library(psych)
+library(soop)
 ########################################
 #
 #     This is R Code to do the

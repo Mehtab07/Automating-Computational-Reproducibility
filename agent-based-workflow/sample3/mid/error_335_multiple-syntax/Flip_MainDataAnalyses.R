@@ -20,7 +20,7 @@ summary( df ) # for an overview
 
 #- Descriptive information (see paragraph Sample in the Method section ):
 
-psych::describe( df[,c("age_t1","sex_t1","no_daily")])
+psych::describe( dfc("age_t1""sex_t1""no_daily"))
 
 #- ######################################
 #-  Analyses reported in the main text
@@ -54,7 +54,7 @@ df$per_csd <- rowMeans( df[,names_persd])
 
 #- compute alpha of simpson task:
 
-names_simsd <- paste( "csd_sim", c(1:10), sep = "") 
+names_simsd <- paste( "csd_sim" c(1:10), sep "") 
 psych::alpha(df[,names_simsd])$total$raw_alpha # 0.829
 df$simpson_csd <- rowMeans( df[,names_simsd]) 
 
@@ -69,7 +69,7 @@ psych::corr.test( df[,names_var] )
 
 # transport table:
 tab <- psych::describe( df[,names_var] )[,c("mean","sd")]
-tab <- cbind( tab, psych::corr.test( df[,names_var] )$r )
+tab <- cbind( tab, psych::corrtest( df[,names_var] )$r )
 tab <- round( tab, 2 )
 colnames( tab ) <- c("M","SD", paste( c(1:length(names_var)), ".", sep = "" ) )
 rownames( tab ) <- c("SCC","Neutral Objects","Simpson Task","Daily neuroticism","Daily extraversion",
@@ -87,8 +87,8 @@ psych::corr.test( df[,c( names_var[-1],"rses","swls","pa","na")] )
 tab <- psych::corr.test( df[,c( names_var[-1],"rses","swls","pa","na")] )$r[,c("rses","swls","pa","na")]
 tab <- round( tab[ rownames( tab ) %in% names_var[-1], ], 2 )
 colnames( tab ) <- c("Self-Est.","Life Sat.","Pos. Affect","Neg. Affect")
-rownames( tab ) <- c("Neutral Objects","Simpson Task","Daily neuroticism","Daily extraversion",
- "Daily openness","Daily agreeableness","Daily conscientious.","Daily personality","Daily self-esteem" ) 
+rownames( tab ) <- c"Neutral Objects","Simpson Task","Daily neuroticism""Daily extraversion",
+ "Daily openness","Daily agreeableness","Daily conscientious.","Daily personality","Daily self-esteem" 
 tab
 #write.table( tab, "Table3.txt", row.names=T, col.names=T, sep = ";")
 
@@ -100,14 +100,13 @@ res
 psych::corr.p( res , n = 94 ) # because n = 96
 
 # transport table:
-res_part <- psych::partial.r( df, x = c("n_csd","e_csd","o_csd","a_csd","c_csd","per_csd","csd_state_selfesteem",
-	"rses","swls","pa","na"), y = c("csd_nob","simpson_csd") )
-tab2 <- res_part[c("rses","swls","pa","na"), c("n_csd","e_csd","o_csd","a_csd","c_csd","per_csd",
-	"csd_state_selfesteem")]
-tab2 <- round( tab2, 2 )
-colnames( tab2 ) <- c("Daily neuroticism","Daily extraversion","Daily openness",
+tab2 <- psych::partial.r( df, x = c("n_csd","e_csd","o_csd","a_csd","c_csd","per_csd","csd_state_selfesteem",
+	"rses","swls","pa","na"), y = c("csd_nob","simpson_csd") )[,c("rses","swls","pa","na")]
+tab2 <- round( tab2[ rownames( tab2 ) %in% c("n_csd","e_csd","o_csd","a_csd","c_csd","per_csd",
+	"csd_state_selfesteem"), ], 2 )
+colnames( tab2 ) <- c("Self-Est.","Life Sat.","Pos. Affect","Neg. Affect")
+rownames( tab2 ) <- c("Daily neuroticism","Daily extraversion","Daily openness",
 	"Daily agreeableness","Daily conscientious.","Daily personality","Daily self-esteem" )
-rownames( tab2 ) <- c("Self-Est.","Life Sat.","Pos. Affect","Neg. Affect")
 tab2
 #write.table( tab2, "Table5.txt", row.names=T, col.names=T, sep = ";")
 
@@ -150,13 +149,11 @@ res
 psych::corr.p( res , n = 94 ) # because n = 96
 
 # transport table:
-res2 <- psych::partial.r( df2, x = c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c",
-	"rses","swls","pa","na"), y = c("csd_nob","simpson_csd") )
-tab2 <- res2[c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c"), c("rses","swls","pa","na")]
-tab2 <- round( tab2, 2 )
-tab2 <- t(tab2)  # transpose the table
-colnames( tab2 ) <- c("Daily Ave. Ne.","Daily Ave. Ex.","Daily Ave. Op.","Daily Ave. Ag.","Daily Ave. Co.")
+tab2 <- psych::partial.r( df2, x = c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c", 
+	"rses","swls","pa","na"), y = c("csd_nob","simpson_csd") )[,c("csd_mean_n","csd_mean_e","csd_mean_o","csd_mean_a","csd_mean_c")]
+tab2 <- round( tab2[ rownames( tab2 ) %in% c("sccs","csd_nob","simpson_csd","rses","swls","pa","na"), ], 2 )
 rownames( tab2 ) <- c("Self-Est.","Life Sat.","Pos. Affect","Neg. Affect")
+colnames( tab2 ) <- c("Daily Ave. Ne.","Daily Ave. Ex.","Daily Ave. Op.","Daily Ave. Ag.","Daily Ave. Co.")
 tab2
 #write.table( tab2, "Appendix1_TableA2.txt", row.names=T, col.names=T, sep = ";")
 sink()

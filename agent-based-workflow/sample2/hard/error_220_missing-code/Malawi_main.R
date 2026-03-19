@@ -10,9 +10,7 @@ packages <- c("gdtools", "svglite","MASS", "vegan", "lattice", "permute", "openx
 package.check <- lapply(
   packages,
   FUN = function(x) {
-    if (!require(x, character.only = TRUE)) {
-      install.packages(x, dependencies = TRUE)
-      library(x, character.only = TRUE)
+"missing code"
     }
   }
 )

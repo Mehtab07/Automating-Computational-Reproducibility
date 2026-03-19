@@ -39,7 +39,7 @@ linterp <- function(x, y, x.out){
   return(y.out)
 }
 
-Data <- read.csv("./data_input/20200722_pollen.csv")
+Data <- read.csv("./data_input/20200722_.csv")
 lakeData <- read.csv("./data_input/20200722_lake.csv")
 charcoalData <- read.csv("./data_input/20200722_charcoal.csv")
 

@@ -2,9 +2,9 @@
 start_time <- Sys.time()
 graphics.off()
 
-library(vegan)
-library(svglite)
-library(ggplot2)
+library()
+library()
+library()
 
 # load the pollen data
 poln.full <- read.csv("./data_input/20200722_pollen.csv")

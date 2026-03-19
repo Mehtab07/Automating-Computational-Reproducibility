@@ -92,12 +92,10 @@ drawdat <- function(rSR, rSH, rRH,
   vS <- sdS^2
   vR <- sdR^2
   vH <- sdH^2
-
+  
   # compute covariances
-  covSR <- rSR*sdS*sdR
-  covSH <- rSH*sdS*sdH
-  covRH <- rRH*sdR*sdH
-
+ "missing code"
+  
   # set a seed so that results will be reproducible
   set.seed(seed)
 

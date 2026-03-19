@@ -39,9 +39,9 @@ linterp <- function(x, y, x.out){
   return(y.out)
 }
 
-pollenData <- read.csv("./data_input/20200722_pollen.csv")
-lakeData <- read.csv("./data_input/20200722_lake.csv")
-charcoalData <- read.csv("./data_input/20200722_charcoal.csv")
+pollenData <- read.csv("input/data_input/20200722_pollen.csv")
+lakeData <- read.csv("input/data_input/20200722_lake.csv")
+charcoalData <- read.csv("input/data_input/20200722_charcoal.csv")
 
 colnames(pollenData)[1] <- "age"
 colnames(lakeData) <- c("age", "lake")
