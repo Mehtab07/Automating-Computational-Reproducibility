@@ -26,7 +26,50 @@ The repository is organized into two primary directories, each encapsulating a c
 
 ## Workflow 1: Prompt-Based Reproducibility
 
-This workflow implements an Reproducibility workflow that directly queries LLMs with structured prompts to diagnose and repair R script failures. It includes sophisticated validation steps to check for hallucination and scientific reproducibility.
+This workflow implements an automated repair cycle that directly queries LLMs with structured prompts. It uses the research paper and other scripts as context to diagnose and repair R script failures, followed by automated validation.
+
+### 🛠️ Setup
+
+1.  **Navigate and Install Dependencies**:
+    ```bash
+    cd prompt-based-workflow/
+    pip install -r requirements.txt
+    ```
+2.  **Build Docker Images**:
+    Two images are required: one for the base R environment and one for the orchestration environment.
+    ```bash
+    docker build -f Dockerfile.r-image -t r-image .
+    docker build -f Dockerfile -t prompt-repro-env .
+    ```
+3.  **Configure Environment Variables**:
+    Create a `.env` file or set the following in your shell:
+    -   `OPEN_ROUTER_API_KEY`: Your OpenRouter API key.
+    -   `HOST_PROJECT_PATH`: **(Required)** The absolute path to this repository on your *host* machine (e.g., `C:/Users/Name/Automating-Computational-Reproducibility`). This is used for Docker volume mounting.
+
+### ⚙️ Configuration
+
+-   **Model Selection**: Edit `SELECTED_MODEL` in `main.py`. Default is `qwen/qwen3-coder`.
+-   **Validation**: Toggle `ENABLE_REPRO_CHECK` and `ENABLE_HALLUCINATION_CHECK` in `main.py` to enable/disable automated verification.
+
+### 🚀 Usage
+
+Run the `main.py` script on a specific error folder:
+
+```bash
+# Example: Run on Sample 1, Easy Error 101 with full context
+python main.py sample1/easy/error_101_wrong-path --mode full
+```
+
+-   **Modes**: 
+    -   `minimal`: Only provides the error log and the broken script.
+    -   `medium`: Adds the research paper (`paper.md`) as context.
+    -   `full`: Adds the paper and other related R scripts from the same study.
+
+### 📊 Output & Analysis
+
+-   **`run_summary.csv`**: Created in the sample's directory (e.g., `sample1/run_summary.csv`) with detailed metrics for each run.
+-   **`Categories.csv`**: Global log for all executions.
+-   **`paper_vs_results_summary.txt`**: Detailed LLM-generated comparison between the script's output and the findings in the research paper.
 
 ### Directory Structure
 
@@ -49,62 +92,53 @@ prompt-based-workflow/
 ├── reproducibility_check.py        # Script for verifying scientific claims against the paper
 ├── requirements.txt                # Python dependencies for this workflow
 └── samples                         # Test cases for this workflow (sample1-5)
-    ├── sample1/
-    │   ├── base/                   # Reference output for sample1
-    │   └── ... (error_XXX folders with R scripts, data, paper.md)
-    └── ... (sample2-5 structured similarly)
 ```
 
 ### How It Works
 
 Orchestrated by `main.py`, this workflow operates within an isolated Docker environment defined by `Dockerfile` and `Dockerfile.r-image`. When an R script fails, the system gathers the broken code, error logs, and contextual intent (from `paper.md`). It then constructs a structured prompt for an LLM (e.g., Qwen-Coder, GPT-4o) to generate a fix. After patching the code, it re-executes and proceeds to validate the results using `hallucination_check.py` and `reproducibility_check.py`.
 
-### Setup
-
-1.  **Navigate:** Change directory to `prompt-based-workflow/`.
-    ```bash
-    cd prompt-based-workflow/
-    ```
-2.  **Build Docker Images:** Build the necessary Docker images.
-    ```bash
-    docker build -f Dockerfile.r-image -t r-image .
-    docker build -f Dockerfile -t prompt-repro-env .
-    # Or use docker-compose for convenience
-    # docker-compose up --build -d
-    ```
-3.  **Install Python Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  **API Keys:** Ensure your `OPEN_ROUTER_API_KEY` or `OPENAI_API_KEY` are set as environment variables.
-
-### Usage
-
-Run the `main.py` script, specifying the desired sample and execution mode.
-
-```bash
-python main.py samples/<sample_id>/<error_path> --mode <mode>
-```
-
-*   `<sample_id>`: e.g., `sample1`.
-*   `<error_path>`: e.g., `easy/error_101_wrong-path`.
-*   `<mode>`: `minimal`, `medium`, or `full` (determines the contextual richness of the prompt sent to the LLM).
-
-**Example:**
-
-To run the full mode on `sample1`'s `error_101_wrong-path` case:
-
-```bash
-python main.py samples/sample1/easy/error_101_wrong-path --mode full
-```
-
-### Output & Analysis
-
-This workflow logs detailed results into `prompt-based-workflow/Categories.csv`, including success status, attempts, and validation outcomes. The `hallucination_check.py` and `reproducibility_check.py` scripts provide granular insights into the quality and scientific integrity of the LLM-generated fixes.
-
 ## Workflow 2: Agent-Based Reproducibility
 
-This workflow employs AI agents to interactively diagnose, modify, and re-run R scripts within a Dockerized environment, aiming to achieve computational reproducibility. It simulates a research assistant capable of inspecting the environment and performing fixes.
+This workflow employs autonomous AI agents (e.g., Claude, OpenCode, or Gemini) to interactively diagnose, modify, and re-run R scripts within a Dockerized environment. Unlike the prompt-based approach, agents can explore the filesystem and iteratively fix errors based on real-time feedback.
+
+### 🛠️ Setup
+
+1.  **Navigate and Install Dependencies**:
+    ```bash
+    cd agent-based-workflow/
+    # The orchestrator requires python-dotenv
+    pip install -r requirements.txt 
+    ```
+2.  **Build the Agent Environment**:
+    The orchestration script expects a docker image. Build it using:
+    ```bash
+    docker build -t my-agent-base:latest .
+    ```
+3.  **Configure API Keys**:
+    Ensure `OPENROUTER_API_KEY` is set in your environment or a `.env` file.
+
+### ⚙️ Configuration (Model Selection)
+
+You can customize which LLM the agents use by editing the configuration files, by default, it uses `qwen/qwen3-coder`:
+-   **OpenCode Agent**: Edit `opencode_config/opencode.json`..
+-   **Claude Agent**: Edit `claude_code_router_config/config.json`.
+
+### 🚀 Usage
+
+The `run.py` script orchestrates the execution, `--agent` is used to switch between opencode or claude. You can run it on a single sample or in batch mode using `--single` or `--batch` argument:
+
+```bash
+# Run on a single error case (Example: Sample 1, Easy Error 101) using opencode
+python run.py --single sample1/easy/error_101_wrong-path --agent opencode
+
+# Run in batch mode on all 'sample' folders within a sample3 using claude
+python run.py --batch sample3 --agent claude
+```
+
+### 📊 Output & Results
+The agent will attempt to fix the code and perform a reproducibility check against the paper.
+- **`Categories.csv`**: A global log updated with execution metrics, model used, and success status.
 
 ### Directory Structure
 
@@ -129,52 +163,5 @@ agent-based-workflow/
 ### How It Works
 
 The `run.py` script acts as the orchestrator. It sets up a Docker container based on `Dockerfile`, which includes an R environment and necessary agent CLI tools. It then leverages an AI agent ( OpenCode, or Claude agent) to attempt to reproduce R scripts from the `samples/` directory. The agent follows instructions in `prompt.txt` to identify errors, apply minimal fixes, and report the reproducibility status (`status.txt`).
-
-### Setup
-
-1.  **Navigate:** Change directory to `agent-based-workflow/`.
-    ```bash
-    cd agent-based-workflow/
-    ```
-2.  **Build Docker Image:** Build the Docker image required for the agent's execution environment.
-    ```bash
-    docker build -t my-agent-base:latest .
-    ```
-3.  **API Keys:** Ensure your `OPENROUTER_API_KEY` is set as environment variables.
-
-## Usage
-
-The core of this project is the `run.py` script, which orchestrates the execution of the AI agents. The script can be run in two modes: `--single` and `--batch`.
-
-### Command-Line Arguments
-
--   `--single`: The path to a single directory containing the R script(s) you want the agent to analyze.
--   `--batch`: The path to a directory to be searched recursively for subdirectories starting with "error". The agent will be run on each of these "error" directories.
--   `--agent`: The AI agent to use. The available options are `opencode`, and `claude`.
-
-You must provide either the `--single` or the `--batch` argument.
-
-### Examples
-
--   **Running on a single folder:**
-    ```bash
-    python run.py --single sample1/easy/error_101_wrong-path
-    ```
-
--   **Running in batch mode:**
-    This command will search the `sample1` directory and run the agent on all "error" folders found within it.
-    ```bash
-    python run.py --batch sample1
-    ```
--   **Using the `claude` agent:**
-    ```bash
-    python run.py --single sample1/easy/error_101_wrong-path --agent claude
-    ```
-
-The script will execute the chosen agent within the Docker container, mounting the specified folder(s) as a workspace. The agent will then attempt to understand and fix the R scripts in that directory.
-
-### Output & Analysis
-
-Results from each run, including performance metrics and reproducibility status, are logged into `agent-based-workflow/Categories.csv`. The `log_parser.py` utility can be used for post-processing and analyzing the detailed logs generated by the `claude` agent.
 
 ---

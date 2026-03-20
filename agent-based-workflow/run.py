@@ -38,7 +38,7 @@ def main():
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--single", help="Path to the single sample folder to mount.")
     group.add_argument("--batch", help="Path to the batch folder to search for error folders.")
-    parser.add_argument("--agent", required=False, default="opencode", choices=["gemini", "opencode", "claude"], help="Which agent CLI to use.")
+    parser.add_argument("--agent", required=False, default="opencode", choices=["opencode", "claude"], help="Which agent CLI to use.")
     parser.add_argument("--timeout", type=int, help="Timeout in seconds for the agent to run.")
     args = parser.parse_args()
 
