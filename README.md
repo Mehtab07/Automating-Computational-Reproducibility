@@ -105,7 +105,11 @@ prompt-based-workflow/
 ├── pdftomd.py                      # Utility for PDF to Markdown conversion
 ├── reproducibility_check.py        # Script for verifying scientific claims against the paper
 ├── requirements.txt                # Python dependencies for this workflow
-└── samples                         # Test cases for this workflow (sample1-5)
+└── samples                         # Test cases for this workflow (sample 1-5)
+    ├── sample1/
+    │   ├── base/                   # original reproducible sample
+    │   └── ... (error_XXX folders with R scripts, data, paper.md)
+    └── ... (sample2-5 structured similarly)
 ```
 
 ### How It Works
