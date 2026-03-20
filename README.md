@@ -39,7 +39,7 @@ This workflow implements an automated repair cycle that directly queries LLMs wi
     Two images are required: one for the base R environment and one for the orchestration environment.
     ```bash
     docker build -f Dockerfile.r-image -t r-image .
-    docker build -f Dockerfile -t prompt-repro-env .
+    docker-compose build manager
     ```
 3.  **Configure Environment Variables**:
     Create a `.env` file or set the following in your shell:
@@ -53,11 +53,26 @@ This workflow implements an automated repair cycle that directly queries LLMs wi
 
 ### 🚀 Usage
 
-Run the `main.py` script on a specific error folder:
+Use `docker-compose run` to execute the `main.py` script inside the `manager` container. The arguments to `main.py` are passed at the end of the command.
+
+To avoid warnings about "orphan containers" and to keep your system clean, it is highly recommended to use the `--rm` flag. This will automatically remove the container after the experiment is finished.
+
+```bash
+docker-compose run --rm manager python main.py [paths...] [--mode MODE]
+```
+
+Run the `main.py` script on a specific error sample:
 
 ```bash
 # Example: Run on Sample 1, Easy Error 101 with full context
-python main.py sample1/easy/error_101_wrong-path --mode full
+docker-compose run --rm manager python main.py sample1/easy/error_101_wrong-path --mode full
+```
+
+Run the `main.py` script on a batch of samples:
+
+```bash
+# Example: Run on Sample 3, all Easy Errors with minimal context
+docker-compose run --rm manager python main.py sample3/easy --mode minimal
 ```
 
 -   **Modes**: 
@@ -69,7 +84,6 @@ python main.py sample1/easy/error_101_wrong-path --mode full
 
 -   **`run_summary.csv`**: Created in the sample's directory (e.g., `sample1/run_summary.csv`) with detailed metrics for each run.
 -   **`Categories.csv`**: Global log for all executions.
--   **`paper_vs_results_summary.txt`**: Detailed LLM-generated comparison between the script's output and the findings in the research paper.
 
 ### Directory Structure
 
