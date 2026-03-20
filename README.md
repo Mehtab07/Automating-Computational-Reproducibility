@@ -32,7 +32,7 @@ This workflow implements an automated repair cycle that directly queries LLMs wi
 
 1.  **Navigate and Install Dependencies**:
     ```bash
-    cd prompt-based-workflow/
+    cd prompt-based-workflow
     pip install -r requirements.txt
     ```
 2.  **Build Docker Images**:

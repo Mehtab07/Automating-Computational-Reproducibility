@@ -203,7 +203,7 @@ def execute_workflow(execution_path, config, mode, selected_script, args, error_
 
             target_script_names = [target_script_for_fixing]
             context_script_names = config["r_scripts"]
-            api_key = os.getenv({"openai": "OPENAI_API_KEY", "openrouter": "OPEN_ROUTER_API_KEY", "chatai": "CHAT_AI_API_KEY"}.get(SELECTED_API_PROVIDER))
+            api_key = os.getenv({"openai": "OPENAI_API_KEY", "openrouter": "OPENROUTER_API_KEY", "chatai": "CHAT_AI_API_KEY"}.get(SELECTED_API_PROVIDER))
             if not api_key:
                 print(f"{SELECTED_API_PROVIDER.upper()}_API_KEY not found. Skipping fix attempts.")
                 break
@@ -278,7 +278,7 @@ def execute_workflow(execution_path, config, mode, selected_script, args, error_
             base_result_text = read_result_files(base_result_files) if base_result_files else ""
 
             if markdown_text and result_text and base_result_text:
-                api_key = os.getenv({"openai": "OPENAI_API_KEY", "openrouter": "OPEN_ROUTER_API_KEY", "chatai": "CHAT_AI_API_KEY"}.get(SELECTED_API_PROVIDER))
+                api_key = os.getenv({"openai": "OPENAI_API_KEY", "openrouter": "OPENROUTER_API_KEY", "chatai": "CHAT_AI_API_KEY"}.get(SELECTED_API_PROVIDER))
                 if not api_key:
                     print(f"{SELECTED_API_PROVIDER.upper()}_API_KEY not found. Skipping hallucination check.")
                     paper_status, paper_reason, base_status = "Skipped", f"{SELECTED_API_PROVIDER.upper()} API key not found.", "Skipped"
