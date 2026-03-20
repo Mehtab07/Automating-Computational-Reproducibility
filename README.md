@@ -48,7 +48,7 @@ prompt-based-workflow/
 ├── pdftomd.py                      # Utility for PDF to Markdown conversion
 ├── reproducibility_check.py        # Script for verifying scientific claims against the paper
 ├── requirements.txt                # Python dependencies for this workflow
-└── samples/                        # Test cases for this workflow (sample1-5)
+└── samples                         # Test cases for this workflow (sample1-5)
     ├── sample1/
     │   ├── base/                   # Reference output for sample1
     │   └── ... (error_XXX folders with R scripts, data, paper.md)
@@ -119,7 +119,7 @@ agent-based-workflow/
 ├── run.py                          # Main script to orchestrate agent runs
 ├── claude_code_router_config/      # Configuration for claude agent 
 ├── opencode_config/                # Configuration for the opencode agent 
-└── samples/                        # Test cases for this workflow (sample 1-5)
+└── samples                         # Test cases for this workflow (sample 1-5)
     ├── sample1/
     │   ├── base/                   # Reference output for sample1
     │   └── ... (error_XXX folders with R scripts, data, paper.md)
@@ -138,9 +138,9 @@ The `run.py` script acts as the orchestrator. It sets up a Docker container base
     ```
 2.  **Build Docker Image:** Build the Docker image required for the agent's execution environment.
     ```bash
-    docker build -t agent-repro-env .
+    docker build -t my-agent-base:latest .
     ```
-3.  **API Keys:** Ensure your `OPEN_ROUTER_API_KEY` is set as environment variables.
+3.  **API Keys:** Ensure your `OPENROUTER_API_KEY` is set as environment variables.
 
 ## Usage
 
