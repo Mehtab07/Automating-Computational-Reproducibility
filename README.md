@@ -43,8 +43,8 @@ This workflow implements an automated repair cycle that directly queries LLMs wi
     ```
 3.  **Configure Environment Variables**:
     Create a `.env` file or set the following in your shell:
-    -   `OPEN_ROUTER_API_KEY`: Your OpenRouter API key.
-    -   `HOST_PROJECT_PATH`: **(Required)** The absolute path to this repository on your *host* machine (e.g., `C:/Users/Name/Automating-Computational-Reproducibility`). This is used for Docker volume mounting.
+    -   `OPENROUTER_API_KEY`: Your OpenRouter API key.
+    -   `HOST_PROJECT_PATH`: **(Required)** The absolute path to this repository on your *host* machine (e.g., ` C:/User/Automating-Computational-Reproducibility/prompt-based-workflow`). This is used for Docker volume mounting.
 
 ### ⚙️ Configuration
 
