@@ -12,7 +12,7 @@ Across prompt-based runs, reproduction success ranged from 31–78%, with perfor
 
 ## Repository Overview
 
-This repository contains the code and data for research study investigating the use of Large Language Models (LLMs) and AI agents to automate the repair of computational reproducibility failures in R-based scientific code. It features two distinct, self-contained workflows: an **Agent-Based Workflow** and a **Prompt-Based Workflow**, each designed to diagnose and fix common issues encountered when reproducing computational research.
+This repository contains the code and data for research study investigating the use of Large Language Models (LLMs) and AI agents to automate the repair of computational reproducibility failures in R-based scientific code. It features two distinct, self-contained workflows: an **Agent-Based Workflow** and a **Prompt-Based Workflow**, each designed to diagnose and fix common issues encountered when reproducing computational research in social science.
 
 ## Repository Structure
 
@@ -64,14 +64,14 @@ docker-compose run --rm manager python main.py [paths...] [--mode MODE]
 Run the `main.py` script on a specific error sample:
 
 ```bash
-# Example: Run on Sample 1, Easy Error 101 with full context
+# Example: Run on Sample 1, easy error 101 with full prompt
 docker-compose run --rm manager python main.py sample1/easy/error_101_wrong-path --mode full
 ```
 
 Run the `main.py` script on a batch of samples:
 
 ```bash
-# Example: Run on Sample 3, all Easy Errors with minimal context
+# Example: Run on Sample 3, all easy errors with minimal prompt
 docker-compose run --rm manager python main.py sample3/easy --mode minimal
 ```
 
