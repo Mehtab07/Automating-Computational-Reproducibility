@@ -49,7 +49,6 @@ This workflow implements an automated repair cycle that directly queries LLMs wi
 ### ⚙️ Configuration
 
 -   **Model Selection**: Edit `SELECTED_MODEL` in `main.py`. Default is `qwen/qwen3-coder`.
--   **Validation**: Toggle `ENABLE_REPRO_CHECK` and `ENABLE_HALLUCINATION_CHECK` in `main.py` to enable/disable automated verification.
 
 ### 🚀 Usage
 
