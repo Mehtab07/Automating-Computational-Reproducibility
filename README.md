@@ -117,14 +117,13 @@ Orchestrated by `main.py`, this workflow operates within an isolated Docker envi
 
 ## Workflow 2: Agent-Based Reproducibility
 
-This workflow employs autonomous AI agents (e.g., Claude, OpenCode, or Gemini) to interactively diagnose, modify, and re-run R scripts within a Dockerized environment. Unlike the prompt-based approach, agents can explore the filesystem and iteratively fix errors based on real-time feedback.
+This workflow employs autonomous AI agents (e.g., Claude, OpenCode) to interactively diagnose, modify, and re-run R scripts within a Dockerized environment. Unlike the prompt-based approach, agents can explore the filesystem and iteratively fix errors based on real-time feedback.
 
 ### 🛠️ Setup
 
 1.  **Navigate and Install Dependencies**:
     ```bash
-    cd agent-based-workflow/
-    # The orchestrator requires python-dotenv
+    cd agent-based-workflow
     pip install -r requirements.txt 
     ```
 2.  **Build the Agent Environment**:
