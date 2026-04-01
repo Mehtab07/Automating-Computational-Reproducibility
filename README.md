@@ -108,7 +108,7 @@ prompt-based-workflow/
 ├── requirements.txt                # Python dependencies for this workflow
 └── samples                         # Test cases for this workflow (sample 1-5)
     ├── sample1/
-    │   ├── base/                   # original reproducible sample
+    │   ├── base/                   # Reference output for sample1
     │   └── ... (error_XXX folders with R scripts, data, paper.md)
     └── ... (sample2-5 structured similarly)
 ```
