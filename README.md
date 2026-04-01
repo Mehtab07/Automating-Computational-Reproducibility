@@ -4,11 +4,11 @@
 
 ## Abstract
 
-Reproducing computational research is often assumed to be as simple as re-running the original code with the provided data. In practice, this rarely works. Missing packages, fragile file paths, version conflicts, or incomplete logic frequently cause published analyses to fail, even when authors share all materials. This study asks whether large language models (LLMs) and AI agents can help automate the practical work of diagnosing and repairing such failures, making computational results easier to reproduce and verify.
+Reproducing computational research is often treated as a straightforward matter of re-running shared code on shared data. In practice, published analyses frequently fail even when materials are available, due to missing dependencies, brittle paths, version mismatches, and—more challenging—gaps in analytical logic. We investigate whether large language models (LLMs) and autonomous AI agents can automate the routine but labor-intensive work of repairing such failures, thereby lowering the practical barrier to computational verification.
 
-We evaluate this idea using a controlled reproducibility testbed built from five fully reproducible R-based social science studies. We deliberately injected realistic failures ranging from simple issues to complex missing logic and tested two automated repair workflows in clean Docker environments. The first workflow followed a prompt-based approach, where LLMs were repeatedly queried with structured prompts of varying contextual richness, while the second used agent-based systems that could inspect files, modify code, and re-run analyses inside the environment.
+We evaluate two automated repair paradigms in a controlled setting derived from five fully reproducible R-based social science studies. Starting from ground-truth executions, we inject realistic failure modes spanning execution-level issues, contextual code fixes, and structural logic omissions, and package them into 130 synthetic test cases. These test cases were systematically categorized based on the complexity and diversity of the injected errors. We then run (i) a prompt-based workflow that iteratively queries LLMs with structured prompts at increasing levels of contextual richness, and (ii) an agent-based workflow in which coding agents inspect project files, apply targeted edits, and re-run analyses until completion or a time limit. Repairs are only counted as successful if the resulting outputs match the ground-truth outputs, not merely if the code executes.
 
-Across prompt-based runs, reproduction success ranged from 31–78%, with performance strongly influenced by prompt context and error complexity. Complex cases benefited most from additional context. Agent-based workflows performed substantially better across all levels of complexity, with success rates ranging from 69–96%. Overall, our results suggest that automated workflows, especially agent-based repair systems, can significantly reduce the manual effort required for computational reproducibility and improve reproduction success across a wide range of error types in research workflows. Unlike prior reproducibility benchmarks that focus on replication from minimal artifacts, our benchmark isolates post-publication repair under controlled failure modes, enabling a direct comparison between prompt-based and agent-based workflows.
+Across prompt-based runs, reproduction success varies substantially (31–79%), shaped by both failure complexity and the amount of context provided; richer context yields the largest gains on structurally complex cases. Agent-based workflows consistently achieve higher success (69–96%) across all categories, suggesting that environment-aware, iterative tool use provides a decisive advantage over API-only prompting. By isolating post-publication repair under controlled, systematic failure modes, our benchmark enables direct comparisons between prompt-based and agentic workflows and provides evidence that agentic repair systems can meaningfully reduce manual labour while improving the reliability of computational reproducibility in realistic research pipelines.
 
 ## Repository Overview
 
@@ -30,18 +30,20 @@ This workflow implements an automated repair cycle that directly queries LLMs wi
 
 ### 🛠️ Setup
 
-1.  **Navigate and Install Dependencies**:
+1.  **Prepare the Data**:
+    Copy the `sample1`, `sample2`, `sample3`, `sample4`, and `sample5` folders from the root `benchmark-dataset/` directory into the `prompt-based-workflow/` directory.
+2.  **Navigate and Install Dependencies**:
     ```bash
     cd prompt-based-workflow
     pip install -r requirements.txt
     ```
-2.  **Build Docker Images**:
+3.  **Build Docker Images**:
     Two images are required: one for the base R environment and one for the orchestration environment.
     ```bash
     docker build -f Dockerfile.r-image -t r-image .
     docker-compose build manager
     ```
-3.  **Configure Environment Variables**:
+4.  **Configure Environment Variables**:
     Create a `.env` file or set the following in your shell:
     -   `OPENROUTER_API_KEY`: Your OpenRouter API key.
     -   `HOST_PROJECT_PATH`: **(Required)** The absolute path to this repository on your *host* machine (e.g., ` C:/User/Automating-Computational-Reproducibility/prompt-based-workflow`). This is used for Docker volume mounting.
@@ -121,17 +123,19 @@ This workflow employs autonomous AI agents (e.g., Claude, OpenCode) to interacti
 
 ### 🛠️ Setup
 
-1.  **Navigate and Install Dependencies**:
+1.  **Prepare the Data**:
+    Copy the `sample1`, `sample2`, `sample3`, `sample4`, and `sample5` folders from the root `benchmark-dataset/` directory into the `agent-based-workflow/` directory.
+2.  **Navigate and Install Dependencies**:
     ```bash
     cd agent-based-workflow
     pip install -r requirements.txt 
     ```
-2.  **Build the Agent Environment**:
+3.  **Build the Agent Environment**:
     The orchestration script expects a docker image. Build it using:
     ```bash
     docker build -t my-agent-base:latest .
     ```
-3.  **Configure API Keys**:
+4.  **Configure API Keys**:
     Ensure `OPENROUTER_API_KEY` is set in your environment or a `.env` file.
 
 ### ⚙️ Configuration (Model Selection)
@@ -180,4 +184,11 @@ agent-based-workflow/
 
 The `run.py` script acts as the orchestrator. It sets up a Docker container based on `Dockerfile`, which includes an R environment and necessary agent CLI tools. It then leverages an AI agent ( OpenCode, or Claude agent) to attempt to reproduce R scripts from the `samples/` directory. The agent follows instructions in `prompt.txt` to identify errors, apply minimal fixes, and report the reproducibility status (`status.txt`).
 
----
+----
+
+## Citation
+
+If you find this work or the benchmark dataset useful for your research, please cite our paper:
+
+**Shah, S. M. H., Hopfgartner, F., & Bleier, A. (2026). Automating Computational Reproducibility in Social Science: Comparing Prompt-Based and Agent-Based Approaches.** *arXiv preprint arXiv:2602.08561*. 
+[https://doi.org/10.48550/arXiv.2602.08561](https://doi.org/10.48550/arXiv.2602.08561)
