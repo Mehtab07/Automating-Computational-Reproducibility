@@ -45,7 +45,7 @@ This workflow implements an automated repair cycle that directly queries LLMs wi
     ```
 4.  **Configure Environment Variables**:
     Create a `.env` file or set the following in your shell:
-    -   `OPENROUTER_API_KEY`: Your OpenRouter API key.
+    -   `API_KEY`: Your OpenAI-compatible API key.
     -   `HOST_PROJECT_PATH`: **(Required)** The absolute path to this repository on your *host* machine (e.g., ` C:/User/Automating-Computational-Reproducibility/prompt-based-workflow`). This is used for Docker volume mounting.
 
 ### ⚙️ Configuration
@@ -136,7 +136,7 @@ This workflow employs autonomous AI agents (e.g., Claude, OpenCode) to interacti
     docker build -t my-agent-base:latest .
     ```
 4.  **Configure API Keys**:
-    Ensure `API_KEY` is set in your environment or a `.env` file.
+    Ensure OpenAI-compatible `API_KEY` is set in your environment or a `.env` file.
 
 ### ⚙️ Configuration (Model Selection)
 
