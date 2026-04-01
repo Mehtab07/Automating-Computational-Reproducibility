@@ -136,7 +136,7 @@ This workflow employs autonomous AI agents (e.g., Claude, OpenCode) to interacti
     docker build -t my-agent-base:latest .
     ```
 4.  **Configure API Keys**:
-    Ensure `OPENROUTER_API_KEY` is set in your environment or a `.env` file.
+    Ensure `API_KEY` is set in your environment or a `.env` file.
 
 ### ⚙️ Configuration (Model Selection)
 
