@@ -96,7 +96,7 @@ def main():
 
     env_vars = []
     if agent == "opencode":
-        openrouter_api_key = os.environ.get("OPENROUTER_API_KEY")
+        openrouter_api_key = os.environ.get("API_KEY") or os.environ.get("OPENROUTER_API_KEY")
         if openrouter_api_key:
             env_vars = ["-e", f"OPENROUTER_API_KEY={openrouter_api_key}"]
             config_path = os.path.join(base_dir, "opencode_config")
@@ -104,10 +104,10 @@ def main():
             if args.timeout:
                 command = f"timeout {args.timeout} {command}"
         else:
-            print("No OPENROUTER_API_KEY found — cannot run OpenCode CLI.")
+            print("No API_KEY found — cannot run OpenCode CLI.")
             return
     elif agent == "claude":
-        openrouter_api_key = os.environ.get("OPENROUTER_API_KEY")
+        openrouter_api_key = os.environ.get("API_KEY") or os.environ.get("OPENROUTER_API_KEY")
         if openrouter_api_key:
             env_vars = ["-e", f"OPENROUTER_API_KEY={openrouter_api_key}"]
             config_path = os.path.join(base_dir, "claude_code_router_config")
@@ -115,7 +115,7 @@ def main():
             if args.timeout:
                 command = f"timeout {args.timeout} {command}"
         else:
-            print("No OPENROUTER_API_KEY found — cannot run Claude CLI via router.")
+            print("No API_KEY — cannot run Claude CLI via router.")
             return
     else: # gemini agent
         google_api_key = os.environ.get("GOOGLE_API_KEY")
