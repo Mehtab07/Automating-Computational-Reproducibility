@@ -37,7 +37,7 @@ def build_prompt(mode, script_code, log, script_name, paper=None, context_script
         {script_code}
 
         Fix the script so it runs successfully. Add #comments to beside explain your changes.
-        VERY IMPORTANT: Return only the corrected R code. Do not include any explanatory text, markdown formatting, or any other tags like <think> or ```r."""
+        VERY IMPORTANT: Return only the corrected R code and do not include any explanatory text, markdown formatting, or any other tags like <think> or ```r."""
 
     elif mode == "medium":
         return f"""You are an AI assistant helping to fix an R script using paper context and error log.
