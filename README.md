@@ -192,3 +192,7 @@ If you find this work or the benchmark dataset useful for your research, please 
 
 **Shah, S. M. H., Hopfgartner, F., & Bleier, A. (2026). Automating Computational Reproducibility in Social Science: Comparing Prompt-Based and Agent-Based Approaches.** *arXiv preprint arXiv:2602.08561*. 
 [https://doi.org/10.48550/arXiv.2602.08561](https://doi.org/10.48550/arXiv.2602.08561)
+
+----
+
+This work was supported by the German Research Foundation (DFG), project nos. 551687338 and 460234259.
