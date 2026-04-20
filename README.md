@@ -12,7 +12,7 @@ Across prompt-based runs, reproduction success varies substantially (31–79%), 
 
 ## Repository Overview
 
-This repository contains the code and data for research study investigating the use of Large Language Models (LLMs) and AI agents to automate the repair of computational reproducibility failures in R-based scientific code. It features two distinct, self-contained workflows: an **Agent-Based Workflow** and a **Prompt-Based Workflow**, each designed to diagnose and fix common issues encountered when reproducing computational research in social science.
+This repository contains the code and data for a research study investigating the use of Large Language Models (LLMs) and AI agents to automate the repair of computational reproducibility failures in R-based scientific code. It features two distinct, self-contained workflows: an **Agent-Based Workflow** and a **Prompt-Based Workflow**, each designed to diagnose and fix common issues encountered when reproducing computational research in social science.
 
 ## Repository Structure
 
@@ -141,7 +141,7 @@ This workflow employs autonomous AI agents (e.g., Claude, OpenCode) to interacti
 ### ⚙️ Configuration (Model Selection)
 
 You can customize which LLM the agents use by editing the configuration files, by default, it uses `qwen/qwen3-coder`:
--   **OpenCode Agent**: Edit `opencode_config/opencode.json`..
+-   **OpenCode Agent**: Edit `opencode_config/opencode.json`.
 -   **Claude Agent**: Edit `claude_code_router_config/config.json`.
 
 ### 🚀 Usage
